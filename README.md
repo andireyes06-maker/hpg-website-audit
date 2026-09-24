@@ -5,7 +5,7 @@ This repo holds the revised Duda page snippets for higherperformancegroup.com, p
 The site keeps its navy-and-gold look. The changes make it readable, keyboard-friendly, consistent across pages and free of AI-writing tells. Nothing is live until the files are pasted into Duda.
 
 ## See it
-- **Preview:** open [`preview/index.html`](preview/index.html). Each revised page renders on its own, and each card has before/after screenshots and a link to today's live page. If GitHub Pages is on for this repo, the same preview is at `…/preview/`.
+- **Preview (online):** https://andireyes06-maker.github.io/hpg-website-audit/preview/. Each revised page renders on its own, and each card has before/after screenshots and a link to today's live page. Offline, open [`preview/index.html`](preview/index.html).
 - **What changed and why:** [`DECISIONS.md`](DECISIONS.md) (one line per decision), [`docs/audit-002-2026-09-25.md`](docs/audit-002-2026-09-25.md) (the full audit with evidence), and [`DESIGN.md`](DESIGN.md) (the house design system these changes follow).
 
 ## What changed, page by page
