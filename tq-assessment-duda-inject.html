@@ -1,0 +1,544 @@
+<!-- *** ADD OR EDIT HTML INSIDE OF THE dmRespCol DIVS, SEE DOCUMENTATION FOR GUIDELINES *** -->
+<div dm:templateorder="200" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="2001000001">
+ <div class="u_2001000002 dmRespRow" style="text-align: center;" id="2001000002">
+  <div class="dmRespColsWrapper" id="2001000003">
+   <div class="dmRespCol small-12 u_2001000004 medium-12 large-12" id="2001000004">
+    <!-- *** INSERT YOUR HTML BELOW *** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" id="1989056129"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" id="1329725232"/>
+    <style id="1730715317">
+     /* ── DUDA OVERRIDE — reset inherited text-align:center from row wrapper ── */
+.tia-page,
+.tia-page section, .tia-page section * {
+  text-align: left !important;
+}
+/* Re-apply intentional center alignment for the incoming nav/hero/research */
+.tia-page .hpg-hero,
+.tia-page .hpg-research-inner { text-align: center !important; }
+.tia-page .hpg-hero-eyebrow,
+.tia-page .hpg-hero h1,
+.tia-page .hpg-hero-sub,
+.tia-page .hpg-research-eyebrow,
+.tia-page .hpg-research h2 { text-align: center !important; }
+.tia-page .consequence-close { text-align: center !important; }
+.tia-page .form-fine-print   { text-align: center !important; }
+.tia-page .form-thankyou     { text-align: center !important; }
+.tia-page .ty-check          { margin-left: auto !important; margin-right: auto !important; }
+.tia-page .section-form .section-label { justify-content: center !important; }
+.tia-page .section-form .section-h2,
+.tia-page .section-form .section-body,
+.tia-page .section-form .form-cta-wrap { text-align: center !important; }
+:root {
+  --navy: #0E1D36;
+  --navy-mid: #1A2B4C;
+  --navy-deep: #080F1C;
+  --gold: #C9A84C;
+  --gold-light: #E2C47A;
+  --gold-dim: rgba(201,168,76,0.12);
+  --gold-border: rgba(201,168,76,0.3);
+  --white: #FFFFFF;
+  --green: #27AE60;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+.tia-page {
+  font-family: 'DM Sans', sans-serif !important;
+  background: var(--navy-deep);
+  color: var(--white) !important;
+}
+/* ══ BLOCK 1: HERO ══════════════════════════════════════════════════════ */
+.tia-page .hpg-hero {
+background: #08152a;
+padding: 90px 48px 80px;
+text-align: center;
+border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.tia-page .hpg-hero-eyebrow {
+font-size: 10px;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+color: rgba(201,168,76,0.6) !important;
+margin-bottom: 28px;
+}
+.tia-page .hpg-hero h1 {
+font-family: 'Playfair Display', serif !important;
+font-size: 54px;
+color: #fff !important;
+margin: 0 0 24px;
+line-height: 1.15;
+font-weight: 700;
+letter-spacing: -0.01em;
+max-width: 900px !important;
+margin-left: auto !important;
+margin-right: auto !important;
+}
+.tia-page .hpg-hero h1 em { color: #c9a84c !important; font-style: italic; }
+.tia-page .hpg-hero-sub {
+font-size: 17px;
+color: rgba(255,255,255,0.48) !important;
+max-width: 560px;
+margin: 0 auto 44px;
+line-height: 1.7;
+}
+.tia-page .hpg-hero-sub strong { display: block; text-align: center !important; margin-top: 10px; color: rgba(255,255,255,0.78) !important; font-weight: 500; }
+.tia-page .hpg-btn-primary {
+display: inline-block;
+background: #c9a84c;
+color: #08152a !important;
+font-family: 'DM Sans', sans-serif !important;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+padding: 14px 36px;
+border: none;
+cursor: pointer;
+text-decoration: none;
+transition: opacity 0.2s;
+}
+.tia-page .hpg-btn-primary:hover { opacity: 0.88; }
+.tia-page .hpg-hero-btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.tia-page .hpg-btn-outline {
+display: inline-block;
+background: transparent;
+color: #fff !important;
+font-family: 'DM Sans', sans-serif !important;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+padding: 13px 36px;
+border: 1px solid rgba(255,255,255,0.35);
+text-decoration: none;
+transition: border-color 0.2s, opacity 0.2s;
+}
+.tia-page .hpg-btn-outline:hover { border-color: #c9a84c; opacity: 0.88; }
+/* ══ BLOCK 2: THE RESEARCH BEHIND THE ASSESSMENT ══════════════════════ */
+.tia-page .hpg-research {
+background: #08152a;
+padding: 84px 48px 88px;
+border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.tia-page .hpg-research-inner { max-width: 980px; margin: 0 auto; text-align: center; }
+.tia-page .hpg-research-eyebrow {
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #c9a84c !important;
+margin-bottom: 18px;
+}
+.tia-page .hpg-research h2 {
+font-family: 'Playfair Display', serif !important;
+font-size: 38px;
+color: #fff !important;
+font-weight: 700;
+line-height: 1.25;
+margin-bottom: 56px;
+}
+.tia-page .hpg-research h2 em { color: #c9a84c !important; font-style: italic; }
+.tia-page .hpg-research-stats {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2px;
+margin-bottom: 40px;
+text-align: left;
+}
+.tia-page .hpg-rstat {
+background: #0d1e35;
+border-top: 2px solid rgba(201,168,76,0.35);
+padding: 32px 28px 30px;
+}
+.tia-page .hpg-rstat-n {
+font-family: 'Playfair Display', serif !important;
+font-size: 48px;
+font-weight: 700;
+color: #c9a84c !important;
+line-height: 1;
+letter-spacing: -0.02em;
+margin-bottom: 14px;
+}
+.tia-page .hpg-rstat-label {
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: rgba(255,255,255,0.78) !important;
+margin-bottom: 12px;
+line-height: 1.4;
+}
+.tia-page .hpg-rstat-body {
+font-size: 13px;
+color: rgba(255,255,255,0.42) !important;
+line-height: 1.7;
+}
+.tia-page .hpg-research-quote {
+background: #0d1e35;
+border-left: 2px solid #c9a84c;
+padding: 32px 40px;
+text-align: left;
+max-width: 780px;
+margin: 0 auto;
+}
+.tia-page .hpg-research-quote p {
+font-family: 'Playfair Display', serif !important;
+font-style: italic;
+font-size: 18px;
+color: rgba(255,255,255,0.85) !important;
+line-height: 1.55;
+margin-bottom: 16px;
+}
+.tia-page .hpg-research-quote cite {
+display: block;
+font-family: 'DM Sans', sans-serif !important;
+font-style: normal;
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: #c9a84c !important;
+}
+/* ══ BLOCK 3: CLIENT QUOTES ════════════════════════════════════════════ */
+.tia-page .hpg-client-quote-wrap {
+background: #060f1f;
+padding: 56px 48px;
+border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.tia-page .hpg-client-quotes-stack {
+max-width: 700px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+.tia-page .hpg-client-quote {
+background: #0d1e35;
+border-left: 2px solid #c9a84c;
+padding: 24px 30px;
+}
+.tia-page .hpg-client-quote p {
+font-family: 'Playfair Display', serif !important;
+font-style: italic;
+font-size: 15px;
+color: rgba(255,255,255,0.85) !important;
+line-height: 1.6;
+margin-bottom: 13px;
+}
+.tia-page .hpg-client-quote cite {
+display: block;
+font-size: 11px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #c9a84c !important;
+}
+.tia-page .hpg-footer {
+background: #060f1f;
+padding: 24px 48px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-top: 1px solid rgba(255,255,255,0.06);
+}
+.tia-page .hpg-footer-logo {
+font-family: 'Playfair Display', serif !important;
+font-size: 13px;
+color: rgba(201,168,76,0.4) !important;
+font-weight: 700;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.tia-page .hpg-footer-tag {
+font-size: 10px;
+color: rgba(255,255,255,0.16) !important;
+letter-spacing: 0.08em;
+}
+/* SHARED */
+.tia-page .section-inner { max-width: 760px; margin: 0 auto; }
+.tia-page .section-label {
+  font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold) !important;
+  margin-bottom: 16px; display: flex; align-items: center; gap: 10px;
+}
+.tia-page .section-label::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+.tia-page .section-h2 { font-family: 'Playfair Display', serif !important; font-size: clamp(22px, 3.5vw, 32px); font-weight: 400; color: var(--white) !important; line-height: 1.3; margin-bottom: 20px; }
+.tia-page .section-body { font-size: 14px; color: rgba(255,255,255,.6) !important; line-height: 1.85; max-width: 600px; }
+/* FORM */
+.tia-page .section-form { padding: 88px 40px; background: var(--navy-deep); border-top: 1px solid rgba(255,255,255,.05); }
+.tia-page .form-layout { max-width: 680px; margin: 0 auto; }
+.tia-page .form-left-questions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 0; margin-bottom: 40px; }
+.tia-page .form-left-q { padding: 16px 18px; background: var(--navy-mid); border: 1px solid rgba(255,255,255,.08); border-radius: 0; }
+.tia-page .form-left-q p { font-family: 'Playfair Display', serif !important; font-size: 13px; font-style: italic; color: rgba(255,255,255,.65) !important; line-height: 1.65; }
+.tia-page .dr-hill-block { margin-top: 28px; padding: 20px; background: var(--navy-mid); border: 1px solid rgba(255,255,255,.08); border-radius: 0; display: flex; gap: 14px; align-items: flex-start; }
+.tia-page .dr-avatar { width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--gold-border); flex-shrink: 0; overflow: hidden; }
+.tia-page .dr-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tia-page .dr-name { font-size: 12px; font-weight: 600; color: var(--white) !important; margin-bottom: 3px; }
+.tia-page .dr-title { font-size: 10.5px; color: rgba(255,255,255,.4) !important; margin-bottom: 8px; }
+.tia-page .dr-quote { font-family: 'Playfair Display', serif !important; font-size: 12px; font-style: italic; color: rgba(255,255,255,.55) !important; line-height: 1.65; }
+.tia-page .form-card { background: var(--navy-mid); border: 1px solid var(--gold-border); border-top: 3px solid var(--gold); border-radius: 0; padding: 36px 32px; }
+.tia-page .form-card-title { font-family: 'Playfair Display', serif !important; font-size: 20px; font-weight: 400; color: var(--white) !important; margin-bottom: 6px; }
+.tia-page .form-card-sub { font-size: 12.5px; color: rgba(255,255,255,.42) !important; margin-bottom: 28px; line-height: 1.5; }
+.tia-page .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.tia-page .field-label { display: block; font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold) !important; font-weight: 500; margin-bottom: 6px; }
+.tia-page .field-input,
+.tia-page .field-select {
+  width: 100%; padding: 11px 13px; background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.12); border-radius: 6px; color: var(--white) !important;
+  font-family: 'DM Sans', sans-serif !important; font-size: 13px;
+  transition: border-color .2s, background .2s; outline: none;
+}
+.tia-page .field-input:focus,
+.tia-page .field-select:focus { border-color: var(--gold); background: rgba(255,255,255,.07); }
+.tia-page .field-input::placeholder { color: rgba(255,255,255,.2) !important; }
+.tia-page .field-select { appearance: none; cursor: pointer; }
+.tia-page .field-select option { background: var(--navy-mid); color: var(--white) !important; }
+.tia-page .select-wrap { position: relative; }
+.tia-page .select-wrap::after { content: '▾'; position: absolute; right: 13px; top: 50%; transform: translateY(-50%); color: rgba(255,255,255,.3) !important; pointer-events: none; font-size: 11px; }
+.tia-page .form-divider { height: 1px; background: rgba(255,255,255,.07); margin: 20px 0; }
+.tia-page .form-submit-btn {
+  width: 100%; padding: 15px; background: var(--gold); color: var(--navy) !important;
+  font-family: 'DM Sans', sans-serif !important; font-size: 12px; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase; border: none; border-radius: 6px;
+  cursor: pointer; transition: background .2s, transform .1s; margin-top: 4px;
+}
+.tia-page .form-submit-btn:hover { background: var(--gold-light); }
+.tia-page .form-submit-btn:active { transform: scale(.99); }
+.tia-page .form-fine-print { font-size: 10.5px; color: rgba(255,255,255,.28) !important; text-align: center !important; margin-top: 12px; line-height: 1.5; }
+.tia-page .tia-cta-main {
+  display: inline-block;
+  background: var(--gold); color: var(--navy) !important;
+  font-family: 'DM Sans', sans-serif !important; font-size: 12px; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; border-radius: 6px;
+  padding: 18px 44px; text-decoration: none;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  box-shadow: 0 8px 32px rgba(201,168,76,.22);
+}
+.tia-page .tia-cta-main:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 44px rgba(201,168,76,.32);
+}
+.tia-page .form-thankyou { display: none; text-align: center !important; padding: 20px 0; }
+.tia-page .form-thankyou.show { display: block; }
+.tia-page .ty-check { width: 56px; height: 56px; border-radius: 50%; background: rgba(39,174,96,.15); border: 2px solid rgba(39,174,96,.4); display: flex; align-items: center; justify-content: center; font-size: 24px; margin: 0 auto 20px; }
+.tia-page .ty-h { font-family: 'Playfair Display', serif !important; font-size: 22px; color: var(--white) !important; margin-bottom: 10px; }
+.tia-page .ty-p { font-size: 13px; color: rgba(255,255,255,.5) !important; line-height: 1.7; }
+/* REVEAL */
+.tia-page .reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
+.tia-page .reveal.in-view { opacity: 1; transform: translateY(0); }
+.tia-page .reveal-delay-1 { transition-delay: .1s; }
+.tia-page .reveal-delay-2 { transition-delay: .2s; }
+.tia-page .reveal-delay-3 { transition-delay: .3s; }
+.tia-page .reveal-delay-4 { transition-delay: .4s; }
+/* RESPONSIVE — trimmed to form-only rules from the original page,
+   plus new rules for the incoming nav/hero/trusted/paradox/solutions
+   (text.html shipped with no responsive CSS of its own) */
+@media (max-width: 960px) {
+  .tia-page .hpg-research-stats { grid-template-columns: 1fr; }
+}
+@media (max-width: 800px) {
+  .tia-page .section-form { padding: 64px 32px; }
+  .tia-page .form-left-questions { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .tia-page .form-left-questions { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .tia-page .hpg-hero { padding: 64px 24px 56px; }
+  .tia-page .hpg-hero h1 { font-size: 36px; }
+  .tia-page .hpg-research h2 { font-size: 28px; }
+}
+@media (max-width: 480px) {
+  .tia-page .section-form { padding-left: 20px; padding-right: 20px; }
+}
+/* Duda saves one fixed px height for this widget on mobile; real content is taller on small phones (overlaps the footer) and shorter on tablets (blank band). Let it size to content. */
+#dm .dmBody .tia-page.tia-page { height:auto !important; }
+/* ── audit-002: shared accessibility + UX layer (focus ring, press state, anchor offset, new-tab cue, tap area, reduced motion) ── */
+#dmRoot #dm :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible, #dm :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible { outline: 3px solid #c9a84c !important; outline-offset: 2px !important; box-shadow: 0 0 0 2px #08152a !important; }
+#dm :is(button, input[type="submit"], a[class*="btn"], a[class*="cta"], a[class*="Btn"]):active { transform: translateY(1px) !important; filter: brightness(0.94); }
+#dm [id] { scroll-margin-top: 80px; }
+#dm .dmBody :is(p, li, cite, small) a[target="_blank"]:not([class*="btn"]):not(:has(img, svg))::after { content: "\2197"; content: "\2197" / " (opens in a new tab)"; display: inline-block; margin-left: 0.2em; font-size: 0.8em; text-decoration: none; }
+#dm .dmBody :is(p, li, cite, small) a:not([class*="btn"]):not([class*="cta"]) { padding-block: 10px; }
+@media (prefers-reduced-motion: reduce) { #dm *, #dm *::before, #dm *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+/* ── audit-002 #19: contrast fixes, same hue moved just past WCAG AA on its real background ── */
+#dm .dmBody .hpg-hero-eyebrow { color: #94824a !important; } /* was #7c6d3e on #08152a (3.58:1) -> 4.82:1 */
+#dm .dmBody .hpg-rstat-body { color: #808996 !important; } /* was #737d8a on #0d1e35 (3.99:1) -> 4.75:1 */
+#dm .dmBody .dr-title { color: #8c95a6 !important; } /* was #768094 on #1a2b4c (3.53:1) -> 4.67:1 */
+#dm .dmBody .form-fine-print { color: #787f8d !important; } /* was #4d525c on #080f1c (2.45:1) -> 4.76:1 */
+    
+/* ── audit-002 #34: labels and small text lifted to a 12px minimum (was 7.5–11.5px) ── */
+#dm .dmBody :is(.dr-title, .form-fine-print, .hpg-btn-outline, .hpg-btn-primary, .hpg-client-quote > cite, .hpg-hero-eyebrow, .hpg-research-eyebrow, .hpg-research-quote > cite, .hpg-rstat-label, .section-label) { font-size: 12px !important; }
+#dm .dmBody :is(cite, blockquote cite, figcaption) { font-family: 'DM Sans', system-ui, sans-serif; }
+</style>
+    <div class="u_1300266853 tia-page" id="1300266853">
+     <!-- ══ BLOCK 1: HERO ══════════════════════════════════════════════════════ -->
+     <section class="hpg-hero" style="width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;margin-right:0 !important;box-sizing:border-box !important;overflow:hidden !important;">
+      <p class="hpg-hero-eyebrow">
+       An HPG Leadership Team Performance Assessment
+      </p>
+      <h1>
+       Leadership Team Performance
+       <br/>
+       <em>
+        Assessment.
+       </em>
+      </h1>
+      <p class="hpg-hero-sub">
+       Teams average less than 60% of their performance potential.
+       <br/>
+       <strong>
+        You can't fight what you can't see.
+       </strong>
+      </p>
+      <div class="hpg-hero-btn-row">
+       <a href="https://calendly.com/higherperformance/discovery-call" target="_blank" rel="noopener" class="hpg-btn-primary">
+        Find Your Team's Baseline
+       </a>
+       <a href="https://drive.google.com/uc?export=download&id=1IH-4wtr1ZlvXPTqeMox2-CwIEl8BIhSS" target="_blank" rel="noopener" class="hpg-btn-outline">
+        Download Sample PDF
+       </a>
+      </div>
+     </section>
+     <!-- ══ BLOCK 2: THE RESEARCH BEHIND THE ASSESSMENT ══════════════════════ -->
+     <section class="hpg-research" style="width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;margin-right:0 !important;box-sizing:border-box !important;overflow:hidden !important;">
+      <div class="hpg-research-inner">
+       <p class="hpg-research-eyebrow">
+        The Research Behind the Assessment
+       </p>
+       <h2>
+        Four decades of independent research keep finding
+        <em>
+         the same five dimensions.
+        </em>
+       </h2>
+       <div class="hpg-research-stats">
+        <div class="hpg-rstat">
+         <div class="hpg-rstat-n">
+          40+
+         </div>
+         <div class="hpg-rstat-label">
+          Years of validated research behind the model
+         </div>
+         <div class="hpg-rstat-body">
+          Grounded in organizational psychology and collective-intelligence research: Jung, Edmondson, Woolley, Mathieu, Google's Project Aristotle. The same five patterns keep surfacing.
+         </div>
+        </div>
+        <div class="hpg-rstat">
+         <div class="hpg-rstat-n">
+          5
+         </div>
+         <div class="hpg-rstat-label">
+          Dimensions that keep appearing
+         </div>
+         <div class="hpg-rstat-body">
+          Communication, Connection, Alignment, Capacity, Execution. Different researchers, different decades: the same five, every time.
+         </div>
+        </div>
+        <div class="hpg-rstat">
+         <div class="hpg-rstat-n">
+          1
+         </div>
+         <div class="hpg-rstat-label">
+          Pattern, confirmed again
+         </div>
+         <div class="hpg-rstat-body">
+          Dr. Hill's doctoral research confirmed the same five dimensions hold in educational leadership too: one more sector proving the pattern is universal, not industry-specific.
+         </div>
+        </div>
+       </div>
+       <blockquote class="hpg-research-quote">
+        <p>
+         &quot;The global research told us what great team performance looks like, everywhere. My work confirmed it holds in educational leadership too. That's what the TQ Assessment is built on.&quot;
+        </p>
+        <cite>
+         Dr. Joe Hill
+        </cite>
+       </blockquote>
+      </div>
+     </section>
+     <!-- ══ BLOCK 3: CLIENT QUOTES ════════════════════════════════════════════ -->
+     <section class="hpg-client-quote-wrap" style="width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;margin-right:0 !important;box-sizing:border-box !important;overflow:hidden !important;">
+      <div class="hpg-client-quotes-stack">
+       <blockquote class="hpg-client-quote">
+        <p>
+         &quot;Joe's consulting work with our non-profit was transformative. His deep understanding of the public education landscapes helped us refine our mission and dramatically improve our program effectiveness.&quot;
+        </p>
+        <cite>Jennifer Godfrey &middot; CEO, Utah Community Action
+        </cite>
+       </blockquote>
+       <blockquote class="hpg-client-quote">
+        <p>
+         &quot;Powerful teams make a difference. The best ideas in education can be traced to the effectiveness of a team committed to the vision to make it happen.&quot;
+        </p>
+        <cite>
+         Dr. Bernadine Futrell &middot; Senior Fellow, Institute for Educational Leadership
+        </cite>
+       </blockquote>
+      </div>
+     </section>
+     <!-- FORM -->
+     <section class="section-form" id="tia-get-started" style="width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;margin-right:0 !important;box-sizing:border-box !important;overflow:hidden !important;">
+      <div class="form-layout">
+       <div class="section-label reveal">
+        One Conversation
+       </div>
+       <h2 class="section-h2 reveal">
+        What would it mean to
+        <br/>
+        finally have the data?
+       </h2>
+       <p class="section-body reveal" style="margin-left:auto;margin-right:auto;margin-bottom:48px;">
+        Not an opinion. Not a gut feeling. Your team's actual numbers: scored, staged, and interpreted by someone who can tell you what to do with them.
+       </p>
+       <div class="form-left-questions reveal">
+        <div class="form-left-q">
+         <p>
+          &quot;If you knew exactly which one or two dimensions were costing your team the most, would that change how you're spending your next 90 days?&quot;
+         </p>
+        </div>
+        <div class="form-left-q">
+         <p>
+          &quot;Is there any downside to a 30-minute conversation that might give you that clarity?&quot;
+         </p>
+        </div>
+       </div>
+       <div class="dr-hill-block reveal" style="max-width:560px;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:48px;">
+        <div class="dr-avatar">
+         <img src="https://i.postimg.cc/76ZNx210/2nd-pic.jpg" alt="Dr. Joe Hill"/>
+        </div>
+        <div>
+         <div class="dr-name">
+          Dr. Joe Hill
+         </div>
+         <div class="dr-title">
+          Founder &middot; Higher Performance Group
+         </div>
+         <div class="dr-quote">
+          &quot;A discovery call is a straight conversation about your team's numbers. If it's not the right fit, I'll tell you. If it is, you'll know what to do next.&quot;
+         </div>
+        </div>
+       </div>
+       <div class="form-cta-wrap reveal">
+        <a href="https://calendly.com/higherperformance/discovery-call" target="_blank" rel="noopener" class="tia-cta-main">
+         Schedule a Discovery Call &rarr;
+        </a>
+        <p class="form-fine-print" style="margin-top:16px;">
+         No commitment. No pressure. If it's not the right fit, Dr. Hill will tell you.
+        </p>
+       </div>
+      </div>
+     </section>
+     <!-- /.tia-page -->
+     <script id="1613790962">
+      (function() {
+  const reveals = document.querySelectorAll('.tia-page .reveal');
+  const io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(function(el) { io.observe(el); });
+})();
+     </script>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

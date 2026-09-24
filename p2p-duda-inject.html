@@ -1,0 +1,1816 @@
+<!-- *** ADD OR EDIT HTML INSIDE OF THE dmRespCol DIVS, SEE DOCUMENTATION FOR GUIDELINES *** -->
+<div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" style="padding:0 !important;margin:0 !important;min-height:0 !important;border:none !important;background:transparent !important;overflow:hidden !important;" id="1716942098">
+ <div class="u_1243667655 dmRespRow" style="text-align:center;width:100% !important;max-width:100% !important;padding:0 !important;margin:0 !important;min-height:0 !important;" id="1243667655">
+  <div class="dmRespColsWrapper" style="width:100% !important;max-width:100% !important;padding:0 !important;margin:0 !important;min-height:0 !important;" id="1173148036">
+   <div class="dmRespCol small-12 u_1620106714 medium-12 large-12" style="width:100% !important;max-width:100% !important;padding:0 !important;margin:0 !important;min-height:0 !important;line-height:0 !important;font-size:0 !important;" id="1620106714">
+    <!-- *** INSERT YOUR HTML BELOW *** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" id="1050329107"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" id="1226163535"/>
+    <style id="1446349592">
+     :root {
+  --navy: #08152a;
+  --navy-mid: #0d1e38;
+  --navy-card: #111f3a;
+  --navy-lite: #162848;
+  --gold: #c9a84c;
+  --gold-lite: #e2c878;
+  --white: #ffffff;
+  --muted: #7a90b0;
+  --rule: rgba(255,255,255,0.07);
+}
+/* ── DUDA OVERRIDES ──────────────────────────────── */
+.p2p-page, .p2p-page * { text-align:left !important; }
+#1716942098.mainBorder { border:none !important; padding:0 !important; background:transparent !important; }
+/* ── SPONSOR BANNER ──────────────────────────────── */
+.p2p-page .sponsor-banner {
+  background:var(--gold);
+  height:36px;
+  display:flex; align-items:center;
+  overflow:hidden;
+  position:relative;
+}
+.p2p-page .sponsor-track {
+  display:flex; gap:0;
+  animation:p2pMarquee 28s linear infinite;
+  white-space:nowrap;
+}
+.p2p-page .sponsor-track span {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.22em; text-transform:uppercase;
+  color:var(--navy);
+  padding:0 40px;
+}
+.p2p-page .sponsor-track span.dot {
+  color:rgba(8,21,42,0.35);
+  padding:0 4px;
+  letter-spacing:0;
+}
+@keyframes p2pMarquee {
+  0% { transform:translateX(0); }
+  100% { transform:translateX(-50%); }
+}
+/* ── PAGE BLEED WRAPPER ──────────────────────────── */
+.p2p-page {
+  font-family:'DM Sans', sans-serif;
+  background:var(--navy);
+  color:var(--white) !important;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  width:100vw !important;
+  max-width:100vw !important;
+  margin-left:calc(50% - 50vw) !important;
+  margin-right:0 !important;
+  box-sizing:border-box !important;
+}
+.p2p-page h1, .p2p-page h2, .p2p-page h3,
+.p2p-page p, .p2p-page li, .p2p-page span,
+.p2p-page div, .p2p-page a { color:inherit !important; }
+/* ── HERO ────────────────────────────────────────── */
+.p2p-page .hero {
+  display:grid;
+  grid-template-columns:1fr 440px;
+  align-items:center;
+  gap:60px;
+  padding:80px 180px 80px 80px;
+  position:relative;
+  overflow:hidden;
+}
+.p2p-page .hero::before {
+  content:'';
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 60% 60% at 80% 40%, rgba(201,168,76,0.055) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 50% at 10% 80%, rgba(201,168,76,0.03) 0%, transparent 60%);
+  pointer-events:none;
+}
+.p2p-page .hero::after {
+  content:'';
+  position:absolute; bottom:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg, transparent, rgba(201,168,76,0.25), transparent);
+}
+/* staggered hero entrance */
+.p2p-page .hero-left { padding-left:120px; }
+.p2p-page .hero-left > * {
+  opacity:0;
+  animation:p2pFadeUp .65s ease forwards;
+}
+.p2p-page .hero-left > *:nth-child(1) { animation-delay:.05s; }
+.p2p-page .hero-left > *:nth-child(2) { animation-delay:.18s; }
+.p2p-page .hero-left > *:nth-child(3) { animation-delay:.28s; }
+.p2p-page .hero-left > *:nth-child(4) { animation-delay:.36s; }
+.p2p-page .hero-left > *:nth-child(5) { animation-delay:.44s; }
+.p2p-page .hero-left > *:nth-child(6) { animation-delay:.52s; }
+@keyframes p2pFadeUp {
+  from { opacity:0; transform:translateY(20px); }
+  to { opacity:1; transform:translateY(0); }
+}
+.p2p-page .audience-chips {
+  display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+  margin-bottom:32px;
+}
+.p2p-page .chip {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.18em; text-transform:uppercase;
+  padding:6px 14px; border-radius:2px;
+  border:1px solid rgba(201,168,76,0.4); color:var(--gold);
+}
+.p2p-page .chip-div { font-size:11px; font-weight:400; color:var(--muted); }
+.p2p-page .hero h1 {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:clamp(40px,5vw,68px) !important;
+  font-weight:900; line-height:1.06;
+  margin-bottom:28px;
+}
+.p2p-page .hero h1 em { font-style:italic; color:var(--gold); }
+.p2p-page .hero-sub {
+  font-size:17px; font-weight:300; line-height:1.72;
+  color:rgba(255,255,255,0.68); max-width:540px;
+  margin-bottom:22px;
+}
+.p2p-page .hero-tagline {
+  font-size:12px; font-weight:600;
+  letter-spacing:0.06em; color:var(--muted);
+  margin-bottom:36px;
+}
+.p2p-page .hero-tagline span { color:rgba(255,255,255,0.2); margin:0 8px; }
+.p2p-page .hero-proof {
+  display:flex; gap:44px;
+  padding-top:36px; border-top:1px solid var(--rule);
+  margin-bottom:32px;
+}
+.p2p-page .proof-num {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:32px; font-weight:700; color:var(--gold) !important;
+  display:block; line-height:1; margin-bottom:5px;
+}
+.p2p-page .proof-label {
+  font-size:10.5px; font-weight:500;
+  letter-spacing:0.09em; text-transform:uppercase;
+  color:var(--muted); line-height:1.45;
+}
+.p2p-page .hero-ctas { display:flex; gap:14px; flex-wrap:wrap; }
+/* session card — right col */
+.p2p-page .session-card-hero {
+  background:var(--navy-card);
+  border:1px solid rgba(201,168,76,0.22);
+  border-top:3px solid var(--gold);
+  padding:40px 36px;
+  opacity:0;
+  animation:p2pSlideLeft .7s .35s forwards;
+}
+@keyframes p2pSlideLeft {
+  from { opacity:0; transform:translateX(28px); }
+  to { opacity:1; transform:translateX(0); }
+}
+.p2p-page .card-eyebrow {
+  font-size:9.5px; font-weight:700;
+  letter-spacing:0.22em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:18px;
+}
+.p2p-page .card-topic {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:19px; font-weight:700; line-height:1.35;
+  color:var(--white); margin-bottom:28px;
+}
+.p2p-page .card-divider { height:1px; background:var(--rule); margin:0 0 20px; }
+.p2p-page .card-meta { display:flex; flex-direction:column; gap:26px; margin-bottom:40px; }
+.p2p-page .card-meta-row {
+  display:flex; align-items:center; gap:12px;
+  font-size:13px; color:rgba(255,255,255,0.72);
+}
+.p2p-page .card-meta-row strong {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.11em; text-transform:uppercase;
+  color:var(--muted); min-width:54px; flex-shrink:0;
+}
+/* ── TRUSTED BY STRIP ── */
+.p2p-page .trusted-strip {
+  background:#ffffff !important;
+  border-top:1px solid #e0e0e0 !important;
+  border-bottom:3px solid #0a1929 !important;
+  padding:28px 64px !important;
+  display:flex !important; align-items:center !important; gap:32px !important;
+  overflow:hidden !important;
+}
+.p2p-page .trusted-label {
+  font-size:10px !important; font-weight:700 !important;
+  letter-spacing:3px !important; text-transform:uppercase !important;
+  color:#0a1929 !important; white-space:nowrap !important; flex-shrink:0;
+}
+.p2p-page .trust-track-wrap { flex:1 !important; overflow:hidden; }
+.p2p-page .trust-track {
+  display:flex !important; align-items:center !important;
+  animation:p2pTrustMarquee 36s linear infinite !important;
+  white-space:nowrap !important; width:max-content;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+.p2p-page .trusted-strip:hover .trust-track { animation-play-state:paused; }
+.p2p-page .trust-track a, .p2p-page .trust-track span { display:inline-block !important; margin:0 10px; }
+.p2p-page .trust-track img { height:24px; width:auto; opacity:1; vertical-align:middle; transition:opacity .3s; }
+.p2p-page .trust-track a:hover img { opacity:0.7; }
+@keyframes p2pTrustMarquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+@media(max-width:960px) {
+  .p2p-page .trusted-strip { padding:14px 40px !important; gap:24px !important; }
+  .p2p-page .trusted-label { font-size:8px !important; }
+}
+@media(max-width:640px) {
+  .p2p-page .trusted-strip { padding:12px 20px !important; gap:16px !important; }
+  .p2p-page .trusted-label { font-size:7px !important; }
+}
+/* ── BUTTONS ─────────────────────────────────────── */
+.p2p-page .btn-gold {
+  display:inline-block;
+  background:var(--gold); color:var(--navy);
+  font-size:13px; font-weight:700;
+  letter-spacing:0.12em; text-transform:uppercase;
+  padding:18px 44px; border-radius:6px; text-decoration:none;
+  transition:background .18s, transform .15s;
+}
+.p2p-page .btn-gold:hover { background:var(--gold-lite); transform:translateY(-1px); }
+.p2p-page .btn-gold-block { display:block !important; text-align:center !important; }
+.p2p-page .btn-ghost {
+  display:inline-block;
+  border:1px solid rgba(255,255,255,0.2); color:var(--white);
+  font-size:13px; font-weight:600;
+  letter-spacing:0.11em; text-transform:uppercase;
+  padding:17px 44px; border-radius:6px; text-decoration:none;
+  transition:border-color .2s, background .2s;
+}
+.p2p-page .btn-ghost:hover { border-color:var(--gold); background:rgba(201,168,76,0.06); }
+.p2p-page .btn-ghost-gold {
+  display:block !important; text-align:center !important;
+  border:1px solid rgba(201,168,76,0.35); color:var(--gold);
+  font-size:11px; font-weight:600;
+  letter-spacing:0.1em; text-transform:uppercase;
+  padding:15px 20px; border-radius:6px;
+  text-decoration:none; margin-top:16px; transition:all .2s;
+}
+.p2p-page .btn-ghost-gold:hover { background:rgba(201,168,76,0.08); border-color:var(--gold); }
+.p2p-page .session-card-hero .btn-ghost-gold { padding:17px 44px; border-radius:6px; font-size:13px; }
+.p2p-page .btn-dark {
+  display:inline-block;
+  background:var(--navy); color:var(--white);
+  font-size:11.5px; font-weight:700;
+  letter-spacing:0.12em; text-transform:uppercase;
+  padding:15px 36px; border-radius:2px; text-decoration:none;
+  transition:background .2s;
+}
+.p2p-page .btn-dark:hover { background:var(--navy-lite); }
+.p2p-page .btn-outline-navy {
+  display:inline-block;
+  border:2px solid var(--navy); color:var(--navy);
+  font-size:11.5px; font-weight:700;
+  letter-spacing:0.12em; text-transform:uppercase;
+  padding:13px 32px; border-radius:2px; text-decoration:none;
+  transition:background .2s;
+}
+.p2p-page .btn-outline-navy:hover { background:rgba(8,21,42,0.1); }
+/* ── SECTION SHELL ───────────────────────────────── */
+.p2p-page section { padding:100px 56px; }
+.p2p-page .inner { max-width:1020px; margin:0 auto; }
+.p2p-page .eyebrow {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.22em; text-transform:uppercase;
+  color:var(--gold); display:block; margin-bottom:14px;
+}
+.p2p-page .section-h {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:clamp(30px,3.2vw,46px) !important;
+  font-weight:700; line-height:1.1; margin-bottom:18px;
+}
+.p2p-page .section-h em { font-style:italic; color:var(--gold); }
+.p2p-page .section-p {
+  font-size:16px; font-weight:300; line-height:1.78;
+  color:rgba(255,255,255,0.62); max-width:580px;
+}
+.p2p-page .gold-bar { width:44px; height:2px; background:var(--gold); margin:22px 0 36px; }
+/* ── WHO SECTION ─────────────────────────────────── */
+.p2p-page .who-section { background:var(--navy-mid); }
+.p2p-page .audience-banner {
+  display:grid; grid-template-columns:1fr 1fr;
+  border:1px solid rgba(201,168,76,0.2); margin:52px 0 0;
+}
+.p2p-page .audience-col { padding:44px 48px; }
+.p2p-page .audience-col:first-child { border-right:1px solid rgba(201,168,76,0.15); }
+.p2p-page .audience-col-label {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:10px;
+  display:flex; align-items:center; gap:8px;
+}
+.p2p-page .audience-col-label::before { content:''; width:20px; height:1px; background:var(--gold); }
+.p2p-page .audience-col h3 {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:22px; font-weight:700; line-height:1.3;
+  color:var(--white); margin-bottom:16px;
+}
+.p2p-page .audience-col p {
+  font-size:14px; font-weight:300; line-height:1.75;
+  color:rgba(255,255,255,0.62);
+}
+.p2p-page .fit-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-top:2px; }
+.p2p-page .fit-col { padding:44px 48px; background:rgba(255,255,255,0.018); }
+.p2p-page .fit-col.fit-yes { border-top:3px solid var(--gold); }
+.p2p-page .fit-col.fit-no { border-top:3px solid rgba(255,255,255,0.1); }
+.p2p-page .fit-col-hd {
+  font-size:15px; font-weight:700;
+  letter-spacing:0.15em; text-transform:uppercase;
+  margin-bottom:26px; padding-bottom:18px;
+  border-bottom:1px solid var(--rule);
+}
+.p2p-page .fit-col.fit-yes .fit-col-hd { color:var(--gold); }
+.p2p-page .fit-col.fit-no .fit-col-hd { color:var(--muted); }
+.p2p-page .fit-list { list-style:none; display:flex; flex-direction:column; gap:15px; }
+.p2p-page .fit-list li {
+  display:flex; align-items:flex-start; gap:13px;
+  font-size:14px; font-weight:400; line-height:1.55;
+  color:rgba(255,255,255,0.78);
+}
+.p2p-page .fi { font-size:14px; flex-shrink:0; margin-top:1px; font-weight:700; }
+.p2p-page .fit-col.fit-yes .fi { color:var(--gold); }
+.p2p-page .fit-col.fit-no .fi { color:rgba(255,255,255,0.18); }
+/* ── EXPECT ──────────────────────────────────────── */
+.p2p-page .expect-section { background:var(--navy); }
+.p2p-page .expect-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:2px; margin-top:52px;
+}
+.p2p-page .expect-card {
+  padding:44px 38px; background:var(--navy-card);
+  border-top:2px solid rgba(201,168,76,0.18);
+  transition:border-top-color .2s;
+}
+.p2p-page .expect-card:hover { border-top-color:var(--gold); }
+.p2p-page .expect-num {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:44px; font-weight:700;
+  color:rgba(201,168,76,0.13); line-height:1; margin-bottom:20px;
+}
+.p2p-page .expect-card h3 {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:18px; font-weight:700; line-height:1.3;
+  color:var(--white); margin-bottom:12px;
+}
+.p2p-page .expect-card p {
+  font-size:14px; font-weight:300; line-height:1.72;
+  color:rgba(255,255,255,0.58);
+}
+/* ── SESSIONS ────────────────────────────────────── */
+.p2p-page .sessions-section { background:var(--navy-mid); }
+.p2p-page .sessions-hdr {
+  display:flex; align-items:flex-end;
+  justify-content:space-between; margin-bottom:52px;
+}
+.p2p-page .sessions-hdr-note {
+  font-size:13px; font-weight:300; line-height:1.65;
+  color:var(--muted); max-width:240px; text-align:right !important;
+}
+.p2p-page .sessions-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+.p2p-page .sess-card {
+  background:var(--navy-card); padding:36px 32px;
+  border-top:2px solid rgba(201,168,76,0.15);
+  transition:border-top-color .2s; position:relative;
+}
+.p2p-page .sess-card:hover { border-top-color:var(--gold); }
+.p2p-page .sess-card.active { border-top:3px solid var(--gold); background:rgba(201,168,76,0.04); }
+.p2p-page .sess-badge {
+  position:absolute; top:-1px; right:24px;
+  background:var(--gold); color:var(--navy);
+  font-size:9px; font-weight:700;
+  letter-spacing:0.16em; text-transform:uppercase;
+  padding:4px 10px;
+}
+.p2p-page .sess-num {
+  font-size:10px; font-weight:600;
+  letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:10px;
+}
+.p2p-page .sess-date {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:24px; font-weight:700;
+  color:var(--gold) !important; margin-bottom:14px; line-height:1;
+}
+.p2p-page .sess-topic {
+  font-size:14px; font-weight:400; line-height:1.55;
+  color:rgba(255,255,255,0.82); margin-bottom:18px; min-height:50px;
+}
+.p2p-page .sess-topic.pending { color:var(--muted); font-style:italic; font-weight:300; }
+.p2p-page .sess-format {
+  font-size:11px; font-weight:500;
+  letter-spacing:0.06em; color:var(--muted);
+  margin-bottom:22px; padding-bottom:18px;
+  border-bottom:1px solid var(--rule);
+}
+/* ── ARCHIVE ─────────────────────────────────────── */
+.p2p-page .archive-section { background:var(--navy); }
+.p2p-page .archive-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin-top:48px; }
+.p2p-page .archive-card {
+  padding:34px 36px; background:var(--navy-card);
+  border-top:2px solid rgba(201,168,76,0.15);
+  text-decoration:none; display:block;
+  transition:border-top-color .2s, background .2s;
+}
+.p2p-page .archive-card:hover { border-top-color:var(--gold); background:rgba(201,168,76,0.03); }
+.p2p-page .arc-date {
+  font-size:10.5px; font-weight:700;
+  letter-spacing:0.12em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:10px;
+}
+.p2p-page .arc-title {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:16px; font-weight:700; line-height:1.4;
+  color:var(--white); margin-bottom:18px;
+}
+.p2p-page .arc-link {
+  display:inline-block;
+  font-size:11px; font-weight:600;
+  letter-spacing:0.1em; text-transform:uppercase;
+  color:var(--gold);
+  border:1px solid rgba(201,168,76,0.35);
+  padding:10px 20px; border-radius:4px;
+  margin-top:4px; transition:background .2s, border-color .2s;
+}
+.p2p-page .archive-card:hover .arc-link { background:rgba(201,168,76,0.08); border-color:var(--gold); }
+/* ── TESTIMONIALS ────────────────────────────────── */
+.p2p-page .testi-section { background:var(--navy-mid); padding:0 !important; }
+.p2p-page .testi-section .inner { max-width:1400px; margin:0 auto; padding:100px 56px; }
+.p2p-page .testi-intro {
+  display:flex; align-items:flex-end;
+  justify-content:space-between; margin-bottom:0;
+}
+.p2p-page .testi-proof {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:13px; font-weight:700; font-style:italic;
+  color:var(--gold) !important; max-width:280px; text-align:right !important;
+  line-height:1.5; padding-bottom:4px;
+}
+.p2p-page .testi-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin-top:52px; }
+.p2p-page .testi-card { padding:48px 44px; background:var(--navy-card); border-top:2px solid rgba(201,168,76,0.15); }
+.p2p-page .testi-sector {
+  font-size:9.5px; font-weight:700;
+  letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:22px;
+  display:flex; align-items:center; gap:8px;
+}
+.p2p-page .testi-sector::before { content:''; width:16px; height:1px; background:var(--gold); }
+.p2p-page .testi-quote {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:17px; font-style:italic; font-weight:700;
+  line-height:1.6; color:var(--white); margin-bottom:30px;
+}
+.p2p-page .open-q {
+  font-size:52px; line-height:0; vertical-align:-18px;
+  margin-right:3px; color:var(--gold);
+  font-family:'Playfair Display', Georgia, serif !important;
+}
+.p2p-page .testi-by { display:block !important; border-top:1px solid var(--rule); padding-top:20px; }
+.p2p-page .testi-name { display:block !important; font-size:14px; font-weight:600; color:var(--white); margin-bottom:20px; }
+.p2p-page .testi-role { display:block !important; font-size:12px; font-weight:400; color:var(--muted); }
+/* ── NOTIFY ──────────────────────────────────────── */
+.p2p-page .notify-section { background:var(--navy); }
+.p2p-page .notify-wrap { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+.p2p-page .notify-form { display:flex; flex-direction:column; gap:14px; }
+.p2p-page .form-row { display:flex; flex-direction:column; gap:14px; }
+.p2p-page .form-input {
+  flex:1 !important; background:var(--navy-lite) !important;
+  border:1px solid rgba(201,168,76,0.25) !important;
+  border-radius:6px !important;
+  outline:none !important; box-shadow:none !important;
+  color:var(--white) !important; font-family:'DM Sans', sans-serif !important;
+  font-size:15px !important; padding:16px 20px !important;
+  width:100% !important; box-sizing:border-box !important;
+  transition:border-color .2s, background .2s;
+}
+.p2p-page .form-input::placeholder { color:var(--muted) !important; }
+.p2p-page .form-input:focus {
+  border:1px solid var(--gold) !important;
+  outline:none !important; box-shadow:none !important;
+  background:var(--navy-card) !important;
+}
+.p2p-page .form-input.full { width:100%; }
+.p2p-page .form-btn {
+  background:var(--gold); color:var(--navy);
+  font-family:'DM Sans', sans-serif;
+  font-size:12px; font-weight:700;
+  letter-spacing:0.12em; text-transform:uppercase;
+  padding:17px 32px; border:none; border-radius:6px;
+  cursor:pointer; transition:background .2s; width:100%;
+}
+.p2p-page .form-btn:hover { background:var(--gold-lite); }
+.p2p-page .form-note { font-size:11.5px; color:var(--muted); line-height:1.55; }
+/* ── CTA CLOSE ───────────────────────────────────── */
+.p2p-page .cta-section { background:var(--gold); padding:100px 56px; text-align:center !important; }
+.p2p-page .cta-eyebrow {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.22em; text-transform:uppercase;
+  color:rgba(8,21,42,0.55); display:block; margin-bottom:14px;
+  text-align:center !important;
+}
+.p2p-page .cta-h {
+  font-family:'Playfair Display', Georgia, serif !important;
+  font-size:clamp(32px,4vw,52px) !important; font-weight:700; line-height:1.1;
+  color:var(--navy); margin-bottom:18px;
+  text-align:center !important;
+}
+.p2p-page .cta-h em { font-style:italic; color:rgba(8,21,42,0.6); }
+.p2p-page .cta-p {
+  font-size:16px; font-weight:300;
+  color:rgba(8,21,42,0.68); line-height:1.72;
+  max-width:500px; margin:0 auto 48px;
+  text-align:center !important;
+}
+.p2p-page .cta-btns { display:flex; gap:14px; justify-content:center !important; flex-wrap:wrap; }
+/* ── RESPONSIVE ──────────────────────────────────── */
+@media(max-width:1024px) {
+  .p2p-page .hero { grid-template-columns:1fr; padding:60px 40px 72px 40px; text-align:center !important; }
+  .p2p-page .hero-left { padding-left:0; align-items:center; }
+  .p2p-page .hero-left > * { text-align:center !important; }
+  .p2p-page .audience-chips { justify-content:center; }
+  .p2p-page .hero-sub { margin-left:auto; margin-right:auto; }
+  .p2p-page .hero-proof { justify-content:center; }
+  .p2p-page .hero-ctas { justify-content:center; }
+  .p2p-page .session-card-hero { display:none; }
+  .p2p-page .expect-grid { grid-template-columns:1fr 1fr; }
+  .p2p-page .sessions-grid { grid-template-columns:1fr 1fr 1fr; }
+  .p2p-page .testi-grid { grid-template-columns:1fr 1fr; }
+  .p2p-page .testi-intro { max-width:100%; }
+  .p2p-page .testi-section .inner { padding:80px 40px; }
+  .p2p-page .audience-banner { grid-template-columns:1fr; }
+  .p2p-page .audience-col:first-child { border-right:none; border-bottom:1px solid rgba(201,168,76,0.15); }
+  .p2p-page .notify-wrap { grid-template-columns:1fr; gap:48px; }
+  .p2p-page section { padding:80px 40px; }
+  .p2p-page .trusted-strip { padding:24px 28px; }
+  .p2p-page .eyebrow { text-align:center !important; }
+  .p2p-page .section-h { text-align:center !important; }
+  .p2p-page .section-p { text-align:center !important; margin-left:auto; margin-right:auto; }
+  .p2p-page .gold-bar { margin-left:auto; margin-right:auto; }
+  .p2p-page .sessions-hdr { text-align:center !important; align-items:center; flex-direction:column; gap:16px; }
+  .p2p-page .sessions-hdr-note { text-align:center !important; max-width:100%; }
+  .p2p-page .testi-intro { justify-content:center; flex-direction:column; align-items:center; gap:20px; }
+  .p2p-page .testi-proof { text-align:center !important; max-width:100%; }
+  .p2p-page .notify-wrap > div { text-align:center !important; }
+  .p2p-page .notify-wrap .gold-bar { margin-left:auto; margin-right:auto; }
+}
+@media(max-width:800px) {
+  .p2p-page .hero { padding:48px 28px 60px; }
+  .p2p-page .sessions-grid { grid-template-columns:1fr 1fr; }
+  .p2p-page .archive-grid { grid-template-columns:1fr; }
+  .p2p-page .fit-grid { grid-template-columns:1fr; }
+  .p2p-page .testi-grid { grid-template-columns:1fr; }
+  .p2p-page .expect-grid { grid-template-columns:1fr; }
+  .p2p-page .form-row { flex-direction:column; }
+  .p2p-page .testi-proof { text-align:center !important; max-width:100%; }
+  .p2p-page .trusted-strip { flex-wrap:wrap; gap:20px; }
+  .p2p-page section { padding:60px 28px; }
+  .p2p-page .testi-section .inner { padding:60px 28px; }
+}
+@media(max-width:480px) {
+  .p2p-page .sessions-grid { grid-template-columns:1fr; }
+  .p2p-page .hero-ctas { flex-direction:column; align-items:center; }
+  .p2p-page .hero-proof { gap:24px; }
+}
+/* ── ACTIVECAMPAIGN FORM THEME OVERRIDES ─────────── */
+#_form_86_ {
+  background:transparent !important;
+  border:none !important;
+  padding:0 !important;
+  max-width:100% !important;
+  color:var(--white) !important;
+  box-shadow:none !important;
+  margin:0 !important;
+}
+#_form_86_ ._form-label {
+  color:var(--muted) !important;
+  font-family:'DM Sans', sans-serif !important;
+  font-size:10px !important;
+  font-weight:700 !important;
+  letter-spacing:0.12em !important;
+  text-transform:uppercase !important;
+  margin-bottom:8px !important;
+}
+#_form_86_ input[type="text"] {
+  background:var(--navy-lite) !important;
+  border:1px solid rgba(201,168,76,0.25) !important;
+  border-radius:6px !important;
+  color:var(--white) !important;
+  font-family:'DM Sans', sans-serif !important;
+  font-size:15px !important;
+  padding:16px 20px !important;
+  height:auto !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
+#_form_86_ input[type="text"]:focus {
+  border-color:var(--gold) !important;
+  background:var(--navy-card) !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
+#_form_86_ input[type="text"]::placeholder { color:var(--muted) !important; }
+#_form_86_ ._submit {
+  background:var(--gold) !important;
+  color:var(--navy) !important;
+  font-family:'DM Sans', sans-serif !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  letter-spacing:0.12em !important;
+  text-transform:uppercase !important;
+  padding:17px 32px !important;
+  border-radius:6px !important;
+  border:none !important;
+  width:100% !important;
+  margin-top:4px !important;
+  cursor:pointer !important;
+}
+#_form_86_ ._submit:hover { background:var(--gold-lite) !important; }
+#_form_86_ ._submit:disabled { opacity:0.6 !important; cursor:not-allowed !important; }
+#_form_86_ ._form_element { margin-bottom:14px !important; }
+#_form_86_ ._form-branding { display:none !important; }
+#_form_86_ ._form-thank-you {
+  color:var(--white) !important;
+  font-family:'DM Sans', sans-serif !important;
+  font-size:16px !important;
+  padding:24px 0 !important;
+  text-align:left !important;
+}
+#_form_86_ ._error-inner {
+  background:rgba(211,47,47,0.15) !important;
+  color:#ffb3b3 !important;
+  border:1px solid rgba(211,47,47,0.3) !important;
+}
+/* Duda's mobile layout (body.dmMobileBody, any touch device) floats a fixed 60px header over the top of the page. Clear it. */
+body.dmMobileBody #dm .dmBody .p2p-page.p2p-page { padding-top:60px !important; }
+/* ── audit-002: shared accessibility + UX layer (focus ring, press state, anchor offset, new-tab cue, tap area, reduced motion) ── */
+#dmRoot #dm :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible, #dm :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible { outline: 3px solid #c9a84c !important; outline-offset: 2px !important; box-shadow: 0 0 0 2px #08152a !important; }
+#dm :is(button, input[type="submit"], a[class*="btn"], a[class*="cta"], a[class*="Btn"]):active { transform: translateY(1px) !important; filter: brightness(0.94); }
+#dm [id] { scroll-margin-top: 80px; }
+#dm .dmBody :is(p, li, cite, small) a[target="_blank"]:not([class*="btn"]):not(:has(img, svg))::after { content: "\2197"; content: "\2197" / " (opens in a new tab)"; display: inline-block; margin-left: 0.2em; font-size: 0.8em; text-decoration: none; }
+#dm .dmBody :is(p, li, cite, small) a:not([class*="btn"]):not([class*="cta"]) { padding-block: 10px; }
+@media (prefers-reduced-motion: reduce) { #dm *, #dm *::before, #dm *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+/* audit-002 #18: gold sections keep the navy text they were designed with (the page-wide color reset above turned it white) */
+.p2p-page .sponsor-banner, .p2p-page .sponsor-banner *,
+.p2p-page .cta-section, .p2p-page .cta-section *,
+.p2p-page .btn-gold, .p2p-page .btn-gold *,
+.p2p-page .sess-badge { color: var(--navy) !important; }
+.p2p-page .cta-section .btn-outline-navy { color: var(--navy) !important; }
+/* audit-002 #27: the sponsor ticker pauses on hover/focus (WCAG 2.2.2) */
+.p2p-page .sponsor-banner:hover .sponsor-track, .p2p-page .sponsor-banner:focus-within .sponsor-track { animation-play-state: paused !important; }
+/* ── audit-002 #19: contrast fixes, same hue moved just past WCAG AA on its real background ── */
+#dm .dmBody .p2p-page .btn-dark, #dm .dmBody .p2p-page .btn-dark * { color: var(--white) !important; } /* white on navy button (the gold-section rule must not turn it navy) */
+    
+/* ── audit-002 #34: labels and small text lifted to a 12px minimum (was 7.5–11.5px) ── */
+#dm .dmBody :is(._form-label, .arc-date, .arc-link, .audience-col-label, .btn-dark, .btn-ghost-gold, .btn-gold, .btn-outline-navy, .card-eyebrow, .card-meta-row > strong, .chip, .cta-eyebrow, .eyebrow, .form-note, .proof-label, .sess-badge, .sess-format, .sess-num, .sponsor-track > span, .testi-sector) { font-size: 12px !important; }
+#dm .dmBody :is(cite, blockquote cite, figcaption) { font-family: 'DM Sans', system-ui, sans-serif; }
+</style>
+    <style id="1413341162">
+     @import url(https://fonts.bunny.net/css?family=sans-serif:400|IBM+Plex+Sans:400);
+    </style>
+    <style id="1583551826">
+     #_form_86_{font-size:14px;line-height:1.6;font-family:arial, helvetica, sans-serif;margin:0;box-shadow:none}._form_hide{display:none;visibility:hidden}._form_show{display:block;visibility:visible}#_form_86_._form-top{top:0}#_form_86_._form-bottom{bottom:0}#_form_86_._form-left{left:0}#_form_86_._form-right{right:0}#_form_86_ input[type="text"],#_form_86_ input[type="tel"],#_form_86_ input[type="date"],#_form_86_ textarea{padding:6px;height:auto;border:#979797 1px solid;border-radius:4px;color:#000 !important;font-size:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#_form_86_ textarea{resize:none}#_form_86_ input::placeholder{color:#142341}#_form_86_ ._submit{cursor:pointer;font-family:arial, sans-serif;font-size:14px;text-align:center;background:#004CFF !important;border:0 !important;-moz-border-radius:4px !important;-webkit-border-radius:4px !important;border-radius:4px !important;color:#FFFFFF !important;padding:10px !important}#_form_86_ ._submit:disabled{cursor:not-allowed;opacity:0.4}#_form_86_ ._submit.processing{position:relative}#_form_86_ ._submit.processing::before{content:"";width:1em;height:1em;position:absolute;z-index:1;top:50%;left:50%;border:double 3px transparent;border-radius:50%;background-image:linear-gradient(#004CFF, #004CFF), conic-gradient(#004CFF, #FFFFFF);background-origin:border-box;background-clip:content-box, border-box;animation:1200ms ease 0s infinite normal none running _spin}#_form_86_ ._submit.processing::after{content:"";position:absolute;top:0;bottom:0;left:0;right:0}@keyframes _spin{0%{transform:translate(-50%, -50%) rotate(90deg)}100%{transform:translate(-50%, -50%) rotate(450deg)}}#_form_86_ ._close-icon{cursor:pointer;background-image:url("https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png");background-repeat:no-repeat;background-size:14.2px 14.2px;position:absolute;display:block;top:11px;right:9px;overflow:hidden;width:16.2px;height:16.2px}#_form_86_ ._close-icon:before{position:relative}#_form_86_ ._form-body{margin-bottom:30px}#_form_86_ ._form-image-left{width:150px;float:left}#_form_86_ ._form-content-right{margin-left:164px}#_form_86_ ._form-branding{color:#fff;font-size:10px;clear:both;text-align:left;margin-top:30px;font-weight:100}#_form_86_ ._form-branding ._logo{display:block;width:130px;height:14px;margin-top:6px;background-image:url("https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png");background-size:130px auto;background-repeat:no-repeat}#_form_86_ .form-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}#_form_86_ ._form-label,#_form_86_ ._form_element ._form-label{font-weight:bold;margin-bottom:5px;display:block}#_form_86_._dark ._form-branding{color:#333}#_form_86_._dark ._form-branding ._logo{background-image:url("https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png")}#_form_86_ ._form_element{position:relative;margin-bottom:10px;font-size:0;max-width:100%}#_form_86_ ._form_element *{font-size:14px}#_form_86_ ._form_element._clear{clear:both;width:100%;float:none}#_form_86_ ._form_element._clear:after{clear:left}#_form_86_ ._form_element textarea,#_form_86_ ._form_element select,#_form_86_ ._form_element input[type="text"],#_form_86_ ._form_element input[type="date"],#_form_86_ ._form_element input[type="phone"],#_form_86_ ._form_element input[type="email"]{color:#142341 !important;border-radius:0px}#_form_86_ ._form_element input[type="text"],#_form_86_ ._form_element input[type="date"],#_form_86_ ._form_element select,#_form_86_ ._form_element textarea:not(.g-recaptcha-response){display:block;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:inherit}#_form_86_ ._field-wrapper{position:relative}#_form_86_ ._inline-style{float:left}#_form_86_ ._inline-style input[type="text"]{width:150px}#_form_86_ ._inline-style:not(._clear){margin-right:20px}#_form_86_ ._form_element img._form-image{max-width:100%}#_form_86_ ._form_element ._form-fieldset{border:0;padding:0.01em 0 0 0;margin:0;min-width:0}#_form_86_ ._clear-element{clear:left}#_form_86_ ._full_width{width:100%}#_form_86_ ._form_full_field{display:block;width:100%;margin-bottom:10px}#_form_86_ input[type="text"]._has_error,#_form_86_ textarea._has_error{border:#F37C7B 1px solid}#_form_86_ input[type="checkbox"]._has_error{outline:#F37C7B 1px solid}#_form_86_ ._show_be_error{float:left}#_form_86_ ._error{display:block;position:absolute;font-size:14px;z-index:10000001}#_form_86_ ._error._above{padding-bottom:4px;bottom:39px;right:0}#_form_86_ ._error._below{padding-top:8px;top:100%;right:0}#_form_86_ ._error._above ._error-arrow{bottom:-4px;right:15px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #FFDDDD}#_form_86_ ._error._below ._error-arrow{top:0;right:15px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid #FFDDDD}#_form_86_ ._error-inner{padding:12px 12px 12px 36px;background-color:#FFDDDD;background-image:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9 3V9H7V3H9ZM9 13V11H7V13H9Z' fill='%23CA0000'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:12px center;font-size:14px;font-family:arial, sans-serif;font-weight:600;line-height:16px;color:#000;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;box-shadow:0 1px 4px rgba(31, 33, 41, 0.298295)}@media only screen and (max-width:319px){#_form_86_ ._error-inner{padding:7px 7px 7px 25px;font-size:12px;line-height:12px;background-position:4px center;max-width:100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}#_form_86_ ._error-inner._form_error{margin-bottom:5px;text-align:left}#_form_86_ ._button-wrapper ._error-inner._form_error{position:static}#_form_86_ ._error-inner._no_arrow{margin-bottom:10px}#_form_86_ ._error-arrow{position:absolute;width:0;height:0}#_form_86_ ._error-html{margin-bottom:10px}.pika-single{z-index:10000001 !important}#_form_86_ input[type="text"].datetime_date{width:69%;display:inline}#_form_86_ select.datetime_time{width:29%;display:inline;height:32px}#_form_86_ input[type="date"].datetime_date{width:69%;display:inline-flex}#_form_86_ input[type="time"].datetime_time{width:29%;display:inline-flex}@media (min-width:320px) and (max-width:667px){::-webkit-scrollbar{display:none}#_form_86_{margin:0;width:100%;min-width:100%;max-width:100%;box-sizing:border-box}#_form_86_ *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-size:1em}#_form_86_ ._form-content{margin:0;width:100%}#_form_86_ ._form-inner{display:block;min-width:100%}#_form_86_ ._form-title,#_form_86_ ._inline-style{margin-top:0;margin-right:0;margin-left:0}#_form_86_ ._form-title{font-size:1.2em}#_form_86_ ._form_element{margin:0 0 20px;padding:0;width:100%}#_form_86_ ._form-element,#_form_86_ ._inline-style,#_form_86_ input[type="text"],#_form_86_ label,#_form_86_ p,#_form_86_ textarea:not(.g-recaptcha-response){float:none;display:block;width:100%}#_form_86_ ._row._checkbox-radio label{display:inline}#_form_86_ ._row,#_form_86_ p,#_form_86_ label{margin-bottom:0.7em;width:100%}#_form_86_ ._row input[type="checkbox"],#_form_86_ ._row input[type="radio"]{margin:0 !important;vertical-align:middle !important}#_form_86_ ._row input[type="checkbox"]+span label{display:inline}#_form_86_ ._row span label{margin:0 !important;width:initial !important;vertical-align:middle !important}#_form_86_ ._form-image{max-width:100%;height:auto !important}#_form_86_ input[type="text"]{padding-left:10px;padding-right:10px;font-size:16px;line-height:1.3em}#_form_86_ input[type="radio"],#_form_86_ input[type="checkbox"]{display:inline-block;width:1.3em;height:1.3em;font-size:1em;margin:0 0.3em 0 0;vertical-align:baseline}#_form_86_ button[type="submit"]{padding:20px;font-size:1.5em}#_form_86_ ._inline-style{margin:20px 0 0 !important}#_form_86_ ._inline-style input[type="text"]{width:100%}}#_form_86_ .sms_consent_checkbox{position:relative;width:100%;display:flex;align-items:flex-start;padding:20px 0}#_form_86_ .sms_consent_checkbox input[type="checkbox"]{float:left;margin:5px 10px 10px 0}#_form_86_ .sms_consent_checkbox .sms_consent_message{display:inline;float:left;text-align:left;margin-bottom:10px;font-size:14px;color:#7D8799}#_form_86_ .sms_consent_checkbox .sms_consent_message.sms_consent_mini{width:90%}#_form_86_ .sms_consent_checkbox ._error._above{right:auto;bottom:0}#_form_86_ .sms_consent_checkbox ._error._above ._error-arrow{right:auto;left:5px}@media (min-width:320px) and (max-width:667px){#_form_86_ .sms_consent_checkbox ._error._above{top:-30px;left:0;bottom:auto}}#_form_86_ .field-required{color:#FF0000}#_form_86_{position:relative;text-align:left;margin:25px auto 0;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#FFFFFF !important;border:0;max-width:500px;-moz-border-radius:0px !important;-webkit-border-radius:0px !important;border-radius:0px !important;color:#000000}#_form_86_ ._show_be_error{min-width:100%}#_form_86_._inline-form,#_form_86_._inline-form ._form-content{font-family:sans-serif;font-size:14px;font-weight:400}#_form_86_._inline-form ._row span:not(.field-required),#_form_86_._inline-form ._row label{font-family:sans-serif;font-size:14px;font-weight:400;line-height:1.6em;color:black}#_form_86__inlineform input[type="text"],#_form_86__inlineform input[type="date"],#_form_86__inlineform input[type="tel"],#_form_86__inlineform select,#_form_86__inlineform textarea:not(.g-recaptcha-response){font-family:sans-serif;font-size:14px;font-weight:400;color:#000000;line-height:1.6em}#_form_86_._inline-form ._html-code *:not(h1, h2, h3, h4, h5, h6),#_form_86_._inline-form .sms_consent_message,#_form_86_._inline-form ._form-thank-you{font-family:sans-serif;font-size:14px;font-weight:400;color:black}#_form_86_._inline-form ._form-label,#_form_86_._inline-form ._form-emailidentifier,#_form_86_._inline-form ._form-checkbox-option-label{font-family:sans-serif;font-size:14px;font-weight:700;line-height:1.6em;color:black}#_form_86_._inline-form ._submit{margin-top:12px;font-family:sans-serif;font-size:14px;font-weight:400}#_form_86_._inline-form ._html-code h1,#_form_86_._inline-form ._html-code h2,#_form_86_._inline-form ._html-code h3,#_form_86_._inline-form ._html-code h4,#_form_86_._inline-form ._html-code h5,#_form_86_._inline-form ._html-code h6,#_form_86_._inline-form ._form-title{font-family:sans-serif;font-size:24px;line-height:normal;font-weight:400;color:black;margin-bottom:0;display:block}#_form_86_._inline-form ._form-branding{font-family:"IBM Plex Sans", Helvetica, sans-serif;font-size:13px;font-weight:100;font-style:normal;text-decoration:none}#_form_86_:before,#_form_86_:after{content:" ";display:table}#_form_86_:after{clear:both}#_form_86_._inline-style{width:auto;display:inline-block}#_form_86_._inline-style input[type="text"],#_form_86_._inline-style input[type="date"]{padding:10px 12px}#_form_86_._inline-style button._inline-style{position:relative;top:27px}#_form_86_._inline-style p{margin:0}#_form_86_._inline-style ._button-wrapper{position:relative;margin:16px 12.5px 0 20px}#_form_86_._inline-style ._button-wrapper:not(._clear){margin-left:0}#_form_86_ ._form-thank-you{position:relative;left:0;right:0;text-align:center;font-size:18px}#_form_86_ ._form-pc-confirmation ._submit{margin-top:16px}@media (min-width:320px) and (max-width:667px){#_form_86_._inline-form._inline-style ._inline-style._button-wrapper{margin-top:20px !important;margin-left:0 !important}}#_form_86_ .iti{width:100%}#_form_86_ .iti.iti--allow-dropdown.iti--separate-dial-code{width:100%}#_form_86_ .iti input{width:100%;border:#979797 1px solid;border-radius:4px}#_form_86_ .iti--separate-dial-code .iti__selected-flag{background-color:#FFFFFF;border-radius:4px}#_form_86_ .iti--separate-dial-code .iti__selected-flag:hover{background-color:rgba(0, 0, 0, 0.05)}#_form_86_ .iti__country-list{border-radius:4px;margin-top:4px;min-width:460px}#_form_86_ .iti__country-list--dropup{margin-bottom:4px}#_form_86_ .phone-error-hidden{display:none}#_form_86_ .phone-error{color:#E40E49}#_form_86_ .phone-input-error{border:1px solid #E40E49 !important}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field fieldset{margin:0;margin-bottom:1.1428571429em;border:none;padding:0}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field fieldset:last-child{margin-bottom:0}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field legend{margin-bottom:1.1428571429em}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field label{display:flex;align-items:flex-start;justify-content:flex-start;margin-bottom:0.8571428571em}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field label:last-child{margin-bottom:0}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field input{margin:0;margin-right:8px}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field ._form-checkbox-option-label{display:block;font-weight:400;margin-top:-4px}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field ._form-checkbox-option-label-with-description{display:block;font-weight:700;margin-top:-4px}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field ._form-checkbox-option-description{margin:0;font-size:0.8571428571em}#_form_86_._inline-form ._form-content ._form-list-subscriptions-field ._form-subscriptions-unsubscribe-all-description{line-height:normal;margin-top:-2px}
+    </style>
+    <style id="1147014465">
+     /* ── FINAL AC OVERRIDES (must come after AC stylesheet) ── */
+#_form_86_ { background:transparent !important; border:none !important; padding:0 !important; max-width:100% !important; margin:0 !important; box-shadow:none !important; }
+#_form_86_ input[type="text"],
+#_form_86_ ._form_element input[type="text"],
+#_form_86_ ._form_element input[type="email"] {
+  background:#162848 !important;
+  border:1px solid rgba(201,168,76,0.25) !important;
+  border-radius:6px !important;
+  color:#ffffff !important;
+  font-family:'DM Sans', sans-serif !important;
+  font-size:15px !important;
+  padding:16px 20px !important;
+  height:auto !important;
+}
+#_form_86_ input[type="text"]:focus,
+#_form_86_ ._form_element input[type="text"]:focus {
+  border-color:#c9a84c !important;
+  background:#111f3a !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
+#_form_86_ input[type="text"]::placeholder { color:#7a90b0 !important; }
+#_form_86_ ._form-label,
+#_form_86_._inline-form ._form-label,
+#_form_86_._inline-form ._form_element ._form-label {
+  color:#7a90b0 !important;
+  font-family:'DM Sans', sans-serif !important;
+  font-size:10px !important;
+  font-weight:700 !important;
+  letter-spacing:0.12em !important;
+  text-transform:uppercase !important;
+}
+#_form_86_ ._submit,
+#_form_86_._inline-form ._submit {
+  background:#c9a84c !important;
+  color:#08152a !important;
+  font-family:'DM Sans', sans-serif !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  letter-spacing:0.12em !important;
+  text-transform:uppercase !important;
+  padding:17px 32px !important;
+  border-radius:6px !important;
+  border:none !important;
+  width:100% !important;
+  margin-top:4px !important;
+}
+#_form_86_ ._submit:hover { background:#e2c878 !important; }
+#_form_86_ ._form-branding { display:none !important; }
+#_form_86_ ._form-thank-you { color:#ffffff !important; font-family:'DM Sans', sans-serif !important; font-size:16px !important; padding:24px 0 !important; text-align:left !important; }
+    </style>
+    <div class="p2p-page" id="1446850536">
+     <!-- ── SPONSOR BANNER ──────────────────────────────── -->
+     <div class="sponsor-banner">
+      <div class="sponsor-track">
+       <span>
+        HPG
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Proud Sponsor of Progress
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Cancel All Things Average
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Great Leaders Don't Scale. Great Leadership Teams Do.
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Impossible to Inevitable
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        HPG
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Proud Sponsor of Progress
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Cancel All Things Average
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Great Leaders Don't Scale. Great Leadership Teams Do.
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Impossible to Inevitable
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        HPG
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Proud Sponsor of Progress
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Cancel All Things Average
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Great Leaders Don't Scale. Great Leadership Teams Do.
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+       <span>
+        Impossible to Inevitable
+       </span>
+       <span class="dot">
+        &middot;
+       </span>
+      </div>
+     </div>
+     <!-- ── HERO ───────────────────────────────────────── -->
+     <section class="hero">
+      <div class="hero-left">
+       <div class="audience-chips">
+        <div class="chip">
+         K&ndash;12 Superintendents
+        </div>
+        <div class="chip-div">
+         &amp;
+        </div>
+        <div class="chip">
+         College &amp; University Presidents
+        </div>
+       </div>
+       <h1>
+        The loneliest job
+        <br/>
+        in education?
+        <br/>
+        <em>
+         The top.
+        </em>
+       </h1>
+       <p class="hero-sub">
+        A regular collaborative practice for educational CEOs, where superintendents and presidents learn from each other across sectors. No pitches. No panels. No institutional posturing.
+       </p>
+       <p class="hero-tagline">
+        6 Sessions Per Year
+        <span>
+         &middot;
+        </span>
+        K&ndash;12 &amp; Higher Ed
+        <span>
+         &middot;
+        </span>
+        60 Minutes
+        <span>
+         &middot;
+        </span>
+        10:30 AM CST
+       </p>
+       <div class="hero-proof">
+        <div>
+         <span class="proof-num">
+          6&times;
+         </span>
+         <span class="proof-label">
+          Annual
+          <br/>
+          Sessions
+         </span>
+        </div>
+        <div>
+         <span class="proof-num">
+          2
+         </span>
+         <span class="proof-label">
+          Sectors
+          <br/>
+          One Table
+         </span>
+        </div>
+        <div>
+         <span class="proof-num">
+          60
+         </span>
+         <span class="proof-label">
+          Min. Peer
+          <br/>
+          Discussion
+         </span>
+        </div>
+       </div>
+       <div class="hero-ctas">
+        <a href="https://us06web.zoom.us/webinar/register/4417684878545/WN_tCq7saLPRnyTMQuJzgNG_w" class="btn-gold">
+         Register for Oct 7 &rarr;
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=17e03X3Acpp3A8DEIOPxuS1eVYSIAw8Zx" class="btn-ghost">
+         Download Session Brief
+        </a>
+       </div>
+      </div>
+      <div class="session-card-hero">
+       <div class="card-eyebrow">
+        Next Session &nbsp;&middot;&nbsp; Oct 7, 2026
+       </div>
+       <div class="card-topic">
+        The PROOF : What Builders Do When The Season Gets Hard
+       </div>
+       <div class="card-divider">
+       </div>
+       <div class="card-meta">
+        <div class="card-meta-row">
+         <strong>
+          Date
+         </strong>
+         October 7, 2026
+        </div>
+        <div class="card-meta-row">
+         <strong>
+          Time
+         </strong>
+         10:30 AM CST
+        </div>
+        <div class="card-meta-row">
+         <strong>
+          Format
+         </strong>
+         60-min peer discussion
+        </div>
+        <div class="card-meta-row">
+         <strong>
+          Host
+         </strong>
+         Dr. Joe Hill, HPG
+        </div>
+       </div>
+       <a href="https://us06web.zoom.us/webinar/register/4417684878545/WN_tCq7saLPRnyTMQuJzgNG_w" class="btn-gold btn-gold-block">
+        Register Now &rarr;
+       </a>
+       <a href="https://drive.google.com/uc?export=download&id=17e03X3Acpp3A8DEIOPxuS1eVYSIAw8Zx" class="btn-ghost-gold">
+        Download Session Brief
+       </a>
+      </div>
+     </section>
+     <!-- ── WHO IT'S FOR ────────────────────────────────── -->
+     <section class="who-section">
+      <div class="inner">
+       <span class="eyebrow">
+        Who This Is For
+       </span>
+       <h2 class="section-h">
+        Designed for leaders who
+        <br/>
+        still
+        <em>
+         ask questions.
+        </em>
+       </h2>
+       <p class="section-p">
+        The Peer-2-Peer Roundtable is built on one premise: K&ndash;12 and higher education have more to learn from each other than from staying in their own lane. The only credential that earns a seat is a genuine willingness to learn across sectors.
+       </p>
+       <div class="audience-banner">
+        <div class="audience-col">
+         <div class="audience-col-label">
+          K-12 Leadership
+         </div>
+         <h3>
+          Superintendents &amp; Assistant Superintendents
+         </h3>
+         <p>
+          You navigate board politics, legislative pressure, community trust, and a workforce facing historic burnout, all while holding a coherent strategic vision together. You deserve peers who understand the full weight of that chair.
+         </p>
+        </div>
+        <div class="audience-col">
+         <div class="audience-col-label">
+          Higher Education
+         </div>
+         <h3>
+          Presidents, Chancellors &amp; Provosts
+         </h3>
+         <p>
+          You're managing enrollment headwinds, faculty-administration tensions, and a rapidly shifting value proposition for your institution. The best thinking on your most pressing problems isn't always coming from within your sector, and you know it.
+         </p>
+        </div>
+       </div>
+       <div class="fit-grid">
+        <div class="fit-col fit-yes">
+         <div class="fit-col-hd">
+          ✓ &nbsp;This is for you if&hellip;
+         </div>
+         <ul class="fit-list">
+          <li>
+           <span class="fi">
+            ✓
+           </span>
+           You lead K&ndash;12 or higher ed facing real relevance and financial viability pressures
+          </li>
+          <li>
+           <span class="fi">
+            ✓
+           </span>
+           You suspect peer collaboration across sectors beats staying in your lane
+          </li>
+          <li>
+           <span class="fi">
+            ✓
+           </span>
+           You're willing to be challenged by a university president or superintendent who solved your exact problem differently
+          </li>
+          <li>
+           <span class="fi">
+            ✓
+           </span>
+           You want authentic dialogue, not another space for institutional optics management
+          </li>
+          <li>
+           <span class="fi">
+            ✓
+           </span>
+           You're comfortable sitting with questions that don't have clean answers
+          </li>
+         </ul>
+        </div>
+        <div class="fit-col fit-no">
+         <div class="fit-col-hd">
+          ✗ &nbsp;This is NOT for you if&hellip;
+         </div>
+         <ul class="fit-list">
+          <li>
+           <span class="fi">
+            ✗
+           </span>
+           You're not genuinely concerned about your institution's relevance or financial trajectory
+          </li>
+          <li>
+           <span class="fi">
+            ✗
+           </span>
+           You're convinced your sector already has the best answers
+          </li>
+          <li>
+           <span class="fi">
+            ✗
+           </span>
+           You're unwilling to question the assumptions your peer group has always shared
+          </li>
+          <li>
+           <span class="fi">
+            ✗
+           </span>
+           You want a panel where leaders promote their institution's programs and initiatives
+          </li>
+          <li>
+           <span class="fi">
+            ✗
+           </span>
+           You're looking for the already-learned. Only active learners welcome
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- ── WHAT TO EXPECT ──────────────────────────────── -->
+     <section class="expect-section">
+      <div class="inner">
+       <span class="eyebrow">
+        The Format
+       </span>
+       <h2 class="section-h">
+        What happens in
+        <br/>
+        the
+        <em>
+         room.
+        </em>
+       </h2>
+       <div class="gold-bar">
+       </div>
+       <div class="expect-grid">
+        <div class="expect-card">
+         <div class="expect-num">
+          01
+         </div>
+         <h3>
+          Cross-Sector Peer Discussion
+         </h3>
+         <p>
+          Superintendents and college presidents at the same table, learning how the other sector frames and solves shared challenges. The cross-sector lens is the point, not a side benefit.
+         </p>
+        </div>
+        <div class="expect-card">
+         <div class="expect-num">
+          02
+         </div>
+         <h3>
+          No Pitches. No Vendors.
+         </h3>
+         <p>
+          This is not a webinar. There's no product pitch, no sponsor slot, no presenter promoting their institution. Just executives who agreed to show up and think out loud together.
+         </p>
+        </div>
+        <div class="expect-card">
+         <div class="expect-num">
+          03
+         </div>
+         <h3>
+          Topic-Driven, Peer-Led
+         </h3>
+         <p>
+          Each session centers on a challenge that's live for both K&ndash;12 and higher ed. The brief goes out in advance. The conversation follows the people in the room, not a slide deck.
+         </p>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- ── SESSIONS ────────────────────────────────────── -->
+     <section class="sessions-section">
+      <div class="inner">
+       <div class="sessions-hdr">
+        <div>
+         <span class="eyebrow">
+          2026&ndash;2027 Schedule
+         </span>
+         <h2 class="section-h">
+          Upcoming
+          <br/>
+          <em>
+           Roundtables
+          </em>
+         </h2>
+        </div>
+        <p class="sessions-hdr-note">
+         Six sessions per year. Every other month. Always 10:30 AM CST.
+        </p>
+       </div>
+       <div class="sessions-grid">
+        <div class="sess-card active">
+         <div class="sess-badge">
+          Next Session
+         </div>
+         <div class="sess-num">
+          Session 01
+         </div>
+         <div class="sess-date">
+          Oct 7, 2026
+         </div>
+         <div class="sess-topic">
+          Unbuilding the Silos: From Program-Centered Institutions to Partnership-Driven Ecosystems
+         </div>
+         <div class="sess-format">
+          10:30 AM CST &nbsp;&middot;&nbsp; 60-min peer discussion
+         </div>
+         <a href="https://us06web.zoom.us/webinar/register/4417684878545/WN_tCq7saLPRnyTMQuJzgNG_w" class="btn-gold" style="font-size:11px;padding:11px 22px;">
+          Register &rarr;
+         </a>
+        </div>
+        <div class="sess-card">
+         <div class="sess-num">
+          Session 02
+         </div>
+         <div class="sess-date">
+          Dec 2, 2026
+         </div>
+         <div class="sess-topic pending">
+          Topic coming soon
+         </div>
+         <div class="sess-format">
+          10:30 AM CST &nbsp;&middot;&nbsp; 60-min peer discussion
+         </div>
+        </div>
+        <div class="sess-card">
+         <div class="sess-num">
+          Session 03
+         </div>
+         <div class="sess-date">
+          Feb 3, 2027
+         </div>
+         <div class="sess-topic pending">
+          Topic coming soon
+         </div>
+         <div class="sess-format">
+          10:30 AM CST &nbsp;&middot;&nbsp; 60-min peer discussion
+         </div>
+        </div>
+        <div class="sess-card">
+         <div class="sess-num">
+          Session 04
+         </div>
+         <div class="sess-date">
+          Apr 7, 2027
+         </div>
+         <div class="sess-topic pending">
+          Topic coming soon
+         </div>
+         <div class="sess-format">
+          10:30 AM CST &nbsp;&middot;&nbsp; 60-min peer discussion
+         </div>
+        </div>
+        <div class="sess-card">
+         <div class="sess-num">
+          Session 05
+         </div>
+         <div class="sess-date">
+          Jun 2, 2027
+         </div>
+         <div class="sess-topic pending">
+          Topic coming soon
+         </div>
+         <div class="sess-format">
+          10:30 AM CST &nbsp;&middot;&nbsp; 60-min peer discussion
+         </div>
+        </div>
+        <div class="sess-card">
+         <div class="sess-num">
+          Session 06
+         </div>
+         <div class="sess-date">
+          Aug 4, 2027
+         </div>
+         <div class="sess-topic pending">
+          Topic coming soon
+         </div>
+         <div class="sess-format">
+          10:30 AM CST &nbsp;&middot;&nbsp; 60-min peer discussion
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- ── ARCHIVE ─────────────────────────────────────── -->
+     <section class="archive-section">
+      <div class="inner">
+       <span class="eyebrow">
+        Previous Sessions
+       </span>
+       <h2 class="section-h">
+        Roundtable
+        <br/>
+        <em>
+         Executive Briefs
+        </em>
+       </h2>
+       <p class="section-p">
+        Condensed insights from each session: downloadable and shareable with your leadership team.
+       </p>
+       <div class="archive-grid">
+        <a href="https://irp.cdn-website.com/3a63edaf/files/uploaded/ROUNDTABLE+DEBRIEF.pdf" class="archive-card">
+         <div class="arc-date">
+          October 1, 2025
+         </div>
+         <div class="arc-title">
+          Roundtable Executive Brief
+         </div>
+         <div class="arc-link">
+          Download PDF
+         </div>
+        </a>
+        <a href="https://irp.cdn-website.com/3a63edaf/files/uploaded/December+3rd+Executive+Brief+%281%29.pdf" class="archive-card">
+         <div class="arc-date">
+          December 3, 2025
+         </div>
+         <div class="arc-title">
+          Roundtable Executive Brief
+         </div>
+         <div class="arc-link">
+          Download PDF
+         </div>
+        </a>
+        <a href="https://irp.cdn-website.com/3a63edaf/files/uploaded/February+4-+Executive+Brief.pdf" class="archive-card">
+         <div class="arc-date">
+          February 4, 2026
+         </div>
+         <div class="arc-title">
+          Roundtable Executive Brief
+         </div>
+         <div class="arc-link">
+          Download PDF
+         </div>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1BasV2aITBstryV2f6KKmtw4TXGl5hG6f" class="archive-card">
+         <div class="arc-date">
+          April 1, 2026
+         </div>
+         <div class="arc-title">
+          Roundtable Executive Brief
+         </div>
+         <div class="arc-link">
+          Download PDF
+         </div>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1haS_4i3tHP87PCFXCJEOsUqRwfrY9GQd" class="archive-card">
+         <div class="arc-date">
+          June 3, 2026
+         </div>
+         <div class="arc-title">
+          Roundtable Executive Brief
+         </div>
+         <div class="arc-link">
+          Download PDF
+         </div>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1Xv6S4rGGGuRiCjynSEXcmwYN7bCWdpSV" class="archive-card">
+         <div class="arc-date">
+          August 5, 2026
+         </div>
+         <div class="arc-title">
+          Roundtable Executive Brief
+         </div>
+         <div class="arc-link">
+          Download PDF
+         </div>
+        </a>
+       </div>
+      </div>
+     </section>
+     <!-- ── TESTIMONIALS ────────────────────────────────── -->
+     <section class="testi-section">
+      <div class="inner">
+       <div class="testi-intro">
+        <div>
+         <span class="eyebrow">
+          What Leaders Say
+         </span>
+         <h2 class="section-h">
+          Real conversation.
+          <br/>
+          <em>
+           Immediate application.
+          </em>
+         </h2>
+        </div>
+        <div class="testi-proof">
+         &quot;I didn't attend another conference.
+         <br/>
+         I joined a conversation that mattered.&quot;
+        </div>
+       </div>
+       <div class="testi-grid">
+        <div class="testi-card">
+         <div class="testi-sector">
+          Higher Education
+         </div>
+         <div class="testi-quote">
+          <span class="open-q">
+           &quot;
+          </span>
+          A K&ndash;12 superintendent described how they solved our exact enrollment challenge. One conversation, immediate application.
+         </div>
+         <div class="testi-by">
+          <div class="testi-name">
+           Elena
+          </div>
+          <div class="testi-role">
+           College President
+          </div>
+         </div>
+        </div>
+        <div class="testi-card">
+         <div class="testi-sector">
+          K&ndash;12 Education
+         </div>
+         <div class="testi-quote">
+          <span class="open-q">
+           &quot;
+          </span>
+          Finally, a space where we can admit what's not working without worrying about board optics or competitive positioning.
+         </div>
+         <div class="testi-by">
+          <div class="testi-name">
+           Jamal
+          </div>
+          <div class="testi-role">
+           Superintendent
+          </div>
+         </div>
+        </div>
+        <div class="testi-card">
+         <div class="testi-sector">
+          Higher Education
+         </div>
+         <div class="testi-quote">
+          <span class="open-q">
+           &quot;
+          </span>
+          The intimate format meant real conversation, not another panel of people promoting their institution's programs.
+         </div>
+         <div class="testi-by">
+          <div class="testi-name">
+           Priya
+          </div>
+          <div class="testi-role">
+           University President
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- ── NOTIFY ──────────────────────────────────────── -->
+     <section class="notify-section">
+      <div class="inner">
+       <div class="notify-wrap">
+        <div>
+         <span class="eyebrow">
+          Stay Informed
+         </span>
+         <h2 class="section-h">
+          Get notified.
+          <br/>
+          <em>
+           Suggest a topic.
+          </em>
+         </h2>
+         <div class="gold-bar">
+         </div>
+         <p class="section-p">
+          Session topics are shaped by the leaders who show up. If there's a challenge you want the room to tackle, from either sector, submit it. The best roundtables are driven by what's keeping CEOs up at night.
+         </p>
+        </div>
+        <div>
+         <form method="POST" action="https://higherperformancegroup.activehosted.com/proc.php" id="_form_86_" class="_form _form_86 _inline-form _dark" novalidate="" data-styles-version="5">
+          <input type="hidden" name="u" value="86"/>
+          <input type="hidden" name="f" value="86"/>
+          <input type="hidden" name="s"/>
+          <input type="hidden" name="c" value="0"/>
+          <input type="hidden" name="m" value="0"/>
+          <input type="hidden" name="act" value="sub"/>
+          <input type="hidden" name="v" value="2"/>
+          <input type="hidden" name="or" value="7ee01c34-2ce4-4951-81aa-7c3c6fbe95ff"/>
+          <div class="_form-content">
+           <div class="_form_element _field_name _full_width">
+            <label for="fullname" class="_form-label">
+             Full Name
+            </label>
+            <div class="_field-wrapper">
+             <input type="text" id="fullname" name="fullname" placeholder="First & Last Name" autocomplete="name"/>
+            </div>
+           </div>
+           <div class="_form_element _x77413576 _full_width">
+            <label for="field[30]" class="_form-label">
+             Institution
+            </label>
+            <div class="_field-wrapper">
+             <input type="text" id="field[30]" name="field[30]" value="" placeholder="Your Institution" autocomplete="organization"/>
+            </div>
+           </div>
+           <div class="_form_element _x28366109 _full_width">
+            <label for="field[29]" class="_form-label">
+             Your Role
+            </label>
+            <div class="_field-wrapper">
+             <input type="text" id="field[29]" name="field[29]" value="" placeholder="Superintendent, President, etc." autocomplete="organization-title"/>
+            </div>
+           </div>
+           <div class="_form_element _x03348827 _full_width">
+            <label for="field[28]" class="_form-label">
+             Suggest a Roundtable Topic
+            </label>
+            <div class="_field-wrapper">
+             <input type="text" id="field[28]" name="field[28]" value="" placeholder="Optional"/>
+            </div>
+           </div>
+           <div class="_form_element _field_email _full_width">
+            <label for="email" class="_form-label">
+             Email
+             <span class="field-required">
+              *
+             </span>
+            </label>
+            <div class="_field-wrapper">
+             <input type="text" id="email" name="email" placeholder="Email Address" required="" autocomplete="email" inputmode="email"/>
+            </div>
+           </div>
+           <div class="_button-wrapper _full_width">
+            <button id="_form_86_submit" class="_submit" type="submit">Send My Topic</button>
+           </div>
+           <div class="_clear-element">
+           </div>
+          </div>
+          <div class="_form-thank-you" style="display:none;">
+          </div>
+         </form>
+         <p class="form-note" style="margin-top:16px;">
+          For K&ndash;12 and higher education CEOs. No spam. Unsubscribe anytime.
+         </p>
+         <a href="https://www.higherperformancegroup.com/blog" class="btn-ghost-gold">
+          Stay Informed: Visit the HPG Blog &rarr;
+         </a>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- ── CTA CLOSE ───────────────────────────────────── -->
+     <section class="cta-section">
+      <span class="cta-eyebrow">
+       Stop Leading in Isolation
+      </span>
+      <h2 class="cta-h">
+       Start Collaborating
+       <br/>
+       <em>
+        on Purpose.
+       </em>
+      </h2>
+      <p class="cta-p">
+       The conversation your K&ndash;12 and higher ed peers are already having. Register for the next session and be part of it.
+      </p>
+      <div class="cta-btns">
+       <a href="https://us06web.zoom.us/webinar/register/4417684878545/WN_tCq7saLPRnyTMQuJzgNG_w" class="btn-dark">
+        Register for Oct 7 &rarr;
+       </a>
+       <a href="https://calendly.com/higherperformance/30minutecoffee" class="btn-outline-navy">
+        Coffee with Dr. Joe
+       </a>
+      </div>
+     </section>
+    </div>
+    <!-- /.p2p-page -->
+    <script id="1039259667">
+     window.cfields = {"30":"institution","29":"your_role","28":"suggest_a_roundtable_topic"};
+window._show_thank_you = function(id, message, trackcmp_url, email) {
+    var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+    form.querySelector('._form-content').style.display = 'none';
+    thank_you.innerHTML = message;
+    thank_you.style.display = 'block';
+    const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+    var visitorObject = window[vgoAlias];
+    if (email && typeof visitorObject !== 'undefined') {
+        visitorObject('setEmail', email);
+        visitorObject('update');
+    } else if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
+        _load_script(trackcmp_url);
+    }
+    if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+    thank_you.setAttribute('tabindex', '-1');
+    thank_you.focus();
+};
+window._show_error = function(id, message, html) {
+    var form = document.getElementById('_form_' + id + '_'),
+        err = document.createElement('div'),
+        button = form.querySelector('button[type="submit"]'),
+        old_error = form.querySelector('._form_error');
+    if (old_error) old_error.parentNode.removeChild(old_error);
+    err.innerHTML = message;
+    err.className = '_error-inner _form_error _no_arrow';
+    var wrapper = document.createElement('div');
+    wrapper.className = '_form-inner _show_be_error';
+    wrapper.appendChild(err);
+    button.parentNode.insertBefore(wrapper, button);
+    var submitButton = form.querySelector('[id^="_form"][id$="_submit"]');
+    submitButton.disabled = false;
+    submitButton.classList.remove('processing');
+    if (html) {
+        var div = document.createElement('div');
+        div.className = '_error-html';
+        div.innerHTML = html;
+        err.appendChild(div);
+    }
+};
+window._load_script = function(url, callback, isSubmit) {
+    var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+    var submitButton = document.querySelector('#_form_86_submit');
+    script.charset = 'utf-8';
+    script.src = url;
+    if (callback) {
+        script.onload = script.onreadystatechange = function() {
+            if (!r && (!this.readyState || this.readyState == 'complete')) {
+                r = true;
+                callback();
+            }
+        };
+    }
+    script.onerror = function() {
+        if (isSubmit) {
+            if (script.src.length > 10000) {
+                _show_error("86", "Sorry, your submission failed. Please shorten your responses and try again.");
+            } else {
+                _show_error("86", "Sorry, your submission failed. Please try again.");
+            }
+            submitButton.disabled = false;
+            submitButton.classList.remove('processing');
+        }
+    }
+    head.appendChild(script);
+};
+(function() {
+    var iti;
+    if (window.location.search.search("excludeform") !== -1) return false;
+    var getCookie = function(name) {
+        var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+        return match ? match[2] : localStorage.getItem(name);
+    }
+    var setCookie = function(name, value) {
+        var now = new Date();
+        var time = now.getTime();
+        var expireTime = time + 1000 * 60 * 60 * 24 * 365;
+        now.setTime(expireTime);
+        document.cookie = name + '=' + value + '; expires=' + now + ';path=/; Secure; SameSite=Lax;';
+        localStorage.setItem(name, value);
+    }
+    var addEvent = function(element, event, func) {
+        if (element.addEventListener) {
+            element.addEventListener(event, func);
+        } else {
+            var oldFunc = element['on' + event];
+            element['on' + event] = function() {
+                oldFunc.apply(this, arguments);
+                func.apply(this, arguments);
+            };
+        }
+    }
+    var _removed = false;
+    var form_to_submit = document.getElementById('_form_86_');
+    var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
+    var getUrlParam = function(name) {
+        if (name.toLowerCase() !== 'email') {
+            var params = new URLSearchParams(window.location.search);
+            return params.get(name) || false;
+        }
+        var qString = window.location.search;
+        if (!qString) { return false; }
+        var parameters = qString.substr(1).split('&');
+        for (var i = 0; i < parameters.length; i++) {
+            var parameter = parameters[i].split('=');
+            if (parameter[0].toLowerCase() === 'email') {
+                return parameter[1] === undefined ? true : decodeURIComponent(parameter[1]);
+            }
+        }
+        return false;
+    };
+    var acctDateFormat = "%m/%d/%Y";
+    var getNormalizedDate = function(date, acctFormat) {
+        var decodedDate = decodeURIComponent(date);
+        if (acctFormat && acctFormat.match(/(%d|%e).*%m/gi) !== null) {
+            return decodedDate.replace(/(\d{2}).*(\d{2}).*(\d{4})/g, '$3-$2-$1');
+        } else if (Date.parse(decodedDate)) {
+            var dateObj = new Date(decodedDate);
+            var year = dateObj.getFullYear();
+            var month = dateObj.getMonth() + 1;
+            var day = dateObj.getDate();
+            return `${year}-${month < 10 ? `0${month}` : month}-${day < 10 ? `0${day}` : day}`;
+        }
+        return false;
+    };
+    for (var i = 0; i < allInputs.length; i++) {
+        var regexStr = "field\\[(\\d+)\\]";
+        var results = new RegExp(regexStr).exec(allInputs[i].name);
+        if (results != undefined) {
+            allInputs[i].dataset.name = allInputs[i].name.match(/\[time\]$/)
+                ? `${window.cfields[results[1]]}_time`
+                : window.cfields[results[1]];
+        } else {
+            allInputs[i].dataset.name = allInputs[i].name;
+        }
+        var fieldVal = getUrlParam(allInputs[i].dataset.name);
+        if (fieldVal) {
+            if (allInputs[i].dataset.autofill === "false") { continue; }
+            if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
+                if (allInputs[i].value == fieldVal) { allInputs[i].checked = true; }
+            } else if (allInputs[i].type == "date") {
+                allInputs[i].value = getNormalizedDate(fieldVal, acctDateFormat);
+            } else {
+                allInputs[i].value = fieldVal;
+            }
+        }
+    }
+    var remove_tooltips = function() {
+        for (var i = 0; i < tooltips.length; i++) {
+            tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+        }
+        tooltips = [];
+    };
+    var remove_tooltip = function(elem) {
+        for (var i = 0; i < tooltips.length; i++) {
+            if (tooltips[i].elem === elem) {
+                tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+                tooltips.splice(i, 1);
+                return;
+            }
+        }
+    };
+    var create_tooltip = function(elem, text) {
+        var tooltip = document.createElement('div'),
+            arrow = document.createElement('div'),
+            inner = document.createElement('div'), new_tooltip = {};
+        tooltip.id = `${elem.id}-error`;
+        tooltip.setAttribute('role', 'alert');
+        if (elem.type != 'radio' && (elem.type != 'checkbox' || elem.name === 'sms_consent')) {
+            tooltip.className = '_error';
+            arrow.className = '_error-arrow';
+            inner.className = '_error-inner';
+            inner.innerHTML = text;
+            tooltip.appendChild(arrow);
+            tooltip.appendChild(inner);
+            elem.parentNode.appendChild(tooltip);
+        } else {
+            tooltip.className = '_error-inner _no_arrow';
+            tooltip.innerHTML = text;
+            elem.parentNode.insertBefore(tooltip, elem);
+            new_tooltip.no_arrow = true;
+        }
+        new_tooltip.tip = tooltip;
+        new_tooltip.elem = elem;
+        tooltips.push(new_tooltip);
+        return new_tooltip;
+    };
+    var resize_tooltip = function(tooltip) {
+        var rect = tooltip.elem.getBoundingClientRect();
+        var doc = document.documentElement,
+            scrollPosition = rect.top - ((window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0));
+        if (scrollPosition < 40) {
+            tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _below';
+        } else {
+            tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _above';
+        }
+    };
+    var resize_tooltips = function() {
+        if (_removed) return;
+        for (var i = 0; i < tooltips.length; i++) {
+            if (!tooltips[i].no_arrow) resize_tooltip(tooltips[i]);
+        }
+    };
+    var validate_field = function(elem, remove) {
+        var tooltip = null, value = elem.value, no_error = true;
+        remove ? remove_tooltip(elem) : false;
+        elem.removeAttribute('aria-invalid');
+        elem.removeAttribute('aria-describedby');
+        if (elem.type != 'checkbox') elem.className = elem.className.replace(/ ?_has_error ?/g, '');
+        if (elem.getAttribute('required') !== null) {
+            if (value === undefined || value === null || value === '') {
+                elem.className = elem.className + ' _has_error';
+                no_error = false;
+                tooltip = create_tooltip(elem, "This field is required.");
+            }
+        }
+        if (no_error && elem.name == 'email') {
+            if (!value.match(/^[\+_a-z0-9-'&=]+(\.[\+_a-z0-9-']+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i)) {
+                elem.className = elem.className + ' _has_error';
+                no_error = false;
+                tooltip = create_tooltip(elem, "Enter a valid email address.");
+            }
+        }
+        tooltip ? resize_tooltip(tooltip) : false;
+        if (!no_error && elem.hasAttribute('id')) {
+            elem.setAttribute('aria-invalid', 'true');
+            elem.setAttribute('aria-describedby', `${elem.id}-error`);
+        }
+        return no_error;
+    };
+    var needs_validate = function(el) {
+        if (el.getAttribute('required') !== null) { return true; }
+        if (el.name === 'email' && el.value !== "") { return true; }
+        return false;
+    };
+    var validate_form = function(e) {
+        var err = form_to_submit.querySelector('._form_error'), no_error = true;
+        if (!submitted) {
+            submitted = true;
+            for (var i = 0, len = allInputs.length; i < len; i++) {
+                var input = allInputs[i];
+                if (needs_validate(input)) {
+                    if (input.type == 'text' || input.type == 'number') {
+                        addEvent(input, 'blur', function() {
+                            this.value = this.value.trim();
+                            validate_field(this, true);
+                        });
+                        addEvent(input, 'input', function() {
+                            validate_field(this, true);
+                        });
+                    }
+                }
+            }
+        }
+        remove_tooltips();
+        for (var i = 0, len = allInputs.length; i < len; i++) {
+            var elem = allInputs[i];
+            if (needs_validate(elem)) {
+                if (elem.tagName.toLowerCase() !== "select") { elem.value = elem.value.trim(); }
+                validate_field(elem) ? true : no_error = false;
+            }
+        }
+        if (!no_error && e) { e.preventDefault(); }
+        if (!no_error) {
+            const firstFocusableError = form_to_submit.querySelector('._has_error:not([disabled])');
+            if (firstFocusableError && typeof firstFocusableError.focus === 'function') {
+                firstFocusableError.focus();
+            }
+        }
+        resize_tooltips();
+        return no_error;
+    };
+    addEvent(window, 'resize', resize_tooltips);
+    addEvent(window, 'scroll', resize_tooltips);
+    var _form_serialize = function(form){if(!form||form.nodeName!=="FORM"){return }var i,j,q=[];for(i=0;i<form.elements.length;i++){if(form.elements[i].name===""){continue}switch(form.elements[i].nodeName){case"INPUT":switch(form.elements[i].type){case"text":case"number":case"date":case"time":case"hidden":case"password":case"button":case"reset":case"submit":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"checkbox":case"radio":if(form.elements[i].checked){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value))}break;case"file":break}break;case"TEXTAREA":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"SELECT":switch(form.elements[i].type){case"select-one":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"select-multiple":for(j=0;j<form.elements[i].options.length;j++){if(form.elements[i].options[j].selected){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].options[j].value))}}break}break;case"BUTTON":switch(form.elements[i].type){case"reset":case"submit":case"button":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break}break}}return q.join("&")};
+    var form_submit = function(e) {
+        e.preventDefault();
+        if (validate_form()) {
+            var submitButton = e.target.querySelector('#_form_86_submit');
+            submitButton.disabled = true;
+            submitButton.classList.add('processing');
+            var serialized = _form_serialize(document.getElementById('_form_86_')).replace(/%0A/g, '\\n');
+            var err = form_to_submit.querySelector('._form_error');
+            err ? err.parentNode.removeChild(err) : false;
+            _load_script('https://higherperformancegroup.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true);
+        }
+        return false;
+    };
+    addEvent(form_to_submit, 'submit', form_submit);
+})();
+    </script>
+   </div>
+  </div>
+ </div>
+</div>

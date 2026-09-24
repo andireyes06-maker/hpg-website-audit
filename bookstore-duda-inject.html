@@ -1,0 +1,1465 @@
+<!-- *** ADD OR EDIT HTML INSIDE OF THE dmRespCol DIVS, SEE DOCUMENTATION FOR GUIDELINES *** -->
+<div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098">
+ <div class="u_1243667655 dmRespRow" style="text-align: center;" id="1243667655">
+  <div class="dmRespColsWrapper" id="1173148036">
+   <div class="dmRespCol small-12 u_1620106714 medium-12 large-12" id="1620106714">
+    <!-- *** INSERT YOUR HTML BELOW *** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" id="1202318491"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" id="1637449802"/>
+    <style id="1068950601">
+     :root {
+  --navy: #0c1b30;
+  --navy-mid: #162640;
+  --navy-light: #1e3454;
+  --steel: #2e5278;
+  --slate: #4e7aaa;
+  --fog: #d4e4f0;
+  --fog-light: #eaf2f8;
+  --cream: #f3f0eb;
+  --warm-white: #f9f7f4;
+  --gold: #c8a44a;
+  --gold-mid: #dab85e;
+  --gold-light: #e9cb7a;
+  --text-dark: #111827;
+  --text-mid: #3d5068;
+  --text-muted: #7a93ad;
+  --radius: 6px;
+  --ease: cubic-bezier(0.4,0,0.2,1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', system-ui, sans-serif !important;
+  background: #f0eee9;
+  color: #111827;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+/* ══ DUDA OVERRIDE — reset inherited text-align:center from row wrapper ══ */
+.hero, .hero *,
+.shelf-nav, .shelf-nav *,
+.main, .main * {
+  text-align: left !important;
+}
+/* ══ HERO ══ */
+.hero {
+  position: relative;
+  z-index: 0;
+  min-height: 320px;
+  display: flex !important;
+  align-items: center !important;
+  overflow: hidden;
+  background: #0c1b30;
+}
+.hero-canvas {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 100% 80% at 75% 30%, rgba(46,82,120,0.55) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 60% at 5% 90%, rgba(200,164,74,0.10) 0%, transparent 55%),
+    radial-gradient(ellipse 30% 40% at 90% 80%, rgba(200,164,74,0.06) 0%, transparent 50%),
+    linear-gradient(168deg, #0c1b30 0%, #162640 45%, #0c1b30 100%);
+}
+.hero-texture {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: repeating-linear-gradient(
+    -55deg, transparent, transparent 40px,
+    rgba(255,255,255,0.012) 40px, rgba(255,255,255,0.012) 41px
+  );
+}
+.hero-line {
+  position: absolute; bottom: 0; left: 0; width: 100%; height: 2px;
+  background: linear-gradient(to right, transparent, #c8a44a 30%, #e9cb7a 60%, transparent);
+  opacity: 0;
+  animation: lineIn 1.1s 0.5s ease forwards;
+}
+@keyframes lineIn {
+  from { opacity:0; transform: scaleX(0.3); transform-origin: left; }
+  to   { opacity:1; transform: scaleX(1);   transform-origin: left; }
+}
+.hero-inner {
+  position: relative; z-index: 2; 
+  width: 100%; max-width: 1240px;
+  margin: 0 auto; padding: 36px 56px 34px;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  column-gap: 72px !important;
+  row-gap: 0 !important;
+  gap: 0 72px !important;
+  align-items: center !important;
+}
+.hero-kicker {
+  grid-column: 1 / -1 !important;
+  display: inline-flex !important; align-items: center !important; gap: 12px !important;
+  font-size: 10.5px !important; font-weight: 500 !important; letter-spacing: 0.22em !important;
+  text-transform: uppercase !important; color: #c8a44a !important;
+  margin-bottom: 4px !important;
+  margin-top: 0 !important;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.1s ease forwards;
+}
+.hero-kicker span { width: 32px; height: 1px; background: linear-gradient(to right, #c8a44a, transparent); }
+.hero-left {
+  display: flex !important; flex-direction: column !important;
+  margin-top: 0 !important;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.2s ease forwards;
+}
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(44px, 6vw, 76px) !important;
+  font-weight: 300; line-height: 0.94 !important;
+  color: #fff !important; letter-spacing: -0.025em;
+  margin-bottom: 14px;
+}
+.hero h1 em { font-style: italic; font-weight: 300; color: #e9cb7a !important; display: block; }
+.hero-sub {
+  font-size: 13.5px; font-weight: 300 !important;
+  color: rgba(255,255,255,0.6) !important;
+  line-height: 1.65 !important;
+}
+.hero-quote {
+  padding-left: 40px;
+  border-left: 1px solid rgba(200,164,74,0.28);
+  opacity: 0;
+  animation: fadeUp 0.7s 0.35s ease forwards;
+}
+.hero-quote-mark {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 60px; line-height: 0.5 !important;
+  color: #c8a44a !important; opacity: 0.4;
+  margin-bottom: 10px; font-weight: 300;
+}
+.hero-quote blockquote {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(18px, 2.1vw, 24px) !important;
+  font-weight: 300; font-style: italic !important;
+  color: rgba(255,255,255,0.88) !important;
+  line-height: 1.38; letter-spacing: -0.01em !important;
+  margin-bottom: 14px;
+}
+.hero-quote blockquote em { font-style: italic; color: #e9cb7a !important; font-weight: 400; }
+.hero-quote-attr {
+  font-size: 10.5px; font-weight: 500 !important;
+  letter-spacing: 0.18em; text-transform: uppercase !important;
+  color: rgba(255,255,255,0.28) !important;
+}
+.hero-the {
+  display: block; font-size: 0.38em; font-weight: 300 !important;
+  color: rgba(255,255,255,0.38) !important; letter-spacing: 0.12em;
+  text-transform: uppercase; margin-bottom: 0.2em; font-style: normal !important;
+}
+.btn-hero-browse {
+  display: inline-flex; align-items: center; gap: 9px !important;
+  margin-top: 20px;
+  padding: 10px 22px; background: transparent;
+  color: rgba(255,255,255,0.55) !important; border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 4px; font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.13em !important;
+  text-transform: uppercase; text-decoration: none; align-self: flex-start !important;
+  transition: border-color 0.25s cubic-bezier(0.4,0,0.2,1), color 0.25s cubic-bezier(0.4,0,0.2,1), background 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.btn-hero-browse:hover {
+  border-color: rgba(200,164,74,0.48); color: #e9cb7a !important;
+  background: rgba(200,164,74,0.07);
+}
+/* ══ STICKY NAV ══ */
+.shelf-nav {
+  position: sticky; top: 0; z-index: 0;
+  background: rgba(12,27,48,0.97);
+  backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 4px 28px rgba(0,0,0,0.28);
+}
+.shelf-nav-inner {
+  max-width: 1240px; margin: 0 auto;
+  padding: 0 56px;
+  display: flex; align-items: center; gap: 2px !important;
+}
+.shelf-btn {
+  position: relative; padding: 15px 20px;
+  font-family: 'DM Sans', system-ui, sans-serif !important;
+  font-size: 11px; font-weight: 500 !important;
+  letter-spacing: 0.1em; text-transform: uppercase !important;
+  color: rgba(255,255,255,0.36) !important;
+  background: none; border: none; cursor: pointer;
+  transition: color 0.25s cubic-bezier(0.4,0,0.2,1); white-space: nowrap;
+}
+.shelf-btn::after {
+  content: ''; position: absolute;
+  bottom: -1px; left: 20px; right: 20px; height: 2px;
+  background: #c8a44a;
+  transform: scaleX(0); transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.shelf-btn:hover { color: rgba(255,255,255,0.68) !important; }
+.shelf-btn.active { color: #e9cb7a !important; }
+.shelf-btn.active::after { transform: scaleX(1); }
+/* ══ MAIN ══ */
+.main { padding: 44px max(32px, calc((100vw - 1128px) / 2)) 80px; box-sizing: border-box; }
+/* ══ SECTION HEADS ══ */
+.sec-head {
+  display: flex; align-items: center; gap: 20px !important;
+  margin-bottom: 20px;
+}
+.sec-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 30px; font-weight: 300 !important;
+  color: #0c1b30 !important; letter-spacing: -0.02em; white-space: nowrap;
+}
+.sec-rule { flex: 1; height: 1px; background: linear-gradient(to right, #d4e4f0, transparent 80%); }
+.sec-count {
+  font-size: 10px; font-weight: 500 !important;
+  letter-spacing: 0.16em; text-transform: uppercase !important;
+  color: #7a93ad !important; white-space: nowrap;
+}
+/* ══ FEATURED DUO ══ */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.fdc {
+  position: relative; background: #0c1b30;
+  border-radius: 6px; overflow: hidden;
+  display: grid !important;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "cover details"
+    "buttons buttons";
+  border: 1px solid rgba(255,255,255,0.045);
+  opacity: 0; transform: translateY(26px);
+  animation: fadeUp 0.65s ease forwards;
+  transition: box-shadow 0.4s cubic-bezier(0.4,0,0.2,1), transform 0.4s cubic-bezier(0.4,0,0.2,1), border-color 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.fdc:nth-child(2) { animation-delay: 0.13s; }
+.fdc:hover {
+  box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(200,164,74,0.32), 0 0 32px rgba(200,164,74,0.08);
+  transform: translateY(-1px);
+  border-color: rgba(200,164,74,0.22);
+}
+.fdc-glow { position: absolute; inset: 0; pointer-events: none; border-radius: 6px; }
+.glow-tq {
+  background:
+    radial-gradient(ellipse 120% 55% at 110% 8%, rgba(46,82,120,0.65) 0%, transparent 58%),
+    radial-gradient(ellipse 60% 40% at -5% 92%, rgba(200,164,74,0.07) 0%, transparent 50%);
+}
+.glow-bf {
+  background:
+    radial-gradient(ellipse 120% 55% at -10% 8%, rgba(200,164,74,0.16) 0%, transparent 58%),
+    radial-gradient(ellipse 60% 40% at 108% 92%, rgba(46,82,120,0.30) 0%, transparent 50%);
+}
+.fdc-shelf {
+  grid-area: cover;
+  position: relative; z-index: 2;
+  display: flex; align-items: center; justify-content: center !important;
+  padding: 32px 24px;
+  background: rgba(255,255,255,0.025);
+  border-right: 1px solid rgba(255,255,255,0.055);
+  overflow: hidden;
+}
+.fdc-shelf::after { display: none; }
+.fdc-body {
+  grid-area: details;
+  position: relative; z-index: 2;
+  padding: 20px 24px 20px;
+  display: flex; flex-direction: column !important;
+  gap: 10px !important;
+}
+.fdc-tag {
+  position: static;
+  align-self: flex-start !important;
+  font-size: 9px; font-weight: 500; letter-spacing: 0.16em !important;
+  text-transform: uppercase; padding: 5px 12px; border-radius: 3px !important;
+}
+.tag-ws { background: rgba(46,82,120,0.4); color: #a8cce8 !important; border: 1px solid rgba(78,122,170,0.45); }
+.tag-kn { background: rgba(200,164,74,0.18); color: #e9cb7a !important; border: 1px solid rgba(200,164,74,0.35); }
+.fdc-btns-wrap {
+  grid-area: buttons;
+  position: relative; z-index: 2;
+  padding: 0;
+  display: flex; flex-direction: column !important;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+.fdc-btns-wrap a,
+.fdc-btns-wrap div {
+  border-radius: 0;
+  width: 100%;
+  border-left: none; border-right: none; border-bottom: none;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding: 15px 24px;
+}
+.fdc-btns-wrap a:first-child,
+.fdc-btns-wrap div:first-child {
+  border-top: none;
+}
+.fdc-btns-wrap .btn-amazon,
+.fdc-btns-wrap .btn-ghost,
+.fdc-btns-wrap .btn-inert {
+  border-radius: 0;
+  box-shadow: none;
+}
+.fdc-shelf img {
+  max-height: 180px; max-width: 130px; object-fit: contain;
+  filter: drop-shadow(0 16px 32px rgba(0,0,0,0.68));
+  transform: perspective(600px) rotateY(-4deg);
+  transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.5s ease;
+}
+.fdc:hover .fdc-shelf img {
+  transform: perspective(600px) rotateY(0deg) scale(1.03);
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.55));
+}
+.fdc-details { display: flex; flex-direction: column; }
+.fdc-badge {
+  display: inline-flex; align-items: center; gap: 6px !important;
+  padding: 3px 10px; border-radius: 3px;
+  font-size: 9.5px; font-weight: 500; letter-spacing: 0.14em !important;
+  text-transform: uppercase; width: fit-content; margin-bottom: 12px !important;
+}
+.badge-avail { background: rgba(200,164,74,0.16); color: #e9cb7a !important; border: 1px solid rgba(200,164,74,0.32); }
+.badge-kn    { background: rgba(46,82,120,0.35); color: #a8cce8 !important; border: 1px solid rgba(78,122,170,0.4); }
+.badge-soon  { background: rgba(100,110,130,0.22); color: rgba(255,255,255,0.32) !important; border: 1px solid rgba(255,255,255,0.1); }
+.fdc-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 28px; font-weight: 400 !important;
+  color: #fff !important; line-height: 1.06;
+  letter-spacing: -0.022em; margin-bottom: 10px !important;
+}
+.fdc-desc {
+  font-size: 13px; font-weight: 300 !important;
+  color: rgba(255,255,255,0.62) !important; line-height: 1.68;
+  flex: 1; margin-bottom: 18px !important;
+}
+.fdc-rule { height: 1px; background: rgba(255,255,255,0.07); margin-bottom: 16px; }
+.fdc-btns { display: flex; flex-direction: column; gap: 8px; }
+/* ══ BUTTONS ══ */
+.btn-amazon {
+  display: flex; align-items: center; justify-content: center; gap: 10px !important;
+  padding: 12px 22px;
+  background: #FF9900; color: #111 !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; font-weight: 500 !important;
+  letter-spacing: 0.1em; text-transform: uppercase !important;
+  text-decoration: none; border: none; border-radius: 4px; cursor: pointer !important;
+  transition: filter 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 4px 18px rgba(255,153,0,0.28);
+}
+.btn-amazon:hover { filter: brightness(1.08); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(255,153,0,0.42); }
+.btn-amazon svg { display: none; }
+.btn-order-amazon {
+  display: flex; align-items: center; justify-content: center; gap: 9px !important;
+  width: 100%; padding: 10px 18px;
+  background: #FF9900; color: #111 !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 500 !important;
+  letter-spacing: 0.1em; text-transform: uppercase !important;
+  text-decoration: none; border: none; border-radius: 4px; cursor: pointer !important;
+  transition: filter 0.24s cubic-bezier(0.4,0,0.2,1), transform 0.24s cubic-bezier(0.4,0,0.2,1), box-shadow 0.24s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 4px 14px rgba(255,153,0,0.22);
+}
+.btn-order-amazon:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 8px 22px rgba(255,153,0,0.36); }
+.btn-order-amazon svg { display: none; }
+.btn-gold {
+  display: flex; align-items: center; justify-content: center; gap: 9px !important;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #c8a44a 0%, #dab85e 100%);
+  color: #0c1b30 !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; font-weight: 500 !important;
+  letter-spacing: 0.13em; text-transform: uppercase !important;
+  text-decoration: none; border: none; border-radius: 4px; cursor: pointer !important;
+  transition: filter 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 4px 18px rgba(200,164,74,0.24);
+}
+.btn-gold:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 10px 32px rgba(200,164,74,0.4); }
+.btn-ghost {
+  display: flex; align-items: center; justify-content: center; gap: 9px !important;
+  padding: 12px 22px; background: transparent;
+  color: rgba(255,255,255,0.5) !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; font-weight: 500 !important;
+  letter-spacing: 0.13em; text-transform: uppercase !important;
+  text-decoration: none; border: 1px solid rgba(255,255,255,0.13); border-radius: 4px; cursor: pointer !important;
+  transition: border-color 0.25s cubic-bezier(0.4,0,0.2,1), color 0.25s cubic-bezier(0.4,0,0.2,1), background 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.btn-ghost:hover { border-color: rgba(200,164,74,0.48); color: #e9cb7a !important; background: rgba(200,164,74,0.06); transform: translateY(-2px); }
+.btn-inert {
+  display: flex; align-items: center; justify-content: center !important;
+  padding: 12px 22px;
+  background: rgba(255,255,255,0.035); color: rgba(255,255,255,0.2) !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; font-weight: 500 !important;
+  letter-spacing: 0.13em; text-transform: uppercase !important;
+  border: 1px solid rgba(255,255,255,0.07); border-radius: 4px;
+  cursor: not-allowed; pointer-events: none;
+}
+.btn-order {
+  display: block; width: 100%; padding: 10px 18px !important;
+  background: #0c1b30; color: #fff !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 500 !important;
+  letter-spacing: 0.13em; text-transform: uppercase !important;
+  text-decoration: none; border: none; border-radius: 4px; cursor: pointer; text-align: center !important;
+  transition: background 0.24s cubic-bezier(0.4,0,0.2,1), transform 0.24s cubic-bezier(0.4,0,0.2,1);
+}
+.btn-order:hover { background: #1e3454; transform: translateY(-1px); }
+.btn-dl {
+  display: block; width: 100%; padding: 10px 18px !important;
+  background: transparent; color: #4e7aaa !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 500 !important;
+  letter-spacing: 0.13em; text-transform: uppercase !important;
+  text-decoration: none; border: 1px solid #d4e4f0; border-radius: 4px; cursor: pointer; text-align: center !important;
+  transition: border-color 0.24s cubic-bezier(0.4,0,0.2,1), color 0.24s cubic-bezier(0.4,0,0.2,1), background 0.24s cubic-bezier(0.4,0,0.2,1);
+}
+.btn-dl:hover { border-color: #4e7aaa; color: #0c1b30 !important; background: #eaf2f8; }
+.btn-cs {
+  display: block; width: 100%; padding: 10px 18px !important;
+  background: #eaf2f8; color: #7a93ad !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 500 !important;
+  letter-spacing: 0.14em; text-transform: uppercase !important;
+  border: 1px solid #d4e4f0; border-radius: 4px; cursor: default; text-align: center !important;
+}
+.btn-lulu {
+  display: flex; align-items: center; justify-content: center; gap: 8px !important;
+  width: 100%; padding: 10px 18px;
+  background: #0c1b30; color: #fff !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 500 !important;
+  letter-spacing: 0.1em; text-transform: uppercase !important;
+  text-decoration: none; border: none; border-radius: 4px; cursor: pointer; text-align: center !important;
+  transition: background 0.24s cubic-bezier(0.4,0,0.2,1), transform 0.24s cubic-bezier(0.4,0,0.2,1);
+}
+.btn-lulu:hover { background: #1e3454; transform: translateY(-1px); }
+.btn-lulu svg { display: none; }
+/* ══ BOOK GRID ══ */
+.book-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+.two-grid  { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.book-card {
+  background: #fff;
+  border: 1px solid rgba(200,218,232,0.65); border-radius: 6px;
+  overflow: hidden; display: flex; flex-direction: column;
+  opacity: 0; transform: translateY(22px);
+  transition: box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1), border-color 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.book-card:hover {
+  box-shadow: 0 16px 44px rgba(12,27,48,0.11), 0 3px 12px rgba(12,27,48,0.05);
+  transform: translateY(-4px); border-color: #d4e4f0;
+}
+.book-cover {
+  position: relative; min-height: 148px;
+  background: linear-gradient(155deg, #ede9e3 0%, #e4eef5 100%);
+  display: flex; align-items: center; justify-content: center !important;
+  padding: 22px 22px 18px;
+  overflow: hidden;
+}
+.book-cover::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 70% at 50% 35%, rgba(255,255,255,0.55) 0%, transparent 70%);
+}
+.book-cover img {
+  position: relative; z-index: 1;
+  max-height: 130px; max-width: 106px; object-fit: contain;
+  filter: drop-shadow(0 10px 22px rgba(12,27,48,0.22));
+  transform: perspective(500px) rotateY(-3deg);
+  transition: transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.45s ease;
+}
+.book-card:hover .book-cover img {
+  transform: perspective(500px) rotateY(0deg) translateY(-5px) scale(1.04);
+  filter: drop-shadow(0 18px 34px rgba(12,27,48,0.3));
+}
+.book-body {
+  padding: 16px 18px 20px;
+  display: flex; flex-direction: column; flex: 1 !important;
+}
+.book-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px; font-weight: 600 !important;
+  color: #0c1b30 !important; line-height: 1.2;
+  letter-spacing: -0.01em; margin-bottom: 5px !important;
+}
+.book-desc {
+  font-size: 12px; font-weight: 300; color: #3d5068 !important;
+  line-height: 1.58; flex: 1; margin-bottom: 14px !important;
+}
+.book-btns { display: flex; flex-direction: column; gap: 6px; }
+/* ══ BOOK BADGES ══ */
+.book-badge {
+  display: inline-flex; align-items: center !important;
+  padding: 2px 8px; border-radius: 3px;
+  font-size: 9px; font-weight: 500; letter-spacing: 0.14em !important;
+  text-transform: uppercase; width: fit-content; margin-bottom: 9px !important;
+}
+.bb-amazon { background: rgba(255,153,0,0.1); color: #9a5e00 !important; border: 1px solid rgba(255,153,0,0.28); }
+.bb-print  { background: rgba(12,27,48,0.06); color: #3d5068 !important; border: 1px solid rgba(12,27,48,0.12); }
+.bb-soon   { background: rgba(150,160,175,0.1); color: #7a93ad !important; border: 1px solid rgba(150,160,175,0.22); }
+/* ══ MERCH ══ */
+#merch-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.merch-card {
+  background: #0c1b30; border-radius: 6px; overflow: hidden;
+  display: flex; flex-direction: column !important;
+  border: 1px solid rgba(255,255,255,0.045);
+  opacity: 0; transform: translateY(22px);
+  transition: box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.merch-card:hover { box-shadow: 0 24px 56px rgba(0,0,0,0.35); transform: translateY(-4px); }
+.merch-cover {
+  background: rgba(255,255,255,0.028);
+  border-bottom: 1px solid rgba(255,255,255,0.055);
+  display: flex; align-items: center; justify-content: center !important;
+  padding: 24px 24px;
+  min-height: 160px;
+}
+.merch-cover img {
+  max-height: 116px; max-width: 116px; object-fit: contain;
+  filter: drop-shadow(0 12px 28px rgba(0,0,0,0.55));
+  transition: transform 0.45s ease;
+}
+.merch-card:hover .merch-cover img { transform: scale(1.07) translateY(-4px); }
+.merch-body { padding: 18px 22px 22px; }
+.merch-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px; font-weight: 400; color: #fff !important;
+  margin-bottom: 6px; letter-spacing: -0.01em;
+}
+.merch-desc {
+  font-size: 12px; font-weight: 300 !important;
+  color: rgba(255,255,255,0.62) !important; line-height: 1.58; margin-bottom: 14px;
+}
+/* ══ MERCH — single item horizontal ══ */
+#merch-grid .merch-card:only-child {
+  grid-column: 1 / -1;
+  display: grid !important;
+  grid-template-columns: 220px 1fr;
+}
+#merch-grid .merch-card:only-child .merch-cover {
+  border-bottom: none;
+  border-right: 1px solid rgba(255,255,255,0.055);
+  min-height: 0;
+}
+/* ══ CTA BAND ══ */
+.cta-band {
+  margin-top: 44px;
+  margin-bottom: -80px;
+  position: relative; overflow: hidden;
+  background: #0c1b30;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  width: 100vw;
+  margin-left: min(-32px, calc((100vw - 1128px) / -2));
+}
+.cta-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 100% at 100% 50%, rgba(46,82,120,0.55) 0%, transparent 62%),
+    radial-gradient(ellipse 40% 70% at 0% 50%, rgba(200,164,74,0.09) 0%, transparent 55%),
+    linear-gradient(148deg, #0c1b30 0%, #162640 60%, #0c1b30 100%);
+}
+.cta-orb {
+  position: absolute; top: 50%; right: 100px;
+  transform: translateY(-50%);
+  width: 320px; height: 320px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,164,74,0.07) 0%, transparent 68%);
+  pointer-events: none;
+}
+.cta-band::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,164,74,0.35) 40%, rgba(200,164,74,0.35) 60%, transparent);
+}
+.cta-inner {
+  position: relative; z-index: 2;
+  padding: 52px 56px;
+  max-width: 1240px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr auto !important;
+  align-items: center; gap: 56px !important;
+}
+.cta-kicker {
+  display: flex; flex-direction: row; align-items: center; gap: 20px !important;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.2em !important;
+  text-transform: uppercase; color: #c8a44a !important; margin-bottom: 11px !important;
+}
+.cta-kicker span { width: 24px; height: 1px; background: #c8a44a; }
+.cta-inner h2 {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(28px, 3.2vw, 44px); font-weight: 300 !important;
+  color: #fff !important; line-height: 1.06;
+  letter-spacing: -0.025em; margin-bottom: 13px !important;
+}
+.cta-inner h2 em { font-style: italic; color: #e9cb7a !important; }
+.cta-inner p {
+  font-size: 13.5px; font-weight: 300 !important;
+  color: rgba(255,255,255,0.68) !important; line-height: 1.72; max-width: 490px;
+}
+.cta-right { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; flex-shrink: 0; }
+.btn-cta {
+  display: inline-flex; align-items: center; gap: 10px !important;
+  padding: 15px 38px;
+  background: linear-gradient(135deg, #c8a44a 0%, #dab85e 100%);
+  color: #0c1b30 !important;
+  font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; font-weight: 500 !important;
+  letter-spacing: 0.13em; text-transform: uppercase !important;
+  text-decoration: none; border-radius: 4px; white-space: nowrap !important;
+  border: none; cursor: pointer;
+  transition: filter 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 6px 24px rgba(200,164,74,0.28);
+}
+.btn-cta:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(200,164,74,0.42); }
+.cta-note { font-size: 11px; color: rgba(255,255,255,0.48) !important; letter-spacing: 0.04em; text-align: right; }
+/* ══ PLANNERS/MERCH GRID — fixed cover height ══ */
+#merch-grid .book-cover {
+  height: 160px;
+  min-height: 0;
+}
+/* ══ ANIMATIONS ══ */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(24px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.reveal { animation: fadeUp 0.55s ease forwards; }
+/* ══ RESPONSIVE ══ */
+@media (max-width: 1024px) {
+  .hero { min-height: 0; }
+  .hero-inner { padding: 32px 24px 30px; grid-template-columns: 1fr !important; gap: 24px !important; }
+  .hero-quote { padding-left: 0; border-left: none; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.09); }
+  .shelf-nav-inner { padding: 0 16px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .shelf-nav-inner::-webkit-scrollbar { display: none; }
+  .shelf-nav { position: relative; }
+  .book-grid { grid-template-columns: repeat(2,1fr); }
+  .duo { grid-template-columns: 1fr !important; }
+  .fdc { grid-template-columns: 160px 1fr !important; }
+  #merch-grid { grid-template-columns: 1fr 1fr; }
+  .cta-band { margin-left: -24px; }
+  .cta-inner { grid-template-columns: 1fr !important; gap: 28px !important; padding: 40px 24px; }
+  .cta-right { align-items: flex-start; }
+  .main { padding: 36px 24px 64px; }
+  .sec-head { flex-wrap: wrap; }
+}
+@media (max-width: 767px) {
+  .book-grid, .two-grid, #merch-grid { grid-template-columns: 1fr !important; }
+  .hero-quote { display: none; }
+  .hero { padding-top: 48px; }
+  .hero h1 { font-size: 68px !important; }
+  .hero-sub { font-size: 14px !important; }
+  /* FDC: stack cover on top, details below, buttons at bottom */
+  .fdc {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "cover" "details" "buttons" !important;
+  }
+  .fdc-shelf {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.055) !important;
+    min-height: 160px !important;
+    padding: 24px !important;
+  }
+  .fdc-shelf img { max-height: 130px !important; transform: none !important; }
+  .fdc-body { padding: 18px 20px 16px !important; }
+  .fdc-title { font-size: 22px !important; }
+  .book-cover { min-height: 120px !important; }
+  .book-cover img { max-height: 106px !important; }
+  .sec-title { font-size: 20px !important; }
+  .cta-band { margin-left: -16px; }
+  .cta-inner { padding: 32px 16px !important; }
+  .btn-cta { width: 100%; justify-content: center !important; }
+  .cta-right { width: 100%; }
+  .main { padding: 28px 16px 56px !important; }
+  #merch-grid .merch-card:only-child { grid-template-columns: 1fr !important; }
+  #merch-grid .merch-card:only-child .merch-cover { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.055) !important; }
+  .shelf-btn { padding: 14px 16px !important; font-size: 10.5px !important; }
+  .hero-inner { padding: 28px 16px 24px !important; }
+  #merch-grid .book-cover { height: auto !important; min-height: 140px !important; }
+}
+@media (max-width: 400px) {
+  .hero h1 { font-size: 40px !important; }
+  .hero-sub { font-size: 14px !important; }
+  .fdc-title { font-size: 20px !important; }
+  .fdc-shelf { min-height: 130px !important; }
+  .fdc-shelf img { max-height: 110px !important; }
+  .sec-title { font-size: 18px !important; }
+  .book-title { font-size: 15px !important; }
+  .btn-cta { padding: 13px 24px !important; font-size: 11px !important; }
+}
+/* Duda's mobile layout (body.dmMobileBody, any touch device incl. tablets) floats a fixed 60px header over the page. The <=767px query already clears it; extend the same hero padding to touch tablets (768-1024). */
+body.dmMobileBody #dm .dmBody section.hero { padding-top: 48px !important; }
+/* ── audit-002: shared accessibility + UX layer (focus ring, press state, anchor offset, new-tab cue, tap area, reduced motion) ── */
+#dmRoot #dm :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible, #dm :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible { outline: 3px solid #c9a84c !important; outline-offset: 2px !important; box-shadow: 0 0 0 2px #08152a !important; }
+#dm :is(button, input[type="submit"], a[class*="btn"], a[class*="cta"], a[class*="Btn"]):active { transform: translateY(1px) !important; filter: brightness(0.94); }
+#dm [id] { scroll-margin-top: 80px; }
+#dm .dmBody :is(p, li, cite, small) a[target="_blank"]:not([class*="btn"]):not(:has(img, svg))::after { content: "\2197"; content: "\2197" / " (opens in a new tab)"; display: inline-block; margin-left: 0.2em; font-size: 0.8em; text-decoration: none; }
+#dm .dmBody :is(p, li, cite, small) a:not([class*="btn"]):not([class*="cta"]) { padding-block: 10px; }
+@media (prefers-reduced-motion: reduce) { #dm *, #dm *::before, #dm *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+/* audit-002 #46: soft right-edge fade hints the category tabs scroll sideways */
+@media (max-width: 1024px) { .shelf-nav-inner { -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent); mask-image: linear-gradient(90deg, #000 88%, transparent); } }
+/* ── audit-002 #19: contrast fixes, same hue moved just past WCAG AA on its real background ── */
+#dm .dmBody .hero-quote-attr { color: #7b889b !important; } /* was #505b6a on #0c1b30 (2.5:1) -> 4.81:1 */
+#dm .dmBody .shelf-btn { color: #828b98 !important; } /* was #68717e on #132236 (3.27:1) -> 4.65:1 */
+#dm .dmBody .sec-count { color: #5b7794 !important; } /* was #7a93ad on #ffffff (3.18:1) -> 4.66:1 */
+#dm .dmBody .btn-dl { color: #4b75a3 !important; } /* was #4e7aaa on #ffffff (4.48:1) -> 4.81:1 */
+#dm .dmBody .book-badge.bb-soon { color: #556f8a !important; } /* was #7a93ad on #f5f6f7 (2.93:1) -> 4.78:1 */
+#dm .dmBody .book-badge { color: #846a28 !important; } /* was #c8a44a on #f8f4e9 (2.16:1) -> 4.71:1 */
+    
+/* ── audit-002 #34: labels and small text lifted to a 12px minimum (was 7.5–11.5px) ── */
+#dm .dmBody :is(.book-badge, .book-badge.bb-amazon, .book-badge.bb-print, .book-badge.bb-soon, .btn-amazon, .btn-dl, .btn-ghost, .btn-hero-browse, .btn-lulu, .btn-order-amazon, .cta-kicker, .cta-note, .fdc-badge.badge-avail, .fdc-badge.badge-kn, .fdc-tag.tag-kn, .fdc-tag.tag-ws, .hero-kicker, .hero-quote-attr, .sec-count, .shelf-btn, .shelf-btn.active) { font-size: 12px !important; }
+#dm .dmBody :is(cite, blockquote cite, figcaption) { font-family: 'DM Sans', system-ui, sans-serif; }
+/* ── audit-002 #29: elements that fell back to Duda's theme font (Be Vietnam Pro) get the house font their own CSS intended ── */
+#dm .dmBody .hero-kicker { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .hero-sub { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .hero-quote-attr { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .fdc-tag.tag-ws { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .fdc-badge.badge-avail { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .fdc-desc { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .fdc-tag.tag-kn { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .fdc-badge.badge-kn { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .sec-count { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .book-badge.bb-amazon { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .book-desc { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .book-badge.bb-soon { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .book-badge.bb-print { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .book-badge { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .cta-kicker { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .cta-note { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .book-modal-close { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .book-modal > h3 { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .book-modal :is(p, div, button, label, span) { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody [class*="modal"] :is(p, div) { font-family: 'DM Sans', system-ui, sans-serif !important; }
+#dm .dmBody .cta-inner p { font-family: 'DM Sans', system-ui, sans-serif !important; }
+</style>
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" style="width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;margin-right:0 !important;box-sizing:border-box !important;overflow:hidden !important;" id="1987925841">
+     <div class="hero-canvas">
+     </div>
+     <div class="hero-texture">
+     </div>
+     <div class="hero-line">
+     </div>
+     <div class="hero-inner">
+      <div class="hero-kicker">
+       <span>
+       </span>
+       Dr. Joe Hill &middot; Higher Performance Group
+      </div>
+      <div class="hero-left">
+       <h1>
+        <span class="hero-the">
+         The
+        </span>
+        <em>
+         Bookstore.
+        </em>
+       </h1>
+       <p class="hero-sub">
+        Research-based frameworks for leaders who refuse to let brilliant teams underperform.
+       </p>
+       <a href="#book-grid" class="btn-hero-browse">
+        Browse the Collection
+        <svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+         <path d="M12 5v14M5 12l7 7 7-7">
+         </path>
+        </svg>
+       </a>
+      </div>
+      <div class="hero-quote">
+       <div class="hero-quote-mark">
+        &quot;
+       </div>
+       <blockquote>
+        Great leaders don't scale.
+        <br/>
+        Great
+        <em>
+         leadership teams
+        </em>
+        do.
+       </blockquote>
+       <div class="hero-quote-attr">
+        Dr. Joe Hill
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- ═══ STICKY NAV ═══ -->
+    <nav class="shelf-nav" aria-label="Filter by category" style="width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;margin-right:0 !important;box-sizing:border-box !important;overflow:hidden !important;" id="1559608690">
+     <div class="shelf-nav-inner">
+      <button class="shelf-btn active" aria-pressed="true" onclick="filter('all',this)">
+       All
+      </button>
+      <button class="shelf-btn" aria-pressed="false" onclick="filter('books',this)">
+       Books
+      </button>
+      <button class="shelf-btn" aria-pressed="false" onclick="filter('planners',this)">
+       Planners &amp; Merch
+      </button>
+     </div>
+    </nav>
+    <main class="main" style="width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;margin-right:0 !important;box-sizing:border-box !important;overflow:hidden !important;" id="1846645667">
+     <!-- ═══ FEATURED ═══ -->
+     <div class="sec-head" data-head="featured">
+      <span class="sec-title">
+       Featured
+      </span>
+      <div class="sec-rule">
+      </div>
+     </div>
+     <div class="duo">
+      <!-- TQ ADVANTAGE -->
+      <div class="fdc" data-category="books">
+       <div class="fdc-glow glow-tq">
+       </div>
+       <div class="fdc-shelf">
+        <img src="https://i.postimg.cc/sxxdZm7d/TQ-MOCK.png" alt="The TQ Advantage"/>
+       </div>
+       <div class="fdc-body">
+        <div class="fdc-tag tag-ws">
+         2.5-Hr Workshop &middot; Leadership Team
+        </div>
+        <div class="fdc-badge badge-avail">
+         Now Available
+        </div>
+        <h2 class="fdc-title">
+         The TQ Advantage
+        </h2>
+        <p class="fdc-desc">
+         The Leadership Discovery System for Higher Performance Teams. Same room. Same frameworks. Translation tax eliminated: collective intelligence multiplied.
+        </p>
+       </div>
+       <div class="fdc-btns-wrap">
+        <a href="https://www.amazon.com/dp/B0GQCYZMW1" target="_blank" rel="noopener" class="btn-amazon">
+         Order on Amazon
+        </a>
+        <a href="https://www.higherperformancegroup.com/team-intelligence" target="_blank" rel="noopener" class="btn-ghost">
+         Book the TQ Workshop
+        </a>
+       </div>
+      </div>
+      <!-- BURNOUT FORCE -->
+      <div class="fdc" data-category="books" style="animation-delay:0.13s;">
+       <div class="fdc-glow glow-bf">
+       </div>
+       <div class="fdc-shelf">
+        <img src="https://i.postimg.cc/sfJqc4kq/bookimage.png" alt="The Burnout Force"/>
+       </div>
+       <div class="fdc-body">
+        <div class="fdc-tag tag-kn">
+         60-Min Keynote &middot; Full Campus
+        </div>
+        <div class="fdc-badge badge-kn">
+         Keynote
+        </div>
+        <h2 class="fdc-title">
+         The Burnout Force
+        </h2>
+        <p class="fdc-desc">
+         Seven forces fighting your team's collective intelligence: named, felt, and faced. The keynote that turns the stupifany into 48-hour action steps your team actually runs.
+        </p>
+       </div>
+       <div class="fdc-btns-wrap">
+        <a href="https://www.amazon.com/dp/B0GY7HYLJZ" target="_blank" rel="noopener" class="btn-amazon">
+         Order on Amazon
+        </a>
+        <a href="https://www.higherperformancegroup.com/burnout-force" target="_blank" rel="noopener" class="btn-ghost">
+         Book the Keynote
+        </a>
+       </div>
+      </div>
+     </div>
+     <!-- ═══ ALL BOOKS ═══ -->
+     <div class="sec-head" data-head="books" style="margin-top:36px;">
+      <span class="sec-title">
+       All Books
+      </span>
+      <div class="sec-rule">
+      </div>
+      <span class="sec-count">
+       9 titles
+      </span>
+     </div>
+     <div class="book-grid" id="book-grid">
+      <div class="book-card reveal" data-category="books" style="animation-delay:0s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/sxxdZm7d/TQ-MOCK.png" alt="The TQ Advantage"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-amazon">
+         On Amazon
+        </div>
+        <h3 class="book-title">
+         The TQ Advantage
+        </h3>
+        <p class="book-desc">
+         The Leadership Discovery System for Higher Performance Teams. Same room. Same frameworks. Translation tax eliminated: collective intelligence multiplied.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.amazon.com/dp/B0GQCYZMW1" target="_blank" rel="noopener" class="btn-order-amazon">
+          Order on Amazon
+         </a>
+         <a href="https://www.higherperformancegroup.com/team-intelligence" target="_blank" rel="noopener" class="btn-dl">
+          Book the TQ Workshop
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="books" style="animation-delay:0.08s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/sfJqc4kq/bookimage.png" alt="The Burnout Force"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-soon">
+         Coming Soon
+        </div>
+        <h3 class="book-title">
+         The Burnout Force
+        </h3>
+        <p class="book-desc">
+         Seven forces fighting your team's collective intelligence: named, felt, and faced. The keynote that turns the stupifany into 48-hour action steps.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.amazon.com/dp/B0GY7HYLJZ" target="_blank" rel="noopener" class="btn-order-amazon">
+          Order on Amazon
+         </a>
+         <a href="https://www.higherperformancegroup.com/burnout-force" target="_blank" rel="noopener" class="btn-dl">
+          Book the Keynote
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="books" style="animation-delay:0.16s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/MZ388k2N/daily-mock.png" alt="The Daily"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-amazon">
+         On Amazon
+        </div>
+        <h3 class="book-title">
+         The Daily
+        </h3>
+        <p class="book-desc">
+         Short daily reflections and practical wisdom for leaders who want to stay sharp, grounded, and intentional, not just in big moments but in the ordinary ones that shape culture over time.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.amazon.com/DAILY-Joe-Hill/dp/B0FTZSHCLJ" target="_blank" rel="noopener" class="btn-order-amazon">
+          Order on Amazon
+         </a>
+         <a href="https://www.higherperformancegroup.com/blog" target="_blank" rel="noopener" class="btn-dl">
+          Weekly Inspiration
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="books" style="animation-delay:0s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/5y9G8TSr/HPG-Book-Best-Fit-Mockup-1920w-(1).webp" alt="Team Best Fit"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-print">
+         Print + PDF
+        </div>
+        <h3 class="book-title">
+         Team {Best Fit}
+        </h3>
+        <p class="book-desc">
+         Align the right people to the right roles and build the trust that lets a team think and act as one. A practical framework for leaders who want to stop guessing and start truly knowing their team.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.lulu.com/shop/dr-joseph-hill/team-best-fit/paperback/product-74nzkm.html" class="btn-lulu" target="_blank" rel="noopener">
+          Order Your Book
+         </a>
+         <a aria-haspopup="dialog" href="#" class="btn-dl" onclick="openBookModal(event,'tbf','Team {Best Fit}')">
+          Download PDF
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="books" style="animation-delay:0.08s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/sxf85q46/Leading-A-Higher-Performance-System-Mockup-1920w.webp" alt="Leading A Higher Performance System"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-print">
+         Print + PDF
+        </div>
+        <h3 class="book-title">
+         Leading A Higher Performance System
+        </h3>
+        <p class="book-desc">
+         Build the operating rhythms, structures, and disciplines that turn inconsistent effort into reliable results. A field guide for leaders who need their system to perform, not just their people.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.lulu.com/shop/dr-joseph-hill/leading-a-higher-performance-system/paperback/product-95k6em5.html" class="btn-lulu" target="_blank" rel="noopener">
+          Order Your Book
+         </a>
+         <a aria-haspopup="dialog" href="#" class="btn-dl" onclick="openBookModal(event,'lahps','Leading A Higher Performance System')">
+          Download PDF
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="books" style="animation-delay:0.16s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/ZnYg62xw/NLPBook-Mockup-1920w-(1).webp" alt="Your Natural Leadership Profile"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-print">
+         Print + PDF
+        </div>
+        <h3 class="book-title">
+         Your Natural Leadership Profile
+        </h3>
+        <p class="book-desc">
+         Uncover the instincts, tendencies, and blind spots that shape the way you lead. When you understand your natural profile, you stop managing around your gaps and start leading from your strengths.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.lulu.com/shop/dr-joseph-hill/your-natural-leadership-profile/paperback/product-z6vjdm.html" class="btn-lulu" target="_blank" rel="noopener">
+          Order Your Book
+         </a>
+         <a aria-haspopup="dialog" href="#" class="btn-dl" onclick="openBookModal(event,'ynlp','Your Natural Leadership Profile')">
+          Download PDF
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="books" style="animation-delay:0s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/XqNh9mkK/Book-Mockup-Transparent-1920w.webp" alt="Leading From Peace"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-print">
+         Print + PDF
+        </div>
+        <h3 class="book-title">
+         Leading From Peace
+        </h3>
+        <p class="book-desc">
+         High performance doesn't require high stress. This book equips leaders to operate from a grounded, centered state: making better decisions, building healthier teams, and sustaining results without burnout.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.lulu.com/shop/dr-joseph-hill/leading-from-peace/paperback/product-vvp8kn.html" class="btn-lulu" target="_blank" rel="noopener">
+          Order Your Book
+         </a>
+         <a aria-haspopup="dialog" href="#" class="btn-dl" onclick="openBookModal(event,'lfp','Leading From Peace')">
+          Download PDF
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="books" style="animation-delay:0.08s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/kGMZWzvF/Cover-Mockup-1920w.webp" alt="Higher Performance Teams"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-print">
+         Print + PDF
+        </div>
+        <h3 class="book-title">
+         Higher Performance Teams
+        </h3>
+        <p class="book-desc">
+         The foundational playbook for teams that refuse to peak early and plateau. Practical frameworks and honest diagnostics for leaders building cultures where excellence is the standard, not the exception.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.lulu.com/shop/dr-joseph-hill/higher-performance-teams/paperback/product-v6jwz4.html" class="btn-lulu" target="_blank" rel="noopener">
+          Order Your Book
+         </a>
+         <a aria-haspopup="dialog" href="#" class="btn-dl" onclick="openBookModal(event,'hpt','Higher Performance Teams')">
+          Download PDF
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="books" style="animation-delay:0.16s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/Y02VQZzV/cancelaverage-book-1920w.webp" alt="#CancelAverage"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-print">
+         Print + PDF
+        </div>
+        <h3 class="book-title">
+         #CancelAverage
+        </h3>
+        <p class="book-desc">
+         Average hides in plain sight, in routines, expectations, and standards no one challenges. A direct, practical guide to identifying where good enough has taken root and replacing it with higher performance.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.lulu.com/shop/dr-joseph-hill/cancelaverage-a-practical-guide-to-accelerating-higher-team-performance/paperback/product-nvq2kgw.html" class="btn-lulu" target="_blank" rel="noopener">
+          Order Your Book
+         </a>
+         <a aria-haspopup="dialog" href="#" class="btn-dl" onclick="openBookModal(event,'ca','#CancelAverage')">
+          Download PDF
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- ═══ PLANNERS & MERCH ═══ -->
+     <div class="sec-head" data-head="planners" style="margin-top:36px;">
+      <span class="sec-title">
+       Planners &amp; Merchandise
+      </span>
+      <div class="sec-rule">
+      </div>
+      <span class="sec-count">
+       4 items
+      </span>
+     </div>
+     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;" id="merch-grid">
+      <div class="book-card reveal" data-category="planners" style="animation-delay:0s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/FzFq08V3/Hardcover-Planner-1920w.webp" alt="Hardcover Planner"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-print">
+         Planner
+        </div>
+        <h3 class="book-title">
+         Hardcover Planner
+        </h3>
+        <p class="book-desc">
+         The Semester Focus Planner: a 16-week productivity tool for structured goal achievement.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.lulu.com/shop/dr-joseph-hill/focus-planner-hardcover/hardcover/product-84rnv57.html" class="btn-lulu" target="_blank" rel="noopener">
+          Order Your Planner
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="planners" style="animation-delay:0.08s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/T12SnFJn/Spiral-Focus-Planner-1920w.webp" alt="Spiral Bound Planner"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-print">
+         Planner
+        </div>
+        <h3 class="book-title">
+         Spiral Bound Planner
+        </h3>
+        <p class="book-desc">
+         The Semester Focus Planner: a 16-week productivity tool for structured goal achievement.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.lulu.com/shop/dr-joseph-hill/focus-planner-spiral/paperback/product-nvgqk7y.html" class="btn-lulu" target="_blank" rel="noopener">
+          Order Your Planner
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="merch" style="animation-delay:0.16s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/gJHQXm8h/t-shirt-1920w.webp" alt="#cancelaverage t-shirt"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge" style="background:rgba(200,164,74,0.12);color:#c8a44a;border:1px solid rgba(200,164,74,0.28);">
+         Merch
+        </div>
+        <h3 class="book-title">
+         #cancelaverage t-shirt
+        </h3>
+        <p class="book-desc">
+         Average is a mindset. So is Higher Performance.
+        </p>
+        <div class="book-btns">
+         <a href="https://stores.inksoft.com/cancelaverage/shop/home" target="_blank" rel="noopener" class="btn-order-amazon" style="background:linear-gradient(135deg,#c8a44a 0%,#dab85e 100%);color:#0c1b30;box-shadow:0 4px 14px rgba(200,164,74,0.22);">
+          Order Your T-Shirt
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="book-card reveal" data-category="planners" style="animation-delay:0.16s;">
+       <div class="book-cover">
+        <img src="https://i.postimg.cc/5tTQtVPz/kl-pk.png" alt="" style="max-width:100%;max-height:none;width:100%;object-fit:cover;transform:none;"/>
+       </div>
+       <div class="book-body">
+        <div class="book-badge bb-amazon">
+         On Amazon
+        </div>
+        <h3 class="book-title">
+         The TEAM INSTITUTE Toolkit
+        </h3>
+        <p class="book-desc">
+         Everything your leadership team needs to run the TEAM INSTITUTE experience: frameworks, facilitation guides, and tools built for higher performance.
+        </p>
+        <div class="book-btns">
+         <a href="https://www.amazon.com/dp/B0H17MTMLY" target="_blank" rel="noopener" class="btn-order-amazon">
+          Order on Amazon
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- ═══ CTA BAND ═══ -->
+     <div class="cta-band">
+      <div class="cta-bg">
+      </div>
+      <div class="cta-orb">
+      </div>
+      <div class="cta-inner">
+       <div>
+        <div class="cta-kicker">
+         <span>
+         </span>
+         Looking for something specific?
+        </div>
+        <h2>
+         Not sure where
+         <br/>
+         to
+         <em>
+          start?
+         </em>
+        </h2>
+        <p>
+         Every leadership team is at a different place. Tell us where yours is, and we'll build a customized development plan with the right books, the right workshop, and the right sequence matched to where your team actually is right now.
+        </p>
+       </div>
+       <div class="cta-right">
+        <a href="https://calendly.com/higherperformance/30minutecoffee" target="_blank" rel="noopener" class="btn-cta">
+         Schedule a Call &rarr;
+        </a>
+        <span class="cta-note">
+         Complimentary &middot; 30 minutes
+        </span>
+       </div>
+      </div>
+     </div>
+    </main>
+    <script id="1173454237">
+     const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('reveal'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.07 });
+document.querySelectorAll('#book-grid .book-card').forEach((el, i) => {
+  el.style.animationDelay = `${(i % 3) * 0.08}s`;
+  io.observe(el);
+});
+document.querySelectorAll('#merch-grid .book-card, #merch-grid .merch-card').forEach((el, i) => {
+  el.style.animationDelay = `${(i % 4) * 0.08}s`;
+  io.observe(el);
+});
+function filter(cat, btn) {
+  document.querySelectorAll('.shelf-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+  btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
+  var idx = 0;
+  document.querySelectorAll('[data-category]').forEach(function(el) {
+    var visible = cat === 'all' || el.dataset.category === cat || (cat === 'planners' && el.dataset.category === 'merch');
+    if (!visible) { el.style.display = 'none'; el.classList.remove('reveal'); }
+    else {
+      el.style.display = '';
+      if (el.classList.contains('book-card') || el.classList.contains('merch-card')) {
+        el.classList.remove('reveal');
+        var cols = el.closest('#merch-grid') ? 4 : 3;
+        el.style.animationDelay = (idx % cols * 0.07) + 's';
+        (function(card) { requestAnimationFrame(function() { requestAnimationFrame(function() { card.classList.add('reveal'); }); }); })(el);
+      }
+      idx++;
+    }
+  });
+  document.querySelectorAll('[data-head]').forEach(head => {
+    var headKey = head.dataset.head;
+    var show;
+    if (cat === 'all') show = true;
+    else if (headKey === 'featured') show = cat === 'books';
+    else if (headKey === 'planners') show = (cat === 'planners' || cat === 'merch');
+    else show = headKey === cat;
+    head.style.display = show ? '' : 'none';
+    var next = head.nextElementSibling;
+    if (next) next.style.display = show ? '' : 'none';
+  });
+}
+(function() {
+  var countMap = {
+    books:    { sel: '.book-card[data-category="books"]',    sfx: 'title' },
+    planners: { sel: '.book-card[data-category="planners"]', sfx: 'format' },
+    merch:    { sel: '.merch-card[data-category="merch"]',   sfx: 'item' }
+  };
+  document.querySelectorAll('[data-head]').forEach(function(head) {
+    var key = head.dataset.head; if (!countMap[key]) return;
+    var m = countMap[key];
+    var n = document.querySelectorAll(m.sel).length;
+    var span = head.querySelector('.sec-count');
+    if (span) span.textContent = n + ' ' + m.sfx + (n !== 1 ? 's' : '');
+  });
+})();
+    </script>
+    <!-- ── Book Download Modal ── -->
+    <style id="1781421454">
+     .book-modal-overlay {
+        position: fixed; inset: 0;
+        background: rgba(5,12,22,0.88); backdrop-filter: blur(6px);
+        display: flex; align-items: center; justify-content: center;
+        z-index: 9999; opacity: 0; pointer-events: none;
+        transition: opacity 0.25s; padding: 24px; height: 0; overflow: hidden;
+      }
+      .book-modal-overlay.active { height: 100%; opacity: 1; pointer-events: all; }
+      .book-modal {
+        background: #162640; border: 1px solid rgba(200,164,74,0.2);
+        max-width: 480px; width: 100%; padding: 48px; position: relative;
+        transform: translateY(20px); transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+        box-shadow: 0 32px 80px rgba(0,0,0,0.5); border-radius: 4px;
+      }
+      .book-modal-overlay.active .book-modal { transform: translateY(0); }
+      .book-modal-close {
+        position: absolute; top: 20px; right: 20px;
+        background: none; border: none; color: #7a93ad;
+        cursor: pointer; font-size: 22px; line-height: 1; padding: 4px;
+        transition: color 0.2s;
+      }
+      .book-modal-close:hover { color: #fff; }
+      .book-modal-eyebrow {
+        font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+        color: #c8a44a; font-weight: 600; margin-bottom: 12px;
+        font-family: 'DM Sans', sans-serif;
+      }
+      .book-modal h3 {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 22px; font-weight: 500; line-height: 1.25;
+        color: #fff; margin-bottom: 24px;
+      }
+      .book-modal ._form { background: transparent !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+      .book-modal ._form-title { display: none !important; }
+      .book-modal ._form-content { padding: 0 !important; }
+      .book-modal ._form-fieldset { border: none !important; padding: 0 !important; margin: 0 !important; }
+      #bookAcFormContainer input[type="text"],
+      #bookAcFormContainer input[type="email"] {
+        background: rgba(255,255,255,0.05) !important;
+        border: 1px solid rgba(255,255,255,0.12) !important;
+        color: #ffffff !important; -webkit-text-fill-color: #ffffff !important;
+        font-family: 'DM Sans', sans-serif !important;
+        font-size: 14px !important; font-weight: 300 !important;
+        padding: 13px 16px !important; outline: none !important;
+        width: 100% !important; box-sizing: border-box !important; border-radius: 0 !important;
+      }
+      #bookAcFormContainer input::placeholder { color: #7a93ad !important; -webkit-text-fill-color: #7a93ad !important; }
+      #bookAcFormContainer input:-webkit-autofill,
+      #bookAcFormContainer input:-webkit-autofill:hover,
+      #bookAcFormContainer input:-webkit-autofill:focus {
+        -webkit-text-fill-color: #ffffff !important;
+        -webkit-box-shadow: 0 0 0px 1000px #1e3454 inset !important;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+      #bookAcFormContainer input:focus { border-color: #c8a44a !important; box-shadow: none !important; }
+      .book-modal ._form_element label { color: #7a93ad !important; font-size: 11px !important; font-family: 'DM Sans', sans-serif !important; }
+      .book-modal ._form_element { margin-bottom: 14px !important; padding: 0 !important; }
+      .book-modal ._submit {
+        background: #c8a44a !important; color: #0c1b30 !important;
+        border: none !important; padding: 15px 28px !important;
+        font-family: 'DM Sans', sans-serif !important; font-size: 12px !important;
+        font-weight: 600 !important; letter-spacing: 0.16em !important;
+        text-transform: uppercase !important; border-radius: 0 !important;
+        cursor: pointer !important; width: 100% !important; display: block !important; margin-top: 4px !important;
+      }
+      .book-modal ._submit:hover { background: #dab85e !important; }
+      .book-modal ._form-thank-you { color: #7a93ad !important; font-size: 11px !important; text-align: center !important; margin-top: 8px !important; }
+      #bookModalSuccess {
+        display: none; flex-direction: column; align-items: center;
+        gap: 16px; text-align: center; padding: 16px 0;
+      }
+    </style>
+    <div class="book-modal-overlay" id="bookModalOverlay" onclick="handleBookOverlayClick(event)">
+     <div class="book-modal">
+      <button class="book-modal-close" onclick="closeBookModal()" aria-label="Close">
+       &times;
+      </button>
+      <p class="book-modal-eyebrow">
+       Free Download
+      </p>
+      <h3 id="bookModalTitle">
+       Book PDF
+      </h3>
+      <div id="bookAcFormContainer">
+      </div>
+      <div id="bookModalSuccess" style="display:none; flex-direction:column; align-items:center; gap:16px; text-align:center; padding:16px 0;">
+       <div style="font-size:36px; color:#c8a44a;">
+        ✓
+       </div>
+       <p style="font-family:'Playfair Display',Georgia,serif; font-size:20px; color:#ffffff; font-weight:500; margin:0;">
+        You're all set!
+       </p>
+       <p style="color:#7a93ad; font-size:13px; font-weight:300; line-height:1.6; margin:0;">
+        Your download is starting now.
+        <br/>
+        Check your inbox for a copy.
+       </p>
+      </div>
+     </div>
+    </div>
+    <script id="1694262317">
+     var bookActiveDocId = null;
+      var bookDownloadInterval = null;
+      var BOOK_PDF_LINKS = {
+        tbf:   'https://drive.google.com/uc?export=download&id=18zfP3rlepygsKTZz91elpbx35lR6fOd0',
+        lahps: 'https://drive.google.com/uc?export=download&id=1ZMfhuc7lLS3vAWS8CCott_mOEs3Qutug',
+        ynlp:  'https://drive.google.com/uc?export=download&id=1NETBykG-vOgJhhK8qd6xdUL6AkauB92Z',
+        lfp:   'https://drive.google.com/uc?export=download&id=1bFHTi7q3UdZo3LwrNLlmuqk791uZqZ1Z',
+        hpt:   'https://drive.google.com/uc?export=download&id=1sZnb7udL8rPLBwfxdRY0p4DERaTCq3ey',
+        ca:    'https://drive.google.com/uc?export=download&id=14MSChSlYlppLbrcN0JWvIveWZdvf_uTo',
+      };
+      function startBookDownloadFieldUpdater(title) {
+        if (bookDownloadInterval) clearInterval(bookDownloadInterval);
+        bookDownloadInterval = setInterval(function() {
+          var f = document.querySelector('#bookAcFormContainer input[name="field[DOWNLOAD,0]"]');
+          if (f && f.value !== title) { f.value = title; f.defaultValue = title; }
+        }, 150);
+      }
+      function stopBookDownloadFieldUpdater() {
+        if (bookDownloadInterval) { clearInterval(bookDownloadInterval); bookDownloadInterval = null; }
+      }
+      function showBookThankYou() {
+        stopBookDownloadFieldUpdater();
+        var link = BOOK_PDF_LINKS[bookActiveDocId];
+        var formContent = document.querySelector('#bookAcFormContainer ._form-content');
+        var acThankYou = document.querySelector('#bookAcFormContainer ._form-thank-you');
+        if (formContent) formContent.style.display = 'none';
+        if (acThankYou) acThankYou.style.display = 'none';
+        var success = document.getElementById('bookModalSuccess');
+        if (success) success.style.display = 'flex';
+        if (link) setTimeout(function() { (window.top || window).location.href = link; }, 2000);
+      }
+      function initBookAcForm(title) {
+        var container = document.getElementById('bookAcFormContainer');
+        container.innerHTML = '<div class="_form_19"></div>';
+        var s = document.createElement('script');
+        s.src = 'https://higherperformancegroup.activehosted.com/f/embed.php?id=19&_=' + Date.now();
+        s.charset = 'utf-8';
+        s.onload = function() {
+          window._show_thank_you = showBookThankYou;
+          var observer = new MutationObserver(function(mutations, obs) {
+            var acForm = container.querySelector('form');
+            if (!acForm) return;
+            obs.disconnect();
+            acForm.querySelectorAll('input[type="text"], input[type="email"]').forEach(function(el) {
+              el.style.setProperty('color', '#ffffff', 'important');
+              el.style.setProperty('-webkit-text-fill-color', '#ffffff', 'important');
+              el.style.setProperty('background', 'rgba(255,255,255,0.05)', 'important');
+            });
+            function setDownloadValue() {
+              var f = acForm.querySelector('input[name="field[DOWNLOAD,0]"]') ||
+                      acForm.querySelector('input[type="hidden"][name*="DOWNLOAD"]');
+              if (!f) { f = document.createElement('input'); f.type = 'hidden'; f.name = 'field[DOWNLOAD,0]'; acForm.appendChild(f); }
+              if (title) { f.value = title; f.defaultValue = title; f.dispatchEvent(new Event('input',{bubbles:true})); f.dispatchEvent(new Event('change',{bubbles:true})); }
+            }
+            if (title) setDownloadValue();
+            var submitBtn = acForm.querySelector('._submit, input[type="submit"], button[type="submit"]');
+            if (submitBtn && title) submitBtn.addEventListener('mousedown', setDownloadValue);
+          });
+          observer.observe(container, { childList: true, subtree: true });
+        };
+        container.appendChild(s);
+      }
+      function openBookModal(e, docId, title) {
+        e.preventDefault();
+        bookActiveDocId = docId;
+        document.getElementById('bookModalTitle').textContent = title;
+        initBookAcForm(title);
+        startBookDownloadFieldUpdater(title);
+        var success = document.getElementById('bookModalSuccess');
+        if (success) success.style.display = 'none';
+        document.getElementById('bookModalOverlay').classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeBookModal() {
+        stopBookDownloadFieldUpdater();
+        document.getElementById('bookModalOverlay').classList.remove('active');
+        document.body.style.overflow = '';
+        bookActiveDocId = null;
+      }
+      function handleBookOverlayClick(e) {
+        if (e.target === document.getElementById('bookModalOverlay')) closeBookModal();
+      }
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeBookModal();
+      });
+    </script>
+   </div>
+  </div>
+ </div>
+</div>

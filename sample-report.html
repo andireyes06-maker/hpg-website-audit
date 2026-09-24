@@ -1,0 +1,1326 @@
+<!-- *** ADD OR EDIT HTML INSIDE OF THE dmRespCol DIVS, SEE DOCUMENTATION FOR GUIDELINES *** -->
+<div dm:templateorder="190" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" style="padding:0 !important;margin:0 !important;min-height:0 !important;border:none !important;background:transparent !important;overflow:hidden !important;" id="1816942199">
+ <div class="u_1343667755 dmRespRow" style="text-align:center;width:100% !important;max-width:100% !important;padding:0 !important;margin:0 !important;min-height:0 !important;" id="1343667755">
+  <div class="dmRespColsWrapper" style="width:100% !important;max-width:100% !important;padding:0 !important;margin:0 !important;min-height:0 !important;" id="1273148136">
+   <div class="dmRespCol small-12 u_1720106814 medium-12 large-12" style="width:100% !important;max-width:100% !important;padding:0 !important;margin:0 !important;min-height:0 !important;line-height:0 !important;font-size:0 !important;" id="1720106814">
+    <!-- *** INSERT YOUR HTML BELOW *** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" id="1758604435"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" id="1844322359"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" id="1706312000"/>
+    <style id="1764175963">
+     /* ── DUDA OVERRIDES ───────────────────────────────── */
+#1816942199.mainBorder { border:none !important; padding:0 !important; background:transparent !important; }
+.tqr-rpt { text-align:left !important; }
+.tqr-rpt * { text-align:left !important; }
+.tqr-rpt *, .tqr-rpt *::before, .tqr-rpt *::after { box-sizing:border-box; margin:0; padding:0; }
+/* Force 'DM Sans' as base font */
+.tqr-rpt,.tqr-rpt p,.tqr-rpt li,.tqr-rpt span,.tqr-rpt div,.tqr-rpt a,.tqr-rpt button { font-family:'DM Sans',sans-serif !important; }
+/* Force 'Playfair Display' on display elements */
+.tqr-rpt .hero-h1,.tqr-rpt .sec-heading,.tqr-rpt .summary-headline,.tqr-rpt .stat-value,.tqr-rpt .m-score-val,.tqr-rpt .lci-score,.tqr-rpt .bench-stat,.tqr-rpt .prep-institution,.tqr-rpt .footer-brand,.tqr-rpt .quote-text,.tqr-rpt .quote-mark,.tqr-rpt .brand-name { font-family:'Playfair Display',serif !important; }
+/* Force gold color */
+.tqr-rpt .eyebrow,.tqr-rpt .report-label,.tqr-rpt .stage-pill-text,.tqr-rpt .sample-banner-text,.tqr-rpt .quote-attr,.tqr-rpt .dev-text strong { color:#C9A84C !important; }
+.tqr-rpt .lci-score:not(.low) { color:#C9A84C !important; }
+.tqr-rpt .hero-h1 em { color:#C9A84C !important; font-style:italic !important; }
+/* Force white on headings */
+.tqr-rpt .sec-heading,.tqr-rpt .hero-h1,.tqr-rpt .summary-headline,.tqr-rpt .prep-institution,.tqr-rpt .arc-name,.tqr-rpt .m-name,.tqr-rpt .diag-item-name,.tqr-rpt .brand-name { color:#ffffff !important; }
+/* ── TOKENS ───────────────────────────────────────── */
+:root {
+  --navy:#0B1629; --card:#111e33; --card-active:#13213a;
+  --gold:#C9A84C; --gold-light:#E2C47A;
+  --red:#C0392B; --teal:#1D9E75; --blue:#378ADD; --purple:#7B68CC;
+  --white:#FFFFFF;
+  --t1:rgba(255,255,255,0.92); --t2:rgba(255,255,255,0.62);
+  --t3:rgba(255,255,255,0.38); --t4:rgba(255,255,255,0.22);
+  --rule:rgba(255,255,255,0.07); --grid:rgba(255,255,255,0.032);
+  --sp-lg:40px; --sp-md:24px; --sp-sm:16px;
+  --r-sm:6px; --r-md:10px; --r-lg:12px;
+}
+/* ── PAGE WRAPPER ─────────────────────────────────── */
+.tqr-rpt {
+  background:#0B1629 !important;
+  font-family:'DM Sans',sans-serif !important;
+  color:rgba(255,255,255,0.92) !important;
+  -webkit-font-smoothing:antialiased;
+  line-height:1;
+}
+/* ── SAMPLE BANNER ────────────────────────────────── */
+.tqr-rpt .sample-banner {
+  position:relative;
+  background:rgba(201,168,76,0.15);
+  border-bottom:1px solid rgba(201,168,76,0.35);
+  padding:9px 40px;
+  display:flex; align-items:center;
+  justify-content:center !important; gap:12px;
+  backdrop-filter:blur(6px);
+}
+.tqr-rpt .sample-banner-text {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--gold);
+}
+.tqr-rpt .sample-banner-dot {
+  width:4px; height:4px; border-radius:50%;
+  background:rgba(201,168,76,0.5);
+}
+/* ── LAYOUT ───────────────────────────────────────── */
+.tqr-rpt .report { max-width:900px; margin:0 auto; position:relative; }
+.tqr-rpt .report::before {
+  content:''; position:fixed; inset:0; pointer-events:none;
+  background-image:
+    linear-gradient(var(--grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:52px 52px; z-index:0;
+}
+.tqr-rpt section { position:relative; z-index:1; }
+.tqr-rpt .page-sep { height:1px; background:rgba(255,255,255,0.05); margin:48px var(--sp-lg); }
+.tqr-rpt .sec-wrap { padding:48px var(--sp-lg); }
+.tqr-rpt .sec-wrap-flush { padding:0 var(--sp-lg) 48px; }
+.tqr-rpt .sec-heading { font-family:'Playfair Display',serif; font-size:28px; font-weight:600; color:var(--white); margin-bottom:10px; }
+.tqr-rpt .sec-rule { height:1px; background:var(--rule); margin-bottom:28px; }
+.tqr-rpt .eyebrow { font-size:9px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; display:block; }
+.tqr-rpt .rule-gold { height:1px; background:rgba(201,168,76,0.22); margin-bottom:28px; }
+/* ── TOP BAR ──────────────────────────────────────── */
+.tqr-rpt .top-bar {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:var(--sp-md) var(--sp-lg) 20px;
+  border-bottom:1px solid var(--rule);
+}
+.tqr-rpt .brand { display:flex; align-items:center; gap:12px; }
+.tqr-rpt .logo-mark {
+  width:40px; height:40px; border:1.5px solid var(--gold);
+  border-radius:var(--r-sm); display:flex; align-items:flex-end;
+  justify-content:center !important; gap:3px; padding:7px 7px 6px; flex-shrink:0;
+}
+.tqr-rpt .logo-bar { background:var(--gold); border-radius:1px; width:5px; }
+.tqr-rpt .brand-name { font-family:'Playfair Display',serif; font-size:13px; font-weight:500; color:var(--white); letter-spacing:0.01em; line-height:1.3; }
+.tqr-rpt .brand-sub { font-size:8.5px; color:var(--t3); letter-spacing:0.12em; text-transform:uppercase; }
+.tqr-rpt .top-bar-meta { text-align:right !important; line-height:1.6; }
+.tqr-rpt .meta-line { font-size:10px; color:var(--t2); letter-spacing:0.05em; }
+.tqr-rpt .meta-line.dim { color:var(--t3); font-size:9px; }
+/* ── COVER ────────────────────────────────────────── */
+.tqr-rpt .report-label-row { padding:28px var(--sp-lg) 0; display:flex; align-items:center; gap:16px; }
+.tqr-rpt .report-label { font-size:9px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); white-space:nowrap; }
+.tqr-rpt .report-label-rule { flex:1; height:1px; background:rgba(201,168,76,0.25); max-width:200px; }
+.tqr-rpt .hero-block { padding:28px var(--sp-lg) 0; }
+.tqr-rpt .hero-h1 { font-family:'Playfair Display',serif; font-size:clamp(36px,6vw,54px); font-weight:400; line-height:1.1; color:var(--white); }
+.tqr-rpt .hero-h1 em { color:var(--gold); font-style:italic; }
+.tqr-rpt .hero-sub { margin-top:18px; font-size:13px; color:var(--t3); letter-spacing:0.04em; }
+.tqr-rpt .hero-sub span { margin:0 6px; color:rgba(255,255,255,0.16); }
+.tqr-rpt .h-rule { margin:32px var(--sp-lg) 0; height:1px; background:var(--rule); }
+.tqr-rpt .prepared-block { padding:24px var(--sp-lg) 0; }
+.tqr-rpt .prep-label { font-size:9px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--t3); margin-bottom:10px; }
+.tqr-rpt .prep-box { background:rgba(255,255,255,0.035); border:1px solid var(--rule); border-radius:var(--r-sm); padding:18px 22px; }
+.tqr-rpt .prep-institution { font-family:'Playfair Display',serif; font-size:18px; font-weight:500; color:var(--white); margin-bottom:6px; }
+.tqr-rpt .prep-detail { font-size:12px; color:var(--t2); display:flex; gap:18px; flex-wrap:wrap; }
+.tqr-rpt .prep-detail span { display:flex; align-items:center; gap:6px; }
+.tqr-rpt .prep-dot { width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0; }
+.tqr-rpt .score-row { padding:32px var(--sp-lg) 0; display:grid; grid-template-columns:190px 1fr; gap:36px; align-items:start; }
+.tqr-rpt .ring-svg { width:160px; height:160px; }
+.tqr-rpt .ring-track { fill:none; stroke:rgba(255,255,255,0.06); stroke-width:10; }
+.tqr-rpt .ring-fill { fill:none; stroke:var(--gold); stroke-width:10; stroke-linecap:round; stroke-dasharray:376.99; stroke-dashoffset:376.99; transform:rotate(-90deg); transform-origin:50% 50%; transition:stroke-dashoffset 1.4s cubic-bezier(0.4,0,0.2,1); }
+.tqr-rpt .ring-score { font-family:'Playfair Display',serif; font-size:38px; fill:var(--white); }
+.tqr-rpt .ring-denom { font-family:'DM Sans',sans-serif; font-size:11px; fill:rgba(255,255,255,0.38); }
+.tqr-rpt .ring-lbl { font-family:'DM Sans',sans-serif; font-size:8px; fill:var(--gold); letter-spacing:0.14em; text-transform:uppercase; }
+.tqr-rpt .score-summary { padding-top:2px; }
+.tqr-rpt .stage-pill { display:inline-flex; align-items:center; gap:8px; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.28); border-radius:20px; padding:5px 14px 5px 10px; margin-bottom:16px; }
+.tqr-rpt .stage-pill-dot { width:6px; height:6px; border-radius:50%; background:var(--gold); }
+.tqr-rpt .stage-pill-text { font-size:10px; font-weight:600; letter-spacing:0.09em; text-transform:uppercase; color:var(--gold); }
+.tqr-rpt .summary-headline { font-family:'Playfair Display',serif; font-size:24px; font-weight:600; color:var(--white); line-height:1.2; margin-bottom:14px; }
+.tqr-rpt .summary-body { font-size:13px; color:var(--t2); line-height:1.85; }
+.tqr-rpt .stats-row { margin:44px var(--sp-lg) 0; padding-top:28px; border-top:1px solid var(--rule); display:grid; grid-template-columns:repeat(4,1fr); }
+.tqr-rpt .stat-item { display:flex; flex-direction:column; gap:5px; padding-left:20px; border-left:1px solid var(--rule); }
+.tqr-rpt .stat-item:first-child { border-left:none; padding-left:0; }
+.tqr-rpt .stat-value { font-family:'Playfair Display',serif; font-size:30px; font-weight:400; color:var(--white); line-height:1; }
+.tqr-rpt .stat-value.sm { font-size:20px; }
+.tqr-rpt .stat-label { font-size:10px; color:var(--t3); letter-spacing:0.03em; }
+/* ── STAGE ARC ────────────────────────────────────── */
+.tqr-rpt .stage-arc-wrap { padding:40px 32px 48px; position:relative; }
+.tqr-rpt .arc-outer { position:relative; padding-top:26px; }
+.tqr-rpt .arc-pill {
+  position:absolute; top:0; left:calc(25% + 12.5% - 2px); transform:translateX(-50%);
+  background:var(--gold); color:#110e00;
+  font-size:9.5px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase;
+  padding:5px 16px; border-radius:20px; white-space:nowrap; z-index:10;
+}
+.tqr-rpt .arc-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; align-items:stretch; }
+.tqr-rpt .arc-card { background:var(--card); border:1px solid var(--rule); border-radius:var(--r-lg); padding:20px 18px 18px; display:flex; flex-direction:column; }
+.tqr-rpt .arc-card.active { border:2px solid var(--gold); background:var(--card-active); }
+.tqr-rpt .arc-bar { width:32px; height:3px; border-radius:2px; margin-bottom:14px; }
+.tqr-rpt .arc-stage { font-size:9px; letter-spacing:0.05em; color:var(--t3); margin-bottom:6px; }
+.tqr-rpt .arc-name { font-size:16px; font-weight:500; color:var(--white); line-height:1.2; margin-bottom:4px; }
+.tqr-rpt .arc-tagline { font-size:11px; color:var(--t3); font-style:italic; margin-bottom:16px; }
+.tqr-rpt .arc-rule { height:1px; background:var(--rule); margin-bottom:12px; }
+.tqr-rpt .arc-bullets { list-style:none; padding:0; margin:0; flex:1; }
+.tqr-rpt .arc-bullets li { font-size:11.5px; color:var(--t2); line-height:1.65; padding:3px 0 3px 16px; position:relative; }
+.tqr-rpt .arc-bullets li::before { content:''; position:absolute; left:2px; top:10px; width:6px; height:6px; border-radius:50%; }
+.tqr-rpt .c-red .arc-bullets li::before { background:var(--red); }
+.tqr-rpt .c-gold .arc-bullets li::before { background:var(--gold); }
+.tqr-rpt .c-teal .arc-bullets li::before { background:var(--teal); }
+.tqr-rpt .c-blue .arc-bullets li::before { background:var(--blue); }
+.tqr-rpt .signal-box { margin-top:auto; border-radius:8px; padding:12px 13px; }
+.tqr-rpt .signal-label { font-size:8.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:6px; }
+.tqr-rpt .signal-text { font-size:11.5px; line-height:1.65; }
+/* ── FIVE LEAD MEASURES ───────────────────────────── */
+.tqr-rpt .measures-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+.tqr-rpt .measures-bottom { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.tqr-rpt .m-card { background:var(--card); border:1px solid var(--rule); border-radius:var(--r-lg); padding:22px 22px 20px; display:flex; flex-direction:column; }
+.tqr-rpt .m-topbar { width:100%; height:3px; border-radius:2px; background:var(--rule); margin-bottom:18px; position:relative; overflow:hidden; }
+.tqr-rpt .m-topbar-fill { position:absolute; left:0; top:0; bottom:0; border-radius:2px; }
+.tqr-rpt .m-header { display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:4px; }
+.tqr-rpt .m-name { font-size:18px; font-weight:700; color:var(--white); line-height:1.1; }
+.tqr-rpt .m-score-val { font-family:'Playfair Display',serif; font-size:30px; font-weight:400; line-height:1; flex-shrink:0; margin-left:10px; }
+.tqr-rpt .m-score-denom { font-size:12px; color:var(--t3); font-weight:400; font-family:'DM Sans',sans-serif; }
+.tqr-rpt .m-subtitle { font-size:11.5px; color:var(--t3); margin-bottom:12px; line-height:1.4; }
+.tqr-rpt .m-pill { display:inline-block; border:1px solid rgba(255,255,255,0.1); border-radius:4px; padding:4px 10px; font-size:9px; font-weight:600; letter-spacing:0.09em; text-transform:uppercase; color:var(--t3); margin-bottom:12px; width:fit-content; }
+.tqr-rpt .m-progbar { width:100%; height:3px; border-radius:2px; background:rgba(255,255,255,0.06); margin-bottom:16px; position:relative; overflow:hidden; }
+.tqr-rpt .m-progbar-fill { position:absolute; left:0; top:0; bottom:0; border-radius:2px; }
+.tqr-rpt .m-bullets { list-style:none; padding:0; margin:0; flex:1; }
+.tqr-rpt .m-bullets li { font-size:12px; color:var(--t2); line-height:1.65; padding:3px 0 3px 16px; position:relative; }
+.tqr-rpt .m-bullets li::before { content:''; position:absolute; left:2px; top:10px; width:6px; height:6px; border-radius:50%; }
+.tqr-rpt .m-blue .m-bullets li::before { background:var(--blue); }
+.tqr-rpt .m-purple .m-bullets li::before { background:var(--purple); }
+.tqr-rpt .m-gold .m-bullets li::before { background:var(--gold); }
+.tqr-rpt .m-teal .m-bullets li::before { background:var(--teal); }
+.tqr-rpt .radar-card { background:var(--card); border:1px solid var(--rule); border-radius:var(--r-lg); padding:28px 22px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.tqr-rpt .radar-label { font-size:10px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--t3); margin-bottom:20px; text-align:center !important; }
+/* ── LCI ──────────────────────────────────────────── */
+.tqr-rpt .lci-row { background:var(--card); border:1px solid var(--rule); border-radius:8px; padding:15px 20px; display:grid; grid-template-columns:28px 200px 1fr 56px 130px; align-items:center; gap:16px; margin-bottom:8px; }
+.tqr-rpt .lci-num { font-size:10px; color:var(--t3); letter-spacing:0.06em; }
+.tqr-rpt .lci-name { font-size:13.5px; font-weight:500; color:var(--t1); }
+.tqr-rpt .lci-bar-track { height:6px; background:rgba(255,255,255,0.07); border-radius:3px; position:relative; overflow:hidden; }
+.tqr-rpt .lci-bar-fill { position:absolute; left:0; top:0; bottom:0; border-radius:3px; background:var(--gold); }
+.tqr-rpt .lci-bar-fill.low { background:var(--red); }
+.tqr-rpt .lci-score { font-family:'Playfair Display',serif; font-size:22px; font-weight:400; color:var(--gold); text-align:right !important; }
+.tqr-rpt .lci-score.low { color:var(--red); }
+.tqr-rpt .lci-freq { font-size:11px; font-weight:500; color:var(--t3); text-align:right !important; }
+.tqr-rpt .lci-freq.low { color:var(--red); }
+.tqr-rpt .dev-note { margin-top:14px; background:rgba(201,168,76,0.05); border:1px solid rgba(201,168,76,0.16); border-radius:8px; padding:16px 18px; display:flex; gap:14px; align-items:flex-start; }
+.tqr-rpt .dev-diamond { width:9px; height:9px; background:var(--gold); transform:rotate(45deg); flex-shrink:0; margin-top:4px; }
+.tqr-rpt .dev-text { font-size:12px; color:var(--t2); line-height:1.78; }
+.tqr-rpt .dev-text strong { color:var(--gold); font-weight:600; }
+/* ── DIAGNOSTIC ───────────────────────────────────── */
+.tqr-rpt .diag-panels { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.tqr-rpt .diag-panel { border-radius:var(--r-md); padding:24px 22px 26px; display:flex; flex-direction:column; }
+.tqr-rpt .diag-strengths { background:rgba(29,158,117,0.06); border:1px solid rgba(29,158,117,0.26); }
+.tqr-rpt .diag-development { background:rgba(201,168,76,0.05); border:1px solid rgba(201,168,76,0.26); }
+.tqr-rpt .diag-panel-label { font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; margin-bottom:18px; padding-bottom:12px; border-bottom:1px solid var(--rule); }
+.tqr-rpt .diag-strengths .diag-panel-label { color:var(--teal); }
+.tqr-rpt .diag-development .diag-panel-label { color:var(--gold); }
+.tqr-rpt .diag-item { display:flex; gap:12px; padding:13px 0; border-bottom:1px solid rgba(255,255,255,0.04); align-items:flex-start; }
+.tqr-rpt .diag-item:last-child { border-bottom:none; padding-bottom:0; }
+.tqr-rpt .diag-item:first-of-type { padding-top:0; }
+.tqr-rpt .diag-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; margin-top:4px; }
+.tqr-rpt .diag-strengths .diag-dot { background:var(--teal); }
+.tqr-rpt .diag-development .diag-dot { background:var(--gold); }
+.tqr-rpt .diag-item-body { font-size:12.5px; color:var(--t2); line-height:1.72; }
+.tqr-rpt .diag-item-name { font-weight:600; color:var(--t1); }
+.tqr-rpt .chip { display:inline-block; font-size:11px; font-weight:700; padding:1px 6px; border-radius:4px; margin:0 1px; }
+.tqr-rpt .chip-teal { background:rgba(29,158,117,0.16); color:#4ecfa0; }
+.tqr-rpt .chip-gold { background:rgba(201,168,76,0.16); color:#e0c070; }
+/* ── BENCHMARKS ───────────────────────────────────── */
+.tqr-rpt .bench-intro { font-size:13px; color:var(--t3); line-height:1.82; max-width:680px; margin-bottom:28px; }
+.tqr-rpt .bench-grid { display:grid; grid-template-columns:repeat(3,1fr); }
+.tqr-rpt .bench-cell { padding:34px 28px 38px; display:flex; flex-direction:column; border-right:1px solid var(--rule); position:relative; }
+.tqr-rpt .bench-cell:last-child { border-right:none; }
+.tqr-rpt .bench-cell::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--red); }
+.tqr-rpt .bench-arrow { font-size:14px; color:var(--red); margin-bottom:10px; }
+.tqr-rpt .bench-stat { font-family:'Playfair Display',serif; font-size:48px; font-weight:400; color:var(--red); line-height:1; margin-bottom:12px; }
+.tqr-rpt .bench-label { font-size:10.5px; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:rgba(255,255,255,0.68); margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid var(--rule); }
+.tqr-rpt .bench-body { font-size:12.5px; color:var(--t2); line-height:1.8; flex:1; }
+.tqr-rpt .bench-source { padding:18px var(--sp-lg) 0; font-size:10px; color:var(--t4); font-style:italic; letter-spacing:0.02em; border-top:1px solid var(--rule); }
+/* ── CLOSE ────────────────────────────────────────── */
+.tqr-rpt .cta-bar { background:#0d1828; border:1px solid var(--rule); border-radius:var(--r-md); margin:0 var(--sp-lg); padding:22px 28px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.tqr-rpt .cta-text { font-size:13px; color:var(--t2); line-height:1.75; max-width:500px; }
+.tqr-rpt .cta-btn { flex-shrink:0; background:var(--gold); color:#0a0e18; font-family:'DM Sans',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:13px 22px; border-radius:var(--r-sm); border:none; cursor:pointer; text-decoration:none; display:inline-block; transition:background 0.2s; }
+.tqr-rpt .cta-btn:hover { background:var(--gold-light); }
+.tqr-rpt .quote-block { padding:68px var(--sp-lg) 60px; text-align:center !important; border-top:1px solid var(--rule); margin-top:48px; }
+.tqr-rpt .quote-mark { font-family:'Playfair Display',serif; font-size:72px; line-height:0.3; color:rgba(201,168,76,0.18); display:block; margin-bottom:28px; text-align:center !important; }
+.tqr-rpt .quote-text { font-family:'Playfair Display',serif; font-size:clamp(20px,2.8vw,27px); font-style:italic; font-weight:400; color:rgba(255,255,255,0.85); line-height:1.5; max-width:600px; margin:0 auto 22px; text-align:center !important; }
+.tqr-rpt .quote-attr { font-size:9.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); text-align:center !important; }
+.tqr-rpt .report-footer { border-top:1px solid var(--rule); padding:26px var(--sp-lg); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; }
+.tqr-rpt .footer-brand { font-family:'Playfair Display',serif; font-size:13px; color:var(--t2); }
+.tqr-rpt .footer-badge { display:inline-block; border:1px solid rgba(255,255,255,0.13); border-radius:4px; padding:3px 9px; font-size:9px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--t3); margin-top:5px; }
+.tqr-rpt .footer-right { font-size:10.5px; color:var(--t3); text-align:right !important; line-height:1.7; }
+.tqr-rpt .footer-right a { color:rgba(201,168,76,0.65); text-decoration:none; }
+/* ── RESPONSIVE ───────────────────────────────────── */
+@media (max-width:680px) {
+  .tqr-rpt .sec-wrap,.tqr-rpt .sec-wrap-flush { padding-left:20px; padding-right:20px; }
+  .tqr-rpt .top-bar,.tqr-rpt .report-label-row,.tqr-rpt .hero-block,.tqr-rpt .h-rule,.tqr-rpt .prepared-block,.tqr-rpt .score-row,.tqr-rpt .stats-row { padding-left:20px; padding-right:20px; }
+  .tqr-rpt .score-row { grid-template-columns:1fr; }
+  .tqr-rpt .stats-row { grid-template-columns:1fr 1fr; gap:20px; }
+  .tqr-rpt .stat-item { border-left:none; padding-left:0; }
+  .tqr-rpt .arc-grid { grid-template-columns:repeat(auto-fit, minmax(min(100%, max(150px, calc(50% - 5px))), 1fr)); }
+  .tqr-rpt .arc-pill { left:50%; }
+  .tqr-rpt .measures-grid,.tqr-rpt .measures-bottom,.tqr-rpt .diag-panels,.tqr-rpt .bench-grid { grid-template-columns:1fr; }
+  .tqr-rpt .lci-row { grid-template-columns:24px 1fr 56px 100px; }
+  .tqr-rpt .lci-bar-track { display:none; }
+  .tqr-rpt .cta-bar { flex-direction:column; align-items:flex-start; margin:0 20px; }
+  .tqr-rpt .report-footer,.tqr-rpt .quote-block,.tqr-rpt .bench-source { padding-left:20px; padding-right:20px; }
+  .tqr-rpt .page-sep { margin-left:20px; margin-right:20px; }
+}
+/* Below ~400px the fixed score/frequency columns leave the behaviour name no room and push the frequency label off-screen: drop the label under the name. */
+@media (max-width:399px) {
+  .tqr-rpt .lci-row { grid-template-columns:24px minmax(0,1fr) auto; row-gap:4px; }
+  .tqr-rpt .lci-freq { grid-column:2 / -1; text-align:left !important; }
+}
+/* ── audit-002: shared accessibility + UX layer (focus ring, press state, anchor offset, new-tab cue, tap area, reduced motion) ── */
+#dmRoot #dm :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible, #dm :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible { outline: 3px solid #c9a84c !important; outline-offset: 2px !important; box-shadow: 0 0 0 2px #08152a !important; }
+#dm :is(button, input[type="submit"], a[class*="btn"], a[class*="cta"], a[class*="Btn"]):active { transform: translateY(1px) !important; filter: brightness(0.94); }
+#dm [id] { scroll-margin-top: 80px; }
+#dm .dmBody :is(p, li, cite, small) a[target="_blank"]:not([class*="btn"]):not(:has(img, svg))::after { content: "\2197"; content: "\2197" / " (opens in a new tab)"; display: inline-block; margin-left: 0.2em; font-size: 0.8em; text-decoration: none; }
+#dm .dmBody :is(p, li, cite, small) a:not([class*="btn"]):not([class*="cta"]) { padding-block: 10px; }
+@media (prefers-reduced-motion: reduce) { #dm *, #dm *::before, #dm *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+    </style>
+    <div class="tqr-rpt" id="1489961964">
+     <div class="sample-banner">
+      <div class="sample-banner-dot">
+      </div>
+      <span class="sample-banner-text">
+       Sample Report, Illustrative Data Only
+      </span>
+      <div class="sample-banner-dot">
+      </div>
+      <span class="sample-banner-text">
+       Not Based on Any Real Institution
+      </span>
+      <div class="sample-banner-dot">
+      </div>
+     </div>
+     <div class="report">
+      <!-- PAGE 1 — COVER -->
+      <section>
+       <div class="top-bar">
+        <div class="brand">
+         <div class="logo-mark" aria-hidden="true">
+          <div class="logo-bar" style="height:8px;">
+          </div>
+          <div class="logo-bar" style="height:14px;">
+          </div>
+          <div class="logo-bar" style="height:10px;">
+          </div>
+          <div class="logo-bar" style="height:18px;">
+          </div>
+         </div>
+         <div>
+          <div class="brand-name">
+           Higher Performance Group
+          </div>
+          <div class="brand-sub">
+           Leadership Team Development
+          </div>
+         </div>
+        </div>
+        <div class="top-bar-meta">
+         <div class="meta-line">
+          Team Intelligence Assessment&trade;
+         </div>
+         <div class="meta-line dim">
+          March 2026 &nbsp;&middot;&nbsp; Confidential &middot; Executive Review Only
+         </div>
+        </div>
+       </div>
+       <div class="report-label-row">
+        <span class="report-label">
+         Team Intelligence Report
+        </span>
+        <div class="report-label-rule">
+        </div>
+       </div>
+       <div class="hero-block">
+        <h1 class="hero-h1">
+         Your Team
+         <em>
+          Intelligence
+          <br/>
+          Profile
+         </em>
+        </h1>
+        <p class="hero-sub">
+         Five Lead Measures
+         <span>
+          &middot;
+         </span>
+         Leader Competency Index
+         <span>
+          &middot;
+         </span>
+         Your Stage on the TQ Arc
+        </p>
+       </div>
+       <div class="h-rule">
+       </div>
+       <div class="prepared-block">
+        <div class="prep-label">
+         Prepared for
+        </div>
+        <div class="prep-box">
+         <div class="prep-institution">
+          Sample Institution
+         </div>
+         <div class="prep-detail">
+          <span>
+           <span class="prep-dot">
+           </span>
+           Sample Leader
+          </span>
+          <span>
+           <span class="prep-dot">
+           </span>
+           March 2026
+          </span>
+          <span>
+           <span class="prep-dot">
+           </span>
+           19 Respondents
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="score-row">
+        <div>
+         <svg class="ring-svg" viewbox="0 0 160 160" aria-label="TQ Score 5.6 out of 10">
+          <circle class="ring-track" cx="80" cy="80" r="60">
+          </circle>
+          <circle class="ring-fill" cx="80" cy="80" r="60" id="ringFill">
+          </circle>
+          <text class="ring-score" x="80" y="72" text-anchor="middle" dominant-baseline="middle">
+           5.6
+          </text>
+          <text class="ring-denom" x="80" y="94" text-anchor="middle">
+           out of 10
+          </text>
+          <text class="ring-lbl" x="80" y="113" text-anchor="middle">
+           TQ Score
+          </text>
+         </svg>
+        </div>
+        <div class="score-summary">
+         <div class="stage-pill">
+          <div class="stage-pill-dot">
+          </div>
+          <span class="stage-pill-text">
+           Stage 2 &middot; Emerging Integration
+          </span>
+         </div>
+         <div class="summary-headline">
+          Capable Team. Partial Capacity.
+         </div>
+         <p class="summary-body">
+          A TQ Score of 5.6 places this team in Stage 2: Emerging Integration. The talent is real. The strategic direction is clear. What the data reveals is that intelligence is not yet multiplying across all five dimensions. It is moving through some channels and fragmenting in others. Stage 2 teams are one focused development cycle away from breakthrough performance.
+         </p>
+        </div>
+       </div>
+       <div class="stats-row">
+        <div class="stat-item">
+         <div class="stat-value">
+          19
+         </div>
+         <div class="stat-label">
+          Respondents
+         </div>
+        </div>
+        <div class="stat-item">
+         <div class="stat-value">
+          57
+         </div>
+         <div class="stat-label">
+          Questions Assessed
+         </div>
+        </div>
+        <div class="stat-item">
+         <div class="stat-value">
+          6
+         </div>
+         <div class="stat-label">
+          Dimensions Measured
+         </div>
+        </div>
+        <div class="stat-item">
+         <div class="stat-value sm">
+          March 3 &ndash; March 17
+         </div>
+         <div class="stat-label">
+          Assessment Window
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- PAGE 2 — STAGE ARC -->
+      <section>
+       <div class="page-sep">
+       </div>
+       <div class="stage-arc-wrap">
+        <div class="arc-outer">
+         <div class="arc-pill">
+          &larr; Your Team Is Here
+         </div>
+         <div class="arc-grid">
+          <div class="arc-card c-red">
+           <div class="arc-bar" style="background:var(--red);">
+           </div>
+           <div class="arc-stage">
+            STAGE 1 &nbsp;&middot;&nbsp; 1.0 &ndash; 4.0
+           </div>
+           <div class="arc-name">
+            Intelligence Fragmentation
+           </div>
+           <div class="arc-tagline">
+            Impossible stays impossible
+           </div>
+           <div class="arc-rule">
+           </div>
+           <ul class="arc-bullets">
+            <li>
+             Behaviors score 'never' to 'sometimes' across most dimensions
+            </li>
+            <li>
+             Trust, communication, and alignment are all failing at once
+            </li>
+            <li>
+             Each breakdown amplifies the others: dysfunction compounds
+            </li>
+            <li>
+             Output depends on a few individuals, not a reliable system
+            </li>
+            <li>
+             Sustained performance is not possible without intervention
+            </li>
+           </ul>
+           <div class="signal-box" style="background:rgba(192,57,43,0.12);border:1px solid rgba(192,57,43,0.26);">
+            <div class="signal-label" style="color:var(--red);">
+             Performance Signal
+            </div>
+            <div class="signal-text" style="color:rgba(255,155,140,0.9);">
+             Energy is consumed by friction and re-work rather than outcomes. Performance collapses under disruption.
+            </div>
+           </div>
+          </div>
+          <div class="arc-card active c-gold">
+           <div class="arc-bar" style="background:var(--gold);">
+           </div>
+           <div class="arc-stage">
+            STAGE 2 &nbsp;&middot;&nbsp; 4.1 &ndash; 5.9
+           </div>
+           <div class="arc-name">
+            Emerging Integration
+           </div>
+           <div class="arc-tagline">
+            Possible but difficult
+           </div>
+           <div class="arc-rule">
+           </div>
+           <ul class="arc-bullets" style="min-height:220px;">
+            <li>
+             Some dimensions function well; others drag the team down
+            </li>
+            <li>
+             Good work gets produced, but not consistently
+            </li>
+            <li>
+             Results depend on conditions, not on reliable systems
+            </li>
+            <li>
+             Individual output regularly outpaces what the team produces
+            </li>
+            <li>
+             Coordination costs are high and disruption destabilizes
+            </li>
+           </ul>
+           <div class="signal-box" style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.26);">
+            <div class="signal-label" style="color:var(--gold);">
+             Performance Signal
+            </div>
+            <div class="signal-text" style="color:rgba(240,210,130,0.9);">
+             Output fluctuates with circumstances. The team has potential but lacks the systems to realize it consistently.
+            </div>
+           </div>
+          </div>
+          <div class="arc-card c-teal">
+           <div class="arc-bar" style="background:var(--teal);">
+           </div>
+           <div class="arc-stage">
+            STAGE 3 &nbsp;&middot;&nbsp; 6.0 &ndash; 7.9
+           </div>
+           <div class="arc-name">
+            Systematic Multiplication
+           </div>
+           <div class="arc-tagline">
+            Breakthrough becoming normal
+           </div>
+           <div class="arc-rule">
+           </div>
+           <ul class="arc-bullets">
+            <li>
+             'Often' is the consistent answer, across all five dimensions
+            </li>
+            <li>
+             Trust is established and communication is reliably clear
+            </li>
+            <li>
+             Execution holds across changing conditions, not just ideal ones
+            </li>
+            <li>
+             The team produces more than the sum of its individual parts
+            </li>
+            <li>
+             Disruption is absorbed rather than destabilizing performance
+            </li>
+           </ul>
+           <div class="signal-box" style="background:rgba(29,158,117,0.1);border:1px solid rgba(29,158,117,0.24);">
+            <div class="signal-label" style="color:var(--teal);">
+             Performance Signal
+            </div>
+            <div class="signal-text" style="color:rgba(110,225,180,0.9);">
+             Collective intelligence is a measurable advantage. Coordination is efficient and results are durable.
+            </div>
+           </div>
+          </div>
+          <div class="arc-card c-blue">
+           <div class="arc-bar" style="background:var(--blue);">
+           </div>
+           <div class="arc-stage">
+            STAGE 4 &nbsp;&middot;&nbsp; 8.0 &ndash; 10.0
+           </div>
+           <div class="arc-name">
+            Institutional Transformation
+           </div>
+           <div class="arc-tagline">
+            Inevitable as default
+           </div>
+           <div class="arc-rule">
+           </div>
+           <ul class="arc-bullets">
+            <li>
+             'Usually' to 'always' is the answer across all five dimensions
+            </li>
+            <li>
+             Performance is self-sustaining, not dependent on management
+            </li>
+            <li>
+             The culture is self-correcting; the team fixes its own gaps
+            </li>
+            <li>
+             Results persist without external reinforcement or ideal conditions
+            </li>
+            <li>
+             This represents the top 10&ndash;15% of all teams ever assessed
+            </li>
+           </ul>
+           <div class="signal-box" style="background:rgba(55,138,221,0.1);border:1px solid rgba(55,138,221,0.24);">
+            <div class="signal-label" style="color:var(--blue);">
+             Performance Signal
+            </div>
+            <div class="signal-text" style="color:rgba(140,200,255,0.9);">
+             High performance outlasts any single leader. Team practices are embedded in the culture, not the person.
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- PAGE 3 — FIVE LEAD MEASURES -->
+      <section>
+       <div class="page-sep">
+       </div>
+       <div class="sec-wrap">
+        <h2 class="sec-heading">
+         Five Lead Measures of Culture
+        </h2>
+        <div class="sec-rule">
+        </div>
+        <div class="measures-grid">
+         <div class="m-card m-blue">
+          <div class="m-topbar">
+           <div class="m-topbar-fill" style="background:var(--blue);width:55%;">
+           </div>
+          </div>
+          <div class="m-header">
+           <div>
+            <div class="m-name">
+             Communication
+            </div>
+            <div class="m-subtitle">
+             Quality and flow of information exchange
+            </div>
+           </div>
+           <div style="text-align:right !important;">
+            <span class="m-score-val" style="color:var(--blue);">
+             5.5
+            </span>
+            <span class="m-score-denom">
+             / 10
+            </span>
+           </div>
+          </div>
+          <div class="m-pill">
+           Stage 2 &middot; Emerging Integration
+          </div>
+          <div class="m-progbar">
+           <div class="m-progbar-fill" style="background:var(--blue);width:55%;">
+           </div>
+          </div>
+          <ul class="m-bullets">
+           <li>
+            Information is moving, but not consistently or reliably
+           </li>
+           <li>
+            Leaders sometimes learn of key decisions after the fact
+           </li>
+           <li>
+            Communication norms are unclear across the team
+           </li>
+           <li>
+            External stakeholder cadence needs more attention
+           </li>
+           <li>
+            Structure exists: what's missing is protocol discipline
+           </li>
+          </ul>
+         </div>
+         <div class="m-card m-purple">
+          <div class="m-topbar">
+           <div class="m-topbar-fill" style="background:var(--purple);width:58%;">
+           </div>
+          </div>
+          <div class="m-header">
+           <div>
+            <div class="m-name">
+             Connection
+            </div>
+            <div class="m-subtitle">
+             Depth of trust and psychological safety
+            </div>
+           </div>
+           <div style="text-align:right !important;">
+            <span class="m-score-val" style="color:var(--purple);">
+             5.8
+            </span>
+            <span class="m-score-denom">
+             / 10
+            </span>
+           </div>
+          </div>
+          <div class="m-pill">
+           Stage 2 &middot; Emerging Integration
+          </div>
+          <div class="m-progbar">
+           <div class="m-progbar-fill" style="background:var(--purple);width:58%;">
+           </div>
+          </div>
+          <ul class="m-bullets">
+           <li>
+            Trust exists at a surface level but remains fragile
+           </li>
+           <li>
+            Psychological safety is limited across the team
+           </li>
+           <li>
+            Real challenges are rarely surfaced or challenged openly
+           </li>
+           <li>
+            Thin trust turns communication into performance, not candor
+           </li>
+           <li>
+            Execution becomes compliance rather than genuine commitment
+           </li>
+          </ul>
+         </div>
+         <div class="m-card m-gold">
+          <div class="m-topbar">
+           <div class="m-topbar-fill" style="background:var(--gold);width:56%;">
+           </div>
+          </div>
+          <div class="m-header">
+           <div>
+            <div class="m-name">
+             Alignment
+            </div>
+            <div class="m-subtitle">
+             Shared mental models and direction
+            </div>
+           </div>
+           <div style="text-align:right !important;">
+            <span class="m-score-val" style="color:var(--gold);">
+             5.6
+            </span>
+            <span class="m-score-denom">
+             / 10
+            </span>
+           </div>
+          </div>
+          <div class="m-pill">
+           Stage 2 &middot; Emerging Integration
+          </div>
+          <div class="m-progbar">
+           <div class="m-progbar-fill" style="background:var(--gold);width:56%;">
+           </div>
+          </div>
+          <ul class="m-bullets">
+           <li>
+            Alignment is developing but remains incomplete overall
+           </li>
+           <li>
+            Most members understand top priorities at a high level
+           </li>
+           <li>
+            Decision-right clarity has meaningful gaps across roles
+           </li>
+           <li>
+            Resource allocation doesn't always reflect stated priorities
+           </li>
+           <li>
+            Historical patterns still override strategic intent at times
+           </li>
+          </ul>
+         </div>
+         <div class="m-card m-teal">
+          <div class="m-topbar">
+           <div class="m-topbar-fill" style="background:var(--teal);width:55%;">
+           </div>
+          </div>
+          <div class="m-header">
+           <div>
+            <div class="m-name">
+             Capacity
+            </div>
+            <div class="m-subtitle">
+             Sustainable systems that amplify performance
+            </div>
+           </div>
+           <div style="text-align:right !important;">
+            <span class="m-score-val" style="color:var(--teal);">
+             5.5
+            </span>
+            <span class="m-score-denom">
+             / 10
+            </span>
+           </div>
+          </div>
+          <div class="m-pill">
+           Stage 2 &middot; Emerging Integration
+          </div>
+          <div class="m-progbar">
+           <div class="m-progbar-fill" style="background:var(--teal);width:55%;">
+           </div>
+          </div>
+          <ul class="m-bullets">
+           <li>
+            The team is performing largely through effort, not systems
+           </li>
+           <li>
+            Development goals exist informally but lack accountability
+           </li>
+           <li>
+            Absorbing new opportunities strains existing commitments
+           </li>
+           <li>
+            Sustainable systems, not more effort, close this gap
+           </li>
+           <li>
+            Operating below potential due to unaddressed interference
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="measures-bottom">
+         <div class="m-card m-gold">
+          <div class="m-topbar">
+           <div class="m-topbar-fill" style="background:var(--gold);width:57%;">
+           </div>
+          </div>
+          <div class="m-header">
+           <div>
+            <div class="m-name">
+             Execution
+            </div>
+            <div class="m-subtitle">
+             Converting decisions into results
+            </div>
+           </div>
+           <div style="text-align:right !important;">
+            <span class="m-score-val" style="color:var(--gold);">
+             5.7
+            </span>
+            <span class="m-score-denom">
+             / 10
+            </span>
+           </div>
+          </div>
+          <div class="m-pill">
+           Stage 2 &middot; Emerging Integration
+          </div>
+          <div class="m-progbar">
+           <div class="m-progbar-fill" style="background:var(--gold);width:57%;">
+           </div>
+          </div>
+          <ul class="m-bullets">
+           <li>
+            The team's second-strongest dimension overall
+           </li>
+           <li>
+            When decisions are clear, this team follows through reliably
+           </li>
+           <li>
+            Gaps remain in sustained focus and discipline on priorities
+           </li>
+           <li>
+            Peer-to-peer accountability requires leader intervention
+           </li>
+           <li>
+            Strong individual execution hasn't yet become team execution
+           </li>
+          </ul>
+         </div>
+         <div class="radar-card">
+          <div class="radar-label">
+           Five Lead Measures, Score Profile
+          </div>
+          <svg id="radarSvg" viewbox="0 0 300 300" width="100%" style="max-width:270px;" aria-label="Pentagon radar chart of five lead measure scores">
+          </svg>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- PAGE 4 — LEADER COMPETENCY INDEX -->
+      <section>
+       <div class="page-sep">
+       </div>
+       <div class="sec-wrap">
+        <h2 class="sec-heading">
+         Leader Competency Index
+        </h2>
+        <div class="rule-gold">
+        </div>
+        <div class="lci-row">
+         <span class="lci-num">
+          01
+         </span>
+         <span class="lci-name">
+          Building Trust
+         </span>
+         <div class="lci-bar-track">
+          <div class="lci-bar-fill" style="width:73%;">
+          </div>
+         </div>
+         <span class="lci-score">
+          7.3
+         </span>
+         <span class="lci-freq">
+          Often / Usually
+         </span>
+        </div>
+        <div class="lci-row">
+         <span class="lci-num">
+          02
+         </span>
+         <span class="lci-name">
+          Empowerment
+         </span>
+         <div class="lci-bar-track">
+          <div class="lci-bar-fill" style="width:63%;">
+          </div>
+         </div>
+         <span class="lci-score">
+          6.3
+         </span>
+         <span class="lci-freq">
+          Often / Usually
+         </span>
+        </div>
+        <div class="lci-row">
+         <span class="lci-num">
+          03
+         </span>
+         <span class="lci-name">
+          Collaboration
+         </span>
+         <div class="lci-bar-track">
+          <div class="lci-bar-fill" style="width:68%;">
+          </div>
+         </div>
+         <span class="lci-score">
+          6.8
+         </span>
+         <span class="lci-freq">
+          Often / Usually
+         </span>
+        </div>
+        <div class="lci-row">
+         <span class="lci-num">
+          04
+         </span>
+         <span class="lci-name">
+          Broadening Influence
+         </span>
+         <div class="lci-bar-track">
+          <div class="lci-bar-fill" style="width:70%;">
+          </div>
+         </div>
+         <span class="lci-score">
+          7.0
+         </span>
+         <span class="lci-freq">
+          Often / Usually
+         </span>
+        </div>
+        <div class="lci-row">
+         <span class="lci-num">
+          05
+         </span>
+         <span class="lci-name">
+          Guiding Change
+         </span>
+         <div class="lci-bar-track">
+          <div class="lci-bar-fill" style="width:67%;">
+          </div>
+         </div>
+         <span class="lci-score">
+          6.7
+         </span>
+         <span class="lci-freq">
+          Often / Usually
+         </span>
+        </div>
+        <div class="lci-row">
+         <span class="lci-num">
+          06
+         </span>
+         <span class="lci-name">
+          Managing Conflict
+         </span>
+         <div class="lci-bar-track">
+          <div class="lci-bar-fill low" style="width:55%;">
+          </div>
+         </div>
+         <span class="lci-score low">
+          5.5
+         </span>
+         <span class="lci-freq low">
+          Sometimes
+         </span>
+        </div>
+        <div class="lci-row">
+         <span class="lci-num">
+          07
+         </span>
+         <span class="lci-name">
+          Developing Others
+         </span>
+         <div class="lci-bar-track">
+          <div class="lci-bar-fill" style="width:68%;">
+          </div>
+         </div>
+         <span class="lci-score">
+          6.8
+         </span>
+         <span class="lci-freq">
+          Often / Usually
+         </span>
+        </div>
+        <div class="dev-note">
+         <div class="dev-diamond">
+         </div>
+         <p class="dev-text">
+          <strong>
+           Developmental sequence note:
+          </strong>
+          Competencies build in the order listed above. Each creates the foundation for those that follow. Building Trust (7.3) is the team's strongest competency and a legitimate launchpad. Managing Conflict (5.5), the lowest score, cannot be effectively developed until the foundational competencies above it improve. These gaps are directly linked and should be addressed together.
+         </p>
+        </div>
+       </div>
+      </section>
+      <!-- PAGE 5 — DIAGNOSTIC SUMMARY -->
+      <section>
+       <div class="page-sep">
+       </div>
+       <div class="sec-wrap">
+        <h2 class="sec-heading">
+         Diagnostic Summary
+        </h2>
+        <div class="sec-rule">
+        </div>
+        <div class="diag-panels">
+         <div class="diag-panel diag-strengths">
+          <div class="diag-panel-label">
+           Relative Strengths
+          </div>
+          <div class="diag-item">
+           <div class="diag-dot">
+           </div>
+           <div class="diag-item-body">
+            <span class="diag-item-name">
+             Building Trust
+             <span class="chip chip-teal">
+              7.3</span></span>: The foundational condition for all advanced development is present at a meaningful level, the platform for growth exists.
+           </div>
+          </div>
+          <div class="diag-item">
+           <div class="diag-dot">
+           </div>
+           <div class="diag-item-body">
+            <span class="diag-item-name">
+             Broadening Influence
+             <span class="chip chip-teal">
+              7.0</span></span>: The team actively builds external relationships and credibility, a meaningful asset for institutional positioning.
+           </div>
+          </div>
+          <div class="diag-item">
+           <div class="diag-dot">
+           </div>
+           <div class="diag-item-body">
+            <span class="diag-item-name">
+             Collaboration
+             <span class="chip chip-teal">
+              6.8</span></span>: Leadership models genuine collaboration and breaks down silos across the organization.
+           </div>
+          </div>
+          <div class="diag-item">
+           <div class="diag-dot">
+           </div>
+           <div class="diag-item-body">
+            <span class="diag-item-name">
+             Developing Others
+             <span class="chip chip-teal">
+              6.8</span></span>: Consistent investment in leadership development is reducing key-person dependency and building institutional resilience.
+           </div>
+          </div>
+         </div>
+         <div class="diag-panel diag-development">
+          <div class="diag-panel-label">
+           Priority Development Areas
+          </div>
+          <div class="diag-item">
+           <div class="diag-dot">
+           </div>
+           <div class="diag-item-body">
+            <span class="diag-item-name">
+             Managing Conflict
+             <span class="chip chip-gold">
+              5.5</span></span>: Productive tension is being avoided or suppressed rather than channeled. This limits honest problem-solving and innovation.
+           </div>
+          </div>
+          <div class="diag-item">
+           <div class="diag-dot">
+           </div>
+           <div class="diag-item-body">
+            <span class="diag-item-name">
+             Capacity
+             <span class="chip chip-gold">
+              5.5</span></span>: The team is running on effort rather than system. Sustainable infrastructure is underdeveloped relative to performance expectations.
+           </div>
+          </div>
+          <div class="diag-item">
+           <div class="diag-dot">
+           </div>
+           <div class="diag-item-body">
+            <span class="diag-item-name">
+             Communication
+             <span class="chip chip-gold">
+              5.5</span></span>: Information is not flowing reliably. Decisions are communicated inconsistently and communication norms need to be established and enforced.
+           </div>
+          </div>
+          <div class="diag-item">
+           <div class="diag-dot">
+           </div>
+           <div class="diag-item-body">
+            <span class="diag-item-name">
+             Alignment
+             <span class="chip chip-gold">
+              5.6</span></span>: Strategic priorities are not consistently understood or acted upon. Resource allocation does not always reflect stated priorities.
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- PAGE 6 — RESEARCH BENCHMARKS -->
+      <section>
+       <div class="page-sep">
+       </div>
+       <div class="sec-wrap sec-wrap-flush">
+        <div style="padding-bottom:28px;">
+         <h2 class="sec-heading">
+          Stage 2 Research Benchmarks
+         </h2>
+         <p class="bench-intro">
+          Across 1,050 educational leadership teams, Stage 2 produces consistent, measurable patterns. The findings below reflect what teams at this stage typically experience. These are research observations, not projections specific to any single institution.
+         </p>
+         <div class="sec-rule">
+         </div>
+        </div>
+        <div class="bench-grid">
+         <div class="bench-cell">
+          <div class="bench-arrow">
+           &darr;
+          </div>
+          <div class="bench-stat">
+           3.2&times;
+          </div>
+          <div class="bench-label">
+           Higher Enrollment Decline
+          </div>
+          <p class="bench-body">
+           Institutions with capacity scores below 62% experience enrollment decline 3.2 times faster than institutions that improved, independent of location, reputation, or tuition variables.
+          </p>
+         </div>
+         <div class="bench-cell">
+          <div class="bench-arrow">
+           &darr;
+          </div>
+          <div class="bench-stat">
+           1.2 of 7
+          </div>
+          <div class="bench-label">
+           Initiatives Completed on Average
+          </div>
+          <p class="bench-body">
+           Stage 2 teams average 1.2 completed initiatives out of every 7 launched. Each incomplete initiative reduces the next initiative's success probability by 12%, creating compounding skepticism about leadership follow-through.
+          </p>
+         </div>
+         <div class="bench-cell">
+          <div class="bench-arrow">
+           &darr;
+          </div>
+          <div class="bench-stat">
+           $400K
+          </div>
+          <div class="bench-label">
+           Annual Capacity Waste
+          </div>
+          <p class="bench-body">
+           A leadership team compensated at $1M operating at Stage 2 leaves approximately $400,000 in annual organizational effectiveness on the table. That is not a budget problem. It is an intelligence integration problem.
+          </p>
+         </div>
+        </div>
+        <p class="bench-source">
+         Research basis: 1,050 educational leadership teams assessed across the HPG ecosystem &middot; Data reflects team-level patterns, not individual institution projections
+        </p>
+       </div>
+      </section>
+      <!-- PAGE 8 — CLOSE -->
+      <section>
+       <div class="page-sep">
+       </div>
+       <div class="cta-bar">
+        <p class="cta-text">
+         If the data here prompts questions your team wants to explore further, the natural next step is a 30-minute debrief conversation, no preparation required on your end.
+        </p>
+        <a href="mailto:joe@higherperformancegroup.com" class="cta-btn">
+         Schedule a Debrief
+        </a>
+       </div>
+       <div class="quote-block">
+        <span class="quote-mark">
+         &quot;
+        </span>
+        <p class="quote-text">
+         Individual brilliance is your ceiling. Team Intelligence is your breakthrough.
+        </p>
+        <div class="quote-attr">
+         Dr. Joe Hill, Founder &middot; Higher Performance Group
+        </div>
+       </div>
+       <div class="report-footer">
+        <div>
+         <div class="footer-brand">
+          Higher Performance Group
+         </div>
+         <div class="footer-badge">
+          Confidential
+         </div>
+        </div>
+        <div class="footer-right">
+         Team Intelligence Assessment&trade; &middot; Sample Institution &middot; March 2026
+         <br/>
+         <a href="tel:2183107857">
+          218-310-7857
+         </a>
+         &nbsp;&middot;&nbsp;
+         <a href="https://higherperformancegroup.com">
+          higherperformancegroup.com
+         </a>
+        </div>
+       </div>
+      </section>
+     </div>
+     <!-- /report -->
+    </div>
+    <!-- /tqr-rpt -->
+    <script id="1443562783">
+     (function() {
+  var ringEl = document.getElementById('ringFill');
+  var tqScore = 5.6;
+  var circ = 2 * Math.PI * 60;
+  ringEl.style.strokeDashoffset = circ;
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      ringEl.style.strokeDashoffset = circ * (1 - tqScore / 10);
+    });
+  });
+  var svg = document.getElementById('radarSvg');
+  var cx = 150, cy = 155, maxR = 105;
+  var dims = [
+    { label: 'Communication', score: 5.5, color: '#378ADD' },
+    { label: 'Connection',    score: 5.8, color: '#7B68CC' },
+    { label: 'Alignment',     score: 5.6, color: '#C9A84C' },
+    { label: 'Capacity',      score: 5.5, color: '#1D9E75' },
+    { label: 'Execution',     score: 5.7, color: '#C9A84C' }
+  ];
+  var n = dims.length;
+  function ang(i) { return (Math.PI * 2 * i / n) - Math.PI / 2; }
+  function pt(i, r) { return [cx + r * Math.cos(ang(i)), cy + r * Math.sin(ang(i))]; }
+  function el(tag) { return document.createElementNS('http://www.w3.org/2000/svg', tag); }
+  [2,4,6,8,10].forEach(function(v) {
+    var poly = el('polygon');
+    var pts = [];
+    for (var i = 0; i < n; i++) pts.push(pt(i, maxR * v / 10).join(','));
+    poly.setAttribute('points', pts.join(' '));
+    poly.setAttribute('fill', 'none');
+    poly.setAttribute('stroke', v === 10 ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.06)');
+    poly.setAttribute('stroke-width', '1');
+    svg.appendChild(poly);
+  });
+  for (var i = 0; i < n; i++) {
+    var p = pt(i, maxR);
+    var line = el('line');
+    line.setAttribute('x1', cx); line.setAttribute('y1', cy);
+    line.setAttribute('x2', p[0]); line.setAttribute('y2', p[1]);
+    line.setAttribute('stroke', 'rgba(255,255,255,0.08)');
+    line.setAttribute('stroke-width', '1');
+    svg.appendChild(line);
+  }
+  var scorePoly = el('polygon');
+  var scorePts = dims.map(function(d, i) { return pt(i, maxR * d.score / 10).join(','); }).join(' ');
+  scorePoly.setAttribute('points', scorePts);
+  scorePoly.setAttribute('fill', 'rgba(201,168,76,0.12)');
+  scorePoly.setAttribute('stroke', '#C9A84C');
+  scorePoly.setAttribute('stroke-width', '1.5');
+  svg.appendChild(scorePoly);
+  dims.forEach(function(d, i) {
+    var p = pt(i, maxR * d.score / 10);
+    var dot = el('circle');
+    dot.setAttribute('cx', p[0]); dot.setAttribute('cy', p[1]);
+    dot.setAttribute('r', '4');
+    dot.setAttribute('fill', d.color);
+    dot.setAttribute('stroke', '#0B1629');
+    dot.setAttribute('stroke-width', '2');
+    svg.appendChild(dot);
+    var lp = pt(i, maxR + 20);
+    var txt = el('text');
+    txt.setAttribute('x', lp[0]); txt.setAttribute('y', lp[1]);
+    txt.setAttribute('text-anchor', 'middle');
+    txt.setAttribute('dominant-baseline', 'middle');
+    txt.setAttribute('font-size', '10');
+    txt.setAttribute('font-weight', '500');
+    txt.setAttribute('fill', d.color);
+    txt.setAttribute('font-family', "'DM Sans', sans-serif");
+    txt.textContent = d.label;
+    svg.appendChild(txt);
+  });
+})();
+    </script>
+   </div>
+  </div>
+ </div>
+</div>
