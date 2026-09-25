@@ -330,6 +330,17 @@ linear-gradient(180deg, rgba(9,17,36,0.58) 0%, rgba(9,17,36,0.58) 40%, rgba(9,17
 /* ── audit-002 #34: labels and small text lifted to a 12px minimum (was 7.5–11.5px) ── */
 #dm .dmBody :is(.eyebrow, .eyebrow.hero-eyebrow) { font-size: 12px !important; }
 #dm .dmBody :is(cite, blockquote cite, figcaption) { font-family: 'DM Sans', system-ui, sans-serif; }
+
+/* Phone/tablet hero (user request 2026-09-25): photo as its own band above the text, so the title no longer sits on Dr. Joe's face */
+@media (max-width:860px){
+#dm .dmBody .drjoe-page .hero{ display:block !important; min-height:0 !important; }
+body.dmMobileBody #dm .dmBody .drjoe-page .hero{ padding-top:60px !important; }
+#dm .dmBody .drjoe-page .hero-bg{ position:relative !important; inset:auto !important; height:clamp(240px, 76vw, 420px) !important; }
+#dm .dmBody .drjoe-page .hero-bg img{ object-position:10% 22% !important; }
+#dm .dmBody .drjoe-page .hero-scrim{ top:auto !important; bottom:auto !important; left:0 !important; right:0 !important; height:clamp(240px, 76vw, 420px) !important; margin-top:calc(-1 * clamp(240px, 76vw, 420px)) !important; position:relative !important;
+  background:linear-gradient(180deg, rgba(6,12,26,0) 55%, rgba(6,12,26,0.6) 82%, var(--navy-950) 100%) !important; }
+#dm .dmBody .drjoe-page .hero .wrap{ padding-block:4px 36px !important; }
+}
 </style>
 
     <svg width="0" height="0" style="position:absolute" aria-hidden="true">

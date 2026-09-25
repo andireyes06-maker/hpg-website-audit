@@ -35,6 +35,7 @@ The house rules for every Higher Performance Group page, so new Duda injects mat
 - **Arrows (→)** mean "this takes you to another page or site". Use them on navigation and outbound links, never on form submits, downloads or modal buttons.
 - **Icons** are thin-line inline SVGs, 1.6px stroke, round caps, in gold, matching the ones Home already uses. No emoji as icons.
 - **The offering-page series** (The Proof, Burnout Force, TQ Advantage, Team Institute) shares one deliberate template: centred hero → essay → stat pair → "No. 01" feature → grid of the rest → deliverables → logistics → testimonial → CTA. The shared order is a series identity, so visitors know where to find things on every offer. New offer pages should follow it.
+- **Forms** use one house card, matching Home's form: a cream card (`#f7f2e8`, with a `#e3dccb` border), white 48px fields with a `#8a93a3` border (3.1:1) and 16px navy text (so iOS doesn't zoom), `#3a4456` labels above the fields, required marks in `#7a5c1c`, and a full-width gold button with navy text. Errors appear as text under the field. The shared CSS block is marked "HPG house form card" in the Research, Bookstore, Blog and P2P injects.
 - **List markers** are a short gold rule (12×2px), not a dash character.
 - **Button labels** name the action: "Send My Request", "Email Me the PDF", "Book a Call". Never "Get Started", "Submit" or "Learn More".
 
