@@ -46,7 +46,7 @@ Most pages also get two more changes:
 
 ### Review fixes (2026-09-25)
 These came from the client-preview review. They're applied identically in audit-002 and audit-003.
-- **Burnout Force:** a "Take the Assessment" button (to `/tq-assessment`) next to "Talk It Through", in both the hero and the final call to action. It's outlined, so gold stays on the main button.
+- **Burnout Force:** a "Take the Assessment" button (to the Burnout Force Check, burnoutforce.higherperformancegroup.com) next to "Talk It Through", in both the hero and the final call to action. It's outlined, so gold stays on the main button.
 - **Speaker, on phones:** the hero photo is now its own band above the text. The name and buttons no longer sit on Dr. Joe's face.
 - **One house form everywhere.** Every ActiveCampaign form now matches Home's form: a light card, white fields with visible borders, a gold full-width button and left-aligned labels. That covers the Research and Bookstore download popups, the Blog sign-up and P2P's topic form.
 - **Blog:** the post list paints its own light background. Before, it relied on Duda's row colour, so the titles vanished anywhere else (including the preview).
